@@ -1,0 +1,861 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SiteFooter /> does not render mobile links 1`] = `
+<footer
+  aria-label="Page Footer"
+  className="footer d-flex justify-content-center border-top py-3 px-4"
+  role="contentinfo"
+>
+  <div
+    className="max-width-1180 d-grid"
+  >
+    <div
+      className="area-1"
+    >
+      <a
+        aria-label="example Home"
+        href="https://www.example.com/"
+        onClick={[Function]}
+        target="_self"
+      >
+        <img
+          alt="example logo"
+          src="test-file-stub"
+        />
+      </a>
+    </div>
+    <div
+      className="area-2"
+    >
+      <h2>
+        example
+      </h2>
+      <ul
+        className="list-unstyled p-0 m-0"
+      >
+        <li>
+          <a
+            href="https://www.example.com/about-us"
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/enterprise"
+          >
+            example
+             for Business
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/affiliate-program"
+          >
+            Affiliates
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/open"
+          >
+            Open 
+            example
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/careers"
+          >
+            Careers
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/news-announcements"
+          >
+            News
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="area-3"
+    >
+      <h2>
+        Legal
+      </h2>
+      <ul
+        className="list-unstyled p-0 m-0"
+      >
+        <li>
+          <a
+            href="https://www.example.com/terms-of-service"
+          >
+            Terms of Service & Honor Code
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/privacy-policy"
+          >
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/accessibility"
+          >
+            Accessibility Policy
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/trademarks"
+          >
+            Trademark Policy
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/sitemap"
+          >
+            Sitemap
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="area-4"
+    >
+      <h2>
+        Connect
+      </h2>
+      <ul
+        className="list-unstyled p-0 m-0"
+      >
+        <li>
+          <a
+            href="https://www.example.com/blog"
+          >
+            Blog
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/contact"
+          >
+            Contact Us
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/support"
+          >
+            Help Center
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/media-kit"
+          >
+            Media Kit
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/donate"
+          >
+            Donate
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="area-5"
+    >
+      <ul
+        className="d-flex flex-row justify-content-between list-unstyled max-width-222 p-0 mb-4"
+      >
+        <li>
+          <a
+            href="https://www.facebook.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Facebook"
+          >
+            <span
+              aria-hidden={true}
+              className="fa fa-facebook-square fa-2x"
+              id="Icon1"
+            />
+            <span
+              className="sr-only"
+            >
+              Like example on Facebook
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.twitter.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Twitter"
+          >
+            <span
+              aria-hidden={true}
+              className="fa fa-twitter-square fa-2x"
+              id="Icon1"
+            />
+            <span
+              className="sr-only"
+            >
+              Follow example on Twitter
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Youtube"
+          >
+            <span
+              aria-hidden={true}
+              className="fa fa-youtube-square fa-2x"
+              id="Icon1"
+            />
+            <span
+              className="sr-only"
+            >
+              Subscribe to the example YouTube channel
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="LinkedIn"
+          >
+            <span
+              aria-hidden={true}
+              className="fa fa-linkedin-square fa-2x"
+              id="Icon1"
+            />
+            <span
+              className="sr-only"
+            >
+              Follow example on LinkedIn
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://plus.google.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Google+"
+          >
+            <span
+              aria-hidden={true}
+              className="fa fa-google-plus-square fa-2x"
+              id="Icon1"
+            />
+            <span
+              className="sr-only"
+            >
+              Follow example on Google+
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://reddit.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Reddit"
+          >
+            <span
+              aria-hidden={true}
+              className="fa fa-reddit-square fa-2x"
+              id="Icon1"
+            />
+            <span
+              className="sr-only"
+            >
+              Subscribe to the example subreddit
+            </span>
+          </a>
+        </li>
+      </ul>
+      <p>
+        © 2012–
+        2019
+         
+        example
+         Inc.
+        <br />
+        EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 粤ICP备17044299号-2
+      </p>
+    </div>
+  </div>
+</footer>
+`;
+
+exports[`<SiteFooter /> does not render social links 1`] = `
+<footer
+  aria-label="Page Footer"
+  className="footer d-flex justify-content-center border-top py-3 px-4"
+  role="contentinfo"
+>
+  <div
+    className="max-width-1180 d-grid"
+  >
+    <div
+      className="area-1"
+    >
+      <a
+        aria-label="example Home"
+        href="https://www.example.com/"
+        onClick={[Function]}
+        target="_self"
+      >
+        <img
+          alt="example logo"
+          src="test-file-stub"
+        />
+      </a>
+    </div>
+    <div
+      className="area-2"
+    >
+      <h2>
+        example
+      </h2>
+      <ul
+        className="list-unstyled p-0 m-0"
+      >
+        <li>
+          <a
+            href="https://www.example.com/about-us"
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/enterprise"
+          >
+            example
+             for Business
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/affiliate-program"
+          >
+            Affiliates
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/open"
+          >
+            Open 
+            example
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/careers"
+          >
+            Careers
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/news-announcements"
+          >
+            News
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="area-3"
+    >
+      <h2>
+        Legal
+      </h2>
+      <ul
+        className="list-unstyled p-0 m-0"
+      >
+        <li>
+          <a
+            href="https://www.example.com/terms-of-service"
+          >
+            Terms of Service & Honor Code
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/privacy-policy"
+          >
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/accessibility"
+          >
+            Accessibility Policy
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/trademarks"
+          >
+            Trademark Policy
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/sitemap"
+          >
+            Sitemap
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="area-4"
+    >
+      <h2>
+        Connect
+      </h2>
+      <ul
+        className="list-unstyled p-0 m-0"
+      >
+        <li>
+          <a
+            href="https://www.example.com/blog"
+          >
+            Blog
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/contact"
+          >
+            Contact Us
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/support"
+          >
+            Help Center
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/media-kit"
+          >
+            Media Kit
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/donate"
+          >
+            Donate
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="area-5"
+    >
+      <ul
+        className="d-flex flex-row justify-content-between list-unstyled max-width-264 p-0 mb-5"
+      >
+        <li>
+          <a
+            href="https://store.apple.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Download the example mobile app from the Apple App Store"
+              className="max-height-39"
+              src="https://prod-edxapp.edx-cdn.org/static/images/app/app_store_badge_135x40.d0558d910630.svg"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://play.google.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Download the example mobile app from Google Play"
+              className="max-height-39"
+              src="https://prod-edxapp.edx-cdn.org/static/images/app/google_play_badge_45.6ea466e328da.png"
+            />
+          </a>
+        </li>
+      </ul>
+      <p>
+        © 2012–
+        2019
+         
+        example
+         Inc.
+        <br />
+        EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 粤ICP备17044299号-2
+      </p>
+    </div>
+  </div>
+</footer>
+`;
+
+exports[`<SiteFooter /> renders correctly 1`] = `
+<footer
+  aria-label="Page Footer"
+  className="footer d-flex justify-content-center border-top py-3 px-4"
+  role="contentinfo"
+>
+  <div
+    className="max-width-1180 d-grid"
+  >
+    <div
+      className="area-1"
+    >
+      <a
+        aria-label="example Home"
+        href="https://www.example.com/"
+        onClick={[Function]}
+        target="_self"
+      >
+        <img
+          alt="example logo"
+          src="test-file-stub"
+        />
+      </a>
+    </div>
+    <div
+      className="area-2"
+    >
+      <h2>
+        example
+      </h2>
+      <ul
+        className="list-unstyled p-0 m-0"
+      >
+        <li>
+          <a
+            href="https://www.example.com/about-us"
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/enterprise"
+          >
+            example
+             for Business
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/affiliate-program"
+          >
+            Affiliates
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/open"
+          >
+            Open 
+            example
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/careers"
+          >
+            Careers
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/news-announcements"
+          >
+            News
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="area-3"
+    >
+      <h2>
+        Legal
+      </h2>
+      <ul
+        className="list-unstyled p-0 m-0"
+      >
+        <li>
+          <a
+            href="https://www.example.com/terms-of-service"
+          >
+            Terms of Service & Honor Code
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/privacy-policy"
+          >
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/accessibility"
+          >
+            Accessibility Policy
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/trademarks"
+          >
+            Trademark Policy
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/sitemap"
+          >
+            Sitemap
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="area-4"
+    >
+      <h2>
+        Connect
+      </h2>
+      <ul
+        className="list-unstyled p-0 m-0"
+      >
+        <li>
+          <a
+            href="https://www.example.com/blog"
+          >
+            Blog
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/contact"
+          >
+            Contact Us
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/support"
+          >
+            Help Center
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/media-kit"
+          >
+            Media Kit
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.example.com/donate"
+          >
+            Donate
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="area-5"
+    >
+      <ul
+        className="d-flex flex-row justify-content-between list-unstyled max-width-222 p-0 mb-4"
+      >
+        <li>
+          <a
+            href="https://www.facebook.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Facebook"
+          >
+            <span
+              aria-hidden={true}
+              className="fa fa-facebook-square fa-2x"
+              id="Icon1"
+            />
+            <span
+              className="sr-only"
+            >
+              Like example on Facebook
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.twitter.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Twitter"
+          >
+            <span
+              aria-hidden={true}
+              className="fa fa-twitter-square fa-2x"
+              id="Icon1"
+            />
+            <span
+              className="sr-only"
+            >
+              Follow example on Twitter
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Youtube"
+          >
+            <span
+              aria-hidden={true}
+              className="fa fa-youtube-square fa-2x"
+              id="Icon1"
+            />
+            <span
+              className="sr-only"
+            >
+              Subscribe to the example YouTube channel
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="LinkedIn"
+          >
+            <span
+              aria-hidden={true}
+              className="fa fa-linkedin-square fa-2x"
+              id="Icon1"
+            />
+            <span
+              className="sr-only"
+            >
+              Follow example on LinkedIn
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://plus.google.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Google+"
+          >
+            <span
+              aria-hidden={true}
+              className="fa fa-google-plus-square fa-2x"
+              id="Icon1"
+            />
+            <span
+              className="sr-only"
+            >
+              Follow example on Google+
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://reddit.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Reddit"
+          >
+            <span
+              aria-hidden={true}
+              className="fa fa-reddit-square fa-2x"
+              id="Icon1"
+            />
+            <span
+              className="sr-only"
+            >
+              Subscribe to the example subreddit
+            </span>
+          </a>
+        </li>
+      </ul>
+      <ul
+        className="d-flex flex-row justify-content-between list-unstyled max-width-264 p-0 mb-5"
+      >
+        <li>
+          <a
+            href="https://store.apple.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Download the example mobile app from the Apple App Store"
+              className="max-height-39"
+              src="https://prod-edxapp.edx-cdn.org/static/images/app/app_store_badge_135x40.d0558d910630.svg"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://play.google.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Download the example mobile app from Google Play"
+              className="max-height-39"
+              src="https://prod-edxapp.edx-cdn.org/static/images/app/google_play_badge_45.6ea466e328da.png"
+            />
+          </a>
+        </li>
+      </ul>
+      <p>
+        © 2012–
+        2019
+         
+        example
+         Inc.
+        <br />
+        EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 粤ICP备17044299号-2
+      </p>
+    </div>
+  </div>
+</footer>
+`;
