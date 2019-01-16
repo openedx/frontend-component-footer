@@ -180,6 +180,7 @@ exports[`<SiteFooter /> does not render mobile links 1`] = `
         <li>
           <a
             href="https://www.facebook.com"
+            onClick={[Function]}
             rel="noopener noreferrer"
             target="_blank"
             title="Facebook"
@@ -199,6 +200,7 @@ exports[`<SiteFooter /> does not render mobile links 1`] = `
         <li>
           <a
             href="https://www.twitter.com"
+            onClick={[Function]}
             rel="noopener noreferrer"
             target="_blank"
             title="Twitter"
@@ -237,6 +239,7 @@ exports[`<SiteFooter /> does not render mobile links 1`] = `
         <li>
           <a
             href="https://www.linkedin.com"
+            onClick={[Function]}
             rel="noopener noreferrer"
             target="_blank"
             title="LinkedIn"
@@ -256,6 +259,7 @@ exports[`<SiteFooter /> does not render mobile links 1`] = `
         <li>
           <a
             href="https://plus.google.com"
+            onClick={[Function]}
             rel="noopener noreferrer"
             target="_blank"
             title="Google+"
@@ -275,6 +279,7 @@ exports[`<SiteFooter /> does not render mobile links 1`] = `
         <li>
           <a
             href="https://reddit.com"
+            onClick={[Function]}
             rel="noopener noreferrer"
             target="_blank"
             title="Reddit"
@@ -486,6 +491,7 @@ exports[`<SiteFooter /> does not render social links 1`] = `
         <li>
           <a
             href="https://store.apple.com"
+            onClick={[Function]}
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -499,6 +505,7 @@ exports[`<SiteFooter /> does not render social links 1`] = `
         <li>
           <a
             href="https://play.google.com"
+            onClick={[Function]}
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -704,6 +711,7 @@ exports[`<SiteFooter /> renders correctly 1`] = `
         <li>
           <a
             href="https://www.facebook.com"
+            onClick={[Function]}
             rel="noopener noreferrer"
             target="_blank"
             title="Facebook"
@@ -723,6 +731,7 @@ exports[`<SiteFooter /> renders correctly 1`] = `
         <li>
           <a
             href="https://www.twitter.com"
+            onClick={[Function]}
             rel="noopener noreferrer"
             target="_blank"
             title="Twitter"
@@ -761,6 +770,7 @@ exports[`<SiteFooter /> renders correctly 1`] = `
         <li>
           <a
             href="https://www.linkedin.com"
+            onClick={[Function]}
             rel="noopener noreferrer"
             target="_blank"
             title="LinkedIn"
@@ -780,6 +790,7 @@ exports[`<SiteFooter /> renders correctly 1`] = `
         <li>
           <a
             href="https://plus.google.com"
+            onClick={[Function]}
             rel="noopener noreferrer"
             target="_blank"
             title="Google+"
@@ -799,6 +810,7 @@ exports[`<SiteFooter /> renders correctly 1`] = `
         <li>
           <a
             href="https://reddit.com"
+            onClick={[Function]}
             rel="noopener noreferrer"
             target="_blank"
             title="Reddit"
@@ -822,6 +834,7 @@ exports[`<SiteFooter /> renders correctly 1`] = `
         <li>
           <a
             href="https://store.apple.com"
+            onClick={[Function]}
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -835,6 +848,7 @@ exports[`<SiteFooter /> renders correctly 1`] = `
         <li>
           <a
             href="https://play.google.com"
+            onClick={[Function]}
             rel="noopener noreferrer"
             target="_blank"
           >
