@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<SiteFooter /> does not render mobile links 1`] = `
+exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
 <footer
   aria-label="Page Footer"
   className="footer d-flex justify-content-center border-top py-3 px-4"
@@ -220,6 +220,7 @@ exports[`<SiteFooter /> does not render mobile links 1`] = `
         <li>
           <a
             href="https://www.youtube.com"
+            onClick={[Function]}
             rel="noopener noreferrer"
             target="_blank"
             title="Youtube"
@@ -311,7 +312,7 @@ exports[`<SiteFooter /> does not render mobile links 1`] = `
 </footer>
 `;
 
-exports[`<SiteFooter /> does not render social links 1`] = `
+exports[`<SiteFooter /> renders correctly does not render social links 1`] = `
 <footer
   aria-label="Page Footer"
   className="footer d-flex justify-content-center border-top py-3 px-4"
@@ -531,7 +532,7 @@ exports[`<SiteFooter /> does not render social links 1`] = `
 </footer>
 `;
 
-exports[`<SiteFooter /> renders correctly 1`] = `
+exports[`<SiteFooter /> renders correctly renders with social and mobile links 1`] = `
 <footer
   aria-label="Page Footer"
   className="footer d-flex justify-content-center border-top py-3 px-4"
@@ -751,6 +752,7 @@ exports[`<SiteFooter /> renders correctly 1`] = `
         <li>
           <a
             href="https://www.youtube.com"
+            onClick={[Function]}
             rel="noopener noreferrer"
             target="_blank"
             title="Youtube"
