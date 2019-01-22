@@ -19,7 +19,8 @@
     "start": "NODE_ENV=development BABEL_ENV=development node_modules/.bin/webpack-dev-server --config=config/webpack.dev.config.js --progress",
     "test": "jest --coverage",
     "snapshot": "jest --updateSnapshot",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "watch": "watch 'npm run build' ./src"
   },
   "repository": {
     "type": "git",
@@ -68,6 +69,7 @@
     "source-map-loader": "^0.2.1",
     "style-loader": "^0.20.2",
     "travis-deploy-once": "^5.0.0",
+    "watch": "^1.0.2",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.9",
