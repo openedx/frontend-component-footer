@@ -81,6 +81,7 @@ class SiteFooter extends React.Component {
               title="Youtube"
               rel="noopener noreferrer"
               target="_blank"
+              onClick={this.externalLinkClickHandler}
             >
               <Icon className={['fa', 'fa-youtube-square', 'fa-2x']} screenReaderText={`Subscribe to the ${siteName} YouTube channel`} />
             </a>
