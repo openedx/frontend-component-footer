@@ -7,6 +7,9 @@ frontend-component-footer
 frontend-component-footer is a library containing a site footer
 component for use when building edX frontend applications.
 
+At this time, this componenet is hard-coded to match the legacy LMS site footer, including all of its links.
+Note: As implemented, it should really be called the ``frontend-component-lms-footer``.
+
 Usage
 -----
 
