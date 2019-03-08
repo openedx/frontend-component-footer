@@ -188,7 +188,7 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
             <span
               aria-hidden={true}
               className="fa fa-facebook-square fa-2x"
-              id="Icon1"
+              id="edx-footer-icon-facebook"
             />
             <span
               className="sr-only"
@@ -208,7 +208,7 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
             <span
               aria-hidden={true}
               className="fa fa-twitter-square fa-2x"
-              id="Icon1"
+              id="edx-footer-icon-twitter"
             />
             <span
               className="sr-only"
@@ -228,7 +228,7 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
             <span
               aria-hidden={true}
               className="fa fa-youtube-square fa-2x"
-              id="Icon1"
+              id="edx-footer-icon-youtube"
             />
             <span
               className="sr-only"
@@ -248,7 +248,7 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
             <span
               aria-hidden={true}
               className="fa fa-linkedin-square fa-2x"
-              id="Icon1"
+              id="edx-footer-icon-linkedin"
             />
             <span
               className="sr-only"
@@ -268,7 +268,7 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
             <span
               aria-hidden={true}
               className="fa fa-google-plus-square fa-2x"
-              id="Icon1"
+              id="edx-footer-icon-google"
             />
             <span
               className="sr-only"
@@ -720,7 +720,7 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
             <span
               aria-hidden={true}
               className="fa fa-facebook-square fa-2x"
-              id="Icon1"
+              id="edx-footer-icon-facebook"
             />
             <span
               className="sr-only"
@@ -740,7 +740,7 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
             <span
               aria-hidden={true}
               className="fa fa-twitter-square fa-2x"
-              id="Icon1"
+              id="edx-footer-icon-twitter"
             />
             <span
               className="sr-only"
@@ -760,7 +760,7 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
             <span
               aria-hidden={true}
               className="fa fa-youtube-square fa-2x"
-              id="Icon1"
+              id="edx-footer-icon-youtube"
             />
             <span
               className="sr-only"
@@ -780,7 +780,7 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
             <span
               aria-hidden={true}
               className="fa fa-linkedin-square fa-2x"
-              id="Icon1"
+              id="edx-footer-icon-linkedin"
             />
             <span
               className="sr-only"
@@ -800,7 +800,7 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
             <span
               aria-hidden={true}
               className="fa fa-google-plus-square fa-2x"
-              id="Icon1"
+              id="edx-footer-icon-google"
             />
             <span
               className="sr-only"

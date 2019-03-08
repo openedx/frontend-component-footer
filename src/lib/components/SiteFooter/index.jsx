@@ -59,7 +59,7 @@ class SiteFooter extends React.Component {
               target="_blank"
               onClick={this.externalLinkClickHandler}
             >
-              <Icon className={['fa', 'fa-facebook-square', 'fa-2x']} screenReaderText={`Like ${siteName} on Facebook`} />
+              <Icon id="edx-footer-icon-facebook" className={['fa', 'fa-facebook-square', 'fa-2x']} screenReaderText={`Like ${siteName} on Facebook`} />
             </a>
           </li>
 
@@ -72,7 +72,7 @@ class SiteFooter extends React.Component {
               target="_blank"
               onClick={this.externalLinkClickHandler}
             >
-              <Icon className={['fa', 'fa-twitter-square', 'fa-2x']} screenReaderText={`Follow ${siteName} on Twitter`} />
+              <Icon id="edx-footer-icon-twitter" className={['fa', 'fa-twitter-square', 'fa-2x']} screenReaderText={`Follow ${siteName} on Twitter`} />
             </a>
           </li>
           <li>
@@ -83,7 +83,7 @@ class SiteFooter extends React.Component {
               target="_blank"
               onClick={this.externalLinkClickHandler}
             >
-              <Icon className={['fa', 'fa-youtube-square', 'fa-2x']} screenReaderText={`Subscribe to the ${siteName} YouTube channel`} />
+              <Icon id="edx-footer-icon-youtube" className={['fa', 'fa-youtube-square', 'fa-2x']} screenReaderText={`Subscribe to the ${siteName} YouTube channel`} />
             </a>
           </li>
           <li>
@@ -94,7 +94,7 @@ class SiteFooter extends React.Component {
               target="_blank"
               onClick={this.externalLinkClickHandler}
             >
-              <Icon className={['fa', 'fa-linkedin-square', 'fa-2x']} screenReaderText={`Follow ${siteName} on LinkedIn`} />
+              <Icon id="edx-footer-icon-linkedin" className={['fa', 'fa-linkedin-square', 'fa-2x']} screenReaderText={`Follow ${siteName} on LinkedIn`} />
             </a>
           </li>
           <li>
@@ -105,7 +105,7 @@ class SiteFooter extends React.Component {
               target="_blank"
               onClick={this.externalLinkClickHandler}
             >
-              <Icon className={['fa', 'fa-google-plus-square', 'fa-2x']} screenReaderText={`Follow ${siteName} on Google+`} />
+              <Icon id="edx-footer-icon-google" className={['fa', 'fa-google-plus-square', 'fa-2x']} screenReaderText={`Follow ${siteName} on Google+`} />
             </a>
           </li>
           <li>
