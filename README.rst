@@ -7,8 +7,7 @@ frontend-component-footer
 frontend-component-footer is a library containing a site footer
 component for use when building edX frontend applications.
 
-At this time, this componenet is hard-coded to match the legacy LMS site footer, including all of its links.
-Note: As implemented, it should really be called the ``frontend-component-lms-footer``.
+At this time, this component is hard-coded to match the legacy LMS site footer, including all of its links. As implemented, this component should probably be called the ``frontend-component-lms-footer``.
 
 Usage
 -----
@@ -18,8 +17,13 @@ To install frontend-component-footer into your project::
    npm i --save @edx/frontend-component-footer
 
 The component expects properties specifying the various URLs that are
-linked in the footer. See the sample app in src/index.jsx for an example
+linked in the footer. See the sample app in `src/index.jsx <src/index.jsx>`__ for an example
 of how the SiteFooter component can be specified.
+
+Requirements
+------------
+
+This component uses ``react-intl``. Any containing app must provide ``react-intl`` as a peer dependency, and be wrapped inside an ``IntlProvider`` element, whether or not your consuming application is actually localized. For a basic default locale (English) version, follow the ``IntlProvider`` example in the sample application in `src/index.jsx <src/index.jsx>`__.
 
 Development
 -----------
