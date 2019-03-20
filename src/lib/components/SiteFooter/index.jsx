@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
 import { Hyperlink, Icon } from '@edx/paragon';
+import messages from './SiteFooter.messages';
 
 const EVENT_NAMES = {
   FOOTER_LINK: 'edx.bi.footer.link',
@@ -24,7 +26,13 @@ class SiteFooter extends React.Component {
 
   renderSiteLogo() {
     return (
-      <img src={this.props.siteLogo} alt={`${this.props.siteName} logo`} />
+      <img
+        src={this.props.siteLogo}
+        alt={this.props.intl.formatMessage(
+          messages['footer.site-footer.site-logo.alt-text'],
+          { siteName: this.props.siteName },
+        )}
+      />
     );
   }
 
@@ -34,6 +42,7 @@ class SiteFooter extends React.Component {
 
   renderSocialLinks() {
     const {
+      intl,
       siteName,
       showSocialLinks,
       facebookUrl,
@@ -54,69 +63,109 @@ class SiteFooter extends React.Component {
           <li>
             <a
               href={facebookUrl}
-              title="Facebook"
+              title={intl.formatMessage(messages['footer.site-footer.facebook.title'])}
               rel="noopener noreferrer"
               target="_blank"
               onClick={this.externalLinkClickHandler}
             >
-              <Icon id="edx-footer-icon-facebook" className={['fa', 'fa-facebook-square', 'fa-2x']} screenReaderText={`Like ${siteName} on Facebook`} />
+              <Icon
+                id="edx-footer-icon-facebook"
+                className={['fa', 'fa-facebook-square', 'fa-2x']}
+                screenReaderText={intl.formatMessage(
+                  messages['footer.site-footer.facebook.screen-reader-text'],
+                  { siteName },
+                )}
+              />
             </a>
           </li>
-
-
           <li>
             <a
               href={twitterUrl}
-              title="Twitter"
+              title={intl.formatMessage(messages['footer.site-footer.twitter.title'])}
               rel="noopener noreferrer"
               target="_blank"
               onClick={this.externalLinkClickHandler}
             >
-              <Icon id="edx-footer-icon-twitter" className={['fa', 'fa-twitter-square', 'fa-2x']} screenReaderText={`Follow ${siteName} on Twitter`} />
+              <Icon
+                id="edx-footer-icon-twitter"
+                className={['fa', 'fa-twitter-square', 'fa-2x']}
+                screenReaderText={intl.formatMessage(
+                  messages['footer.site-footer.twitter.screen-reader-text'],
+                  { siteName },
+                )}
+              />
             </a>
           </li>
           <li>
             <a
               href={youTubeUrl}
-              title="Youtube"
+              title={intl.formatMessage(messages['footer.site-footer.youtube.title'])}
               rel="noopener noreferrer"
               target="_blank"
               onClick={this.externalLinkClickHandler}
             >
-              <Icon id="edx-footer-icon-youtube" className={['fa', 'fa-youtube-square', 'fa-2x']} screenReaderText={`Subscribe to the ${siteName} YouTube channel`} />
+              <Icon
+                id="edx-footer-icon-youtube"
+                className={['fa', 'fa-youtube-square', 'fa-2x']}
+                screenReaderText={intl.formatMessage(
+                  messages['footer.site-footer.youtube.screen-reader-text'],
+                  { siteName },
+                )}
+              />
             </a>
           </li>
           <li>
             <a
               href={linkedInUrl}
-              title="LinkedIn"
+              title={intl.formatMessage(messages['footer.site-footer.linkedin.title'])}
               rel="noopener noreferrer"
               target="_blank"
               onClick={this.externalLinkClickHandler}
             >
-              <Icon id="edx-footer-icon-linkedin" className={['fa', 'fa-linkedin-square', 'fa-2x']} screenReaderText={`Follow ${siteName} on LinkedIn`} />
+              <Icon
+                id="edx-footer-icon-linkedin"
+                className={['fa', 'fa-linkedin-square', 'fa-2x']}
+                screenReaderText={intl.formatMessage(
+                  messages['footer.site-footer.linkedin.screen-reader-text'],
+                  { siteName },
+                )}
+              />
             </a>
           </li>
           <li>
             <a
               href={googlePlusUrl}
-              title="Google+"
+              title={intl.formatMessage(messages['footer.site-footer.google-plus.title'])}
               rel="noopener noreferrer"
               target="_blank"
               onClick={this.externalLinkClickHandler}
             >
-              <Icon id="edx-footer-icon-google" className={['fa', 'fa-google-plus-square', 'fa-2x']} screenReaderText={`Follow ${siteName} on Google+`} />
+              <Icon
+                id="edx-footer-icon-google"
+                className={['fa', 'fa-google-plus-square', 'fa-2x']}
+                screenReaderText={intl.formatMessage(
+                  messages['footer.site-footer.google-plus.screen-reader-text'],
+                  { siteName },
+                )}
+              />
             </a>
           </li>
           <li>
             <a
               href={redditUrl}
-              title="Reddit"
+              title={intl.formatMessage(messages['footer.site-footer.reddit.title'])}
               rel="noopener noreferrer"
               target="_blank"
               onClick={this.externalLinkClickHandler}
             >
-              <Icon className={['fa', 'fa-reddit-square', 'fa-2x']} screenReaderText={`Subscribe to the ${siteName} subreddit`} />
+              <Icon
+                id="edx-footer-icon-reddit"
+                className={['fa', 'fa-reddit-square', 'fa-2x']}
+                screenReaderText={intl.formatMessage(
+                  messages['footer.site-footer.reddit.screen-reader-text'],
+                  { siteName },
+                )}
+              />
             </a>
           </li>
         </ul>
@@ -127,6 +176,7 @@ class SiteFooter extends React.Component {
 
   renderMobileLinks() {
     const {
+      intl,
       siteName,
       showMobileLinks,
       appleAppStoreUrl,
@@ -140,7 +190,10 @@ class SiteFooter extends React.Component {
             <a href={appleAppStoreUrl} rel="noopener noreferrer" target="_blank" onClick={this.externalLinkClickHandler}>
               <img
                 className="max-height-39"
-                alt={`Download the ${siteName} mobile app from the Apple App Store`}
+                alt={intl.formatMessage(
+                  messages['footer.site-footer.apple-app-store.alt-text'],
+                  { siteName },
+                )}
                 src="https://prod-edxapp.edx-cdn.org/static/images/app/app_store_badge_135x40.d0558d910630.svg"
               />
             </a>
@@ -149,7 +202,10 @@ class SiteFooter extends React.Component {
             <a href={googlePlayUrl} rel="noopener noreferrer" target="_blank" onClick={this.externalLinkClickHandler}>
               <img
                 className="max-height-39"
-                alt={`Download the ${siteName} mobile app from Google Play`}
+                alt={intl.formatMessage(
+                  messages['footer.site-footer.google-play.alt-text'],
+                  { siteName },
+                )}
                 src="https://prod-edxapp.edx-cdn.org/static/images/app/google_play_badge_45.6ea466e328da.png"
               />
             </a>
@@ -162,6 +218,7 @@ class SiteFooter extends React.Component {
 
   render() {
     const {
+      intl,
       siteName,
       openSourceUrl,
       termsOfServiceUrl,
@@ -172,52 +229,200 @@ class SiteFooter extends React.Component {
     return (
       <footer
         role="contentinfo"
-        aria-label="Page Footer"
+        aria-label={intl.formatMessage(messages['footer.site-footer.footer.aria-label'])}
         className="footer d-flex justify-content-center border-top py-3 px-4"
       >
         <div className="max-width-1180 d-grid">
           <div className="area-1">
-            <Hyperlink destination={this.renderMarketingSiteUrl('/')} content={this.renderSiteLogo()} aria-label={`${siteName} Home`} />
+            <Hyperlink
+              destination={this.renderMarketingSiteUrl('/')}
+              content={this.renderSiteLogo()}
+              aria-label={intl.formatMessage(
+                messages['footer.site-footer.site-logo.aria-label'],
+                { siteName },
+              )}
+            />
           </div>
           <div className="area-2">
             <h2>{siteName}</h2>
             <ul className="list-unstyled p-0 m-0">
-              <li><a href={this.renderMarketingSiteUrl('/about-us')}>About</a></li>
-              <li><a href={this.renderMarketingSiteUrl('/enterprise')}>{siteName} for Business</a></li>
-              <li><a href={this.renderMarketingSiteUrl('/affiliate-program')}>Affiliates</a></li>
-              <li><a href={openSourceUrl}>Open {siteName}</a></li>
-              <li><a href={this.renderMarketingSiteUrl('/careers')}>Careers</a></li>
-              <li><a href={this.renderMarketingSiteUrl('/news-announcements')}>News</a></li>
+              <li>
+                <a href={this.renderMarketingSiteUrl('/about-us')}>
+                  <FormattedMessage
+                    id="footer.site-footer.link.about"
+                    defaultMessage="About"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href={this.renderMarketingSiteUrl('/enterprise')}>
+                  <FormattedMessage
+                    id="footer.site-footer.link.business"
+                    defaultMessage="{siteName} for Business"
+                    values={{ siteName }}
+                  />
+                </a>
+              </li>
+              <li>
+                <a href={this.renderMarketingSiteUrl('/affiliate-program')}>
+                  <FormattedMessage
+                    id="footer.site-footer.link.affiliates"
+                    defaultMessage="Affiliates"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href={openSourceUrl}>
+                  <FormattedMessage
+                    id="footer.site-footer.link.open-source"
+                    defaultMessage="Open {siteName}"
+                    values={{ siteName }}
+                    description="Open Source link text"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href={this.renderMarketingSiteUrl('/careers')}>
+                  <FormattedMessage
+                    id="footer.site-footer.link.careers"
+                    defaultMessage="Careers"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href={this.renderMarketingSiteUrl('/news-announcements')}>
+                  <FormattedMessage
+                    id="footer.site-footer.link.news"
+                    defaultMessage="News"
+                  />
+                </a>
+              </li>
             </ul>
           </div>
           <div className="area-3">
-            <h2>Legal</h2>
+            <h2>
+              <FormattedMessage
+                id="footer.site-footer.link.header.legal"
+                defaultMessage="Legal"
+                description="Header for legal links"
+              />
+            </h2>
             <ul className="list-unstyled p-0 m-0">
-              <li><a href={termsOfServiceUrl}>Terms of Service & Honor Code</a></li>
-              <li><a href={privacyPolicyUrl}>Privacy Policy</a></li>
-              <li><a href={this.renderMarketingSiteUrl('/accessibility')}>Accessibility Policy</a></li>
-              <li><a href={this.renderMarketingSiteUrl('/trademarks')}>Trademark Policy</a></li>
-              <li><a href={this.renderMarketingSiteUrl('/sitemap')}>Sitemap</a></li>
+              <li>
+                <a href={termsOfServiceUrl}>
+                  <FormattedMessage
+                    id="footer.site-footer.link.terms-of-service"
+                    defaultMessage="Terms of Service & Honor Code"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href={privacyPolicyUrl}>
+                  <FormattedMessage
+                    id="footer.site-footer.link.privacy"
+                    defaultMessage="Privacy Policy"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href={this.renderMarketingSiteUrl('/accessibility')}>
+                  <FormattedMessage
+                    id="footer.site-footer.link.accessibility"
+                    defaultMessage="Accessibility Policy"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href={this.renderMarketingSiteUrl('/trademarks')}>
+                  <FormattedMessage
+                    id="footer.site-footer.link.trademark"
+                    defaultMessage="Trademark Policy"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href={this.renderMarketingSiteUrl('/sitemap')}>
+                  <FormattedMessage
+                    id="footer.site-footer.link.sitemap"
+                    defaultMessage="Sitemap"
+                  />
+                </a>
+              </li>
             </ul>
           </div>
           <div className="area-4">
-            <h2>Connect</h2>
+            <h2>
+              <FormattedMessage
+                id="footer.site-footer.link.header.connect"
+                defaultMessage="Connect"
+                description="Header for connect links"
+              />
+            </h2>
             <ul className="list-unstyled p-0 m-0">
-              <li><a href={this.renderMarketingSiteUrl('/blog')}>Blog</a></li>
-              <li><a href={contactUrl}>Contact Us</a></li>
-              <li><a href={supportUrl}>Help Center</a></li>
-              <li><a href={this.renderMarketingSiteUrl('/media-kit')}>Media Kit</a></li>
-              <li><a href={this.renderMarketingSiteUrl('/donate')}>Donate</a></li>
+              <li>
+                <a href={this.renderMarketingSiteUrl('/blog')}>
+                  <FormattedMessage
+                    id="footer.site-footer.link.blog"
+                    defaultMessage="Blog"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href={contactUrl}>
+                  <FormattedMessage
+                    id="footer.site-footer.link.contact-us"
+                    defaultMessage="Contact Us"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href={supportUrl}>
+                  <FormattedMessage
+                    id="footer.site-footer.link.help-center"
+                    defaultMessage="Help Center"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href={this.renderMarketingSiteUrl('/media-kit')}>
+                  <FormattedMessage
+                    id="footer.site-footer.link.media-kit"
+                    defaultMessage="Media Kit"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href={this.renderMarketingSiteUrl('/donate')}>
+                  <FormattedMessage
+                    id="footer.site-footer.link.donate"
+                    defaultMessage="Donate"
+                  />
+                </a>
+              </li>
             </ul>
           </div>
           <div className="area-5">
             {this.renderSocialLinks()}
             {this.renderMobileLinks()}
             <p>
-              © 2012–{(new Date().getFullYear())} {siteName} Inc.
+              <FormattedMessage
+                id="footer.site-footer.copyright-text"
+                defaultMessage="{copyrightSymbol} {startDate}–{endDate} {siteName} Inc."
+                values={{
+                  copyrightSymbol: '©',
+                  startDate: '2012',
+                  endDate: `${new Date().getFullYear()}`,
+                  siteName,
+                }}
+                description="Footer copyright text with copyright symbol and dates"
+              />
               <br />
-              EdX, Open edX, and MicroMasters are registered trademarks of edX Inc.
-              | 粤ICP备17044299号-2
+              <FormattedMessage
+                id="footer.site-footer.trademark-text"
+                defaultMessage="EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | {icpLicense}"
+                values={{ icpLicense: '粤ICP备17044299号-2' }}
+                description="Footer trademark text"
+              />
             </p>
           </div>
         </div>
@@ -246,6 +451,7 @@ SiteFooter.propTypes = {
   appleAppStoreUrl: PropTypes.string,
   googlePlayUrl: PropTypes.string,
   handleAllTrackEvents: PropTypes.func.isRequired,
+  intl: intlShape.isRequired,
 };
 
 SiteFooter.defaultProps = {
@@ -269,5 +475,5 @@ SiteFooter.defaultProps = {
   googlePlayUrl: null,
 };
 
-export default SiteFooter;
+export default injectIntl(SiteFooter);
 export { EVENT_NAMES };

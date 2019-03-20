@@ -37,44 +37,54 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
           <a
             href="https://www.example.com/about-us"
           >
-            About
+            <span>
+              About
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/enterprise"
           >
-            example
-             for Business
+            <span>
+              example for Business
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/affiliate-program"
           >
-            Affiliates
+            <span>
+              Affiliates
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/open"
           >
-            Open 
-            example
+            <span>
+              Open example
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/careers"
           >
-            Careers
+            <span>
+              Careers
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/news-announcements"
           >
-            News
+            <span>
+              News
+            </span>
           </a>
         </li>
       </ul>
@@ -83,7 +93,9 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
       className="area-3"
     >
       <h2>
-        Legal
+        <span>
+          Legal
+        </span>
       </h2>
       <ul
         className="list-unstyled p-0 m-0"
@@ -92,35 +104,45 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
           <a
             href="https://www.example.com/terms-of-service"
           >
-            Terms of Service & Honor Code
+            <span>
+              Terms of Service & Honor Code
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/privacy-policy"
           >
-            Privacy Policy
+            <span>
+              Privacy Policy
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/accessibility"
           >
-            Accessibility Policy
+            <span>
+              Accessibility Policy
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/trademarks"
           >
-            Trademark Policy
+            <span>
+              Trademark Policy
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/sitemap"
           >
-            Sitemap
+            <span>
+              Sitemap
+            </span>
           </a>
         </li>
       </ul>
@@ -129,7 +151,9 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
       className="area-4"
     >
       <h2>
-        Connect
+        <span>
+          Connect
+        </span>
       </h2>
       <ul
         className="list-unstyled p-0 m-0"
@@ -138,35 +162,45 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
           <a
             href="https://www.example.com/blog"
           >
-            Blog
+            <span>
+              Blog
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/contact"
           >
-            Contact Us
+            <span>
+              Contact Us
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/support"
           >
-            Help Center
+            <span>
+              Help Center
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/media-kit"
           >
-            Media Kit
+            <span>
+              Media Kit
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/donate"
           >
-            Donate
+            <span>
+              Donate
+            </span>
           </a>
         </li>
       </ul>
@@ -288,7 +322,7 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
             <span
               aria-hidden={true}
               className="fa fa-reddit-square fa-2x"
-              id="Icon1"
+              id="edx-footer-icon-reddit"
             />
             <span
               className="sr-only"
@@ -299,13 +333,13 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
         </li>
       </ul>
       <p>
-        © 2012–
-        2019
-         
-        example
-         Inc.
+        <span>
+          © 2012–2019 example Inc.
+        </span>
         <br />
-        EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 粤ICP备17044299号-2
+        <span>
+          EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 粤ICP备17044299号-2
+        </span>
       </p>
     </div>
   </div>
@@ -349,44 +383,54 @@ exports[`<SiteFooter /> renders correctly does not render social links 1`] = `
           <a
             href="https://www.example.com/about-us"
           >
-            About
+            <span>
+              About
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/enterprise"
           >
-            example
-             for Business
+            <span>
+              example for Business
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/affiliate-program"
           >
-            Affiliates
+            <span>
+              Affiliates
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/open"
           >
-            Open 
-            example
+            <span>
+              Open example
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/careers"
           >
-            Careers
+            <span>
+              Careers
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/news-announcements"
           >
-            News
+            <span>
+              News
+            </span>
           </a>
         </li>
       </ul>
@@ -395,7 +439,9 @@ exports[`<SiteFooter /> renders correctly does not render social links 1`] = `
       className="area-3"
     >
       <h2>
-        Legal
+        <span>
+          Legal
+        </span>
       </h2>
       <ul
         className="list-unstyled p-0 m-0"
@@ -404,35 +450,45 @@ exports[`<SiteFooter /> renders correctly does not render social links 1`] = `
           <a
             href="https://www.example.com/terms-of-service"
           >
-            Terms of Service & Honor Code
+            <span>
+              Terms of Service & Honor Code
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/privacy-policy"
           >
-            Privacy Policy
+            <span>
+              Privacy Policy
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/accessibility"
           >
-            Accessibility Policy
+            <span>
+              Accessibility Policy
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/trademarks"
           >
-            Trademark Policy
+            <span>
+              Trademark Policy
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/sitemap"
           >
-            Sitemap
+            <span>
+              Sitemap
+            </span>
           </a>
         </li>
       </ul>
@@ -441,7 +497,9 @@ exports[`<SiteFooter /> renders correctly does not render social links 1`] = `
       className="area-4"
     >
       <h2>
-        Connect
+        <span>
+          Connect
+        </span>
       </h2>
       <ul
         className="list-unstyled p-0 m-0"
@@ -450,35 +508,45 @@ exports[`<SiteFooter /> renders correctly does not render social links 1`] = `
           <a
             href="https://www.example.com/blog"
           >
-            Blog
+            <span>
+              Blog
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/contact"
           >
-            Contact Us
+            <span>
+              Contact Us
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/support"
           >
-            Help Center
+            <span>
+              Help Center
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/media-kit"
           >
-            Media Kit
+            <span>
+              Media Kit
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/donate"
           >
-            Donate
+            <span>
+              Donate
+            </span>
           </a>
         </li>
       </ul>
@@ -519,13 +587,13 @@ exports[`<SiteFooter /> renders correctly does not render social links 1`] = `
         </li>
       </ul>
       <p>
-        © 2012–
-        2019
-         
-        example
-         Inc.
+        <span>
+          © 2012–2019 example Inc.
+        </span>
         <br />
-        EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 粤ICP备17044299号-2
+        <span>
+          EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 粤ICP备17044299号-2
+        </span>
       </p>
     </div>
   </div>
@@ -569,44 +637,54 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
           <a
             href="https://www.example.com/about-us"
           >
-            About
+            <span>
+              About
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/enterprise"
           >
-            example
-             for Business
+            <span>
+              example for Business
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/affiliate-program"
           >
-            Affiliates
+            <span>
+              Affiliates
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/open"
           >
-            Open 
-            example
+            <span>
+              Open example
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/careers"
           >
-            Careers
+            <span>
+              Careers
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/news-announcements"
           >
-            News
+            <span>
+              News
+            </span>
           </a>
         </li>
       </ul>
@@ -615,7 +693,9 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
       className="area-3"
     >
       <h2>
-        Legal
+        <span>
+          Legal
+        </span>
       </h2>
       <ul
         className="list-unstyled p-0 m-0"
@@ -624,35 +704,45 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
           <a
             href="https://www.example.com/terms-of-service"
           >
-            Terms of Service & Honor Code
+            <span>
+              Terms of Service & Honor Code
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/privacy-policy"
           >
-            Privacy Policy
+            <span>
+              Privacy Policy
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/accessibility"
           >
-            Accessibility Policy
+            <span>
+              Accessibility Policy
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/trademarks"
           >
-            Trademark Policy
+            <span>
+              Trademark Policy
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/sitemap"
           >
-            Sitemap
+            <span>
+              Sitemap
+            </span>
           </a>
         </li>
       </ul>
@@ -661,7 +751,9 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
       className="area-4"
     >
       <h2>
-        Connect
+        <span>
+          Connect
+        </span>
       </h2>
       <ul
         className="list-unstyled p-0 m-0"
@@ -670,35 +762,45 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
           <a
             href="https://www.example.com/blog"
           >
-            Blog
+            <span>
+              Blog
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/contact"
           >
-            Contact Us
+            <span>
+              Contact Us
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/support"
           >
-            Help Center
+            <span>
+              Help Center
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/media-kit"
           >
-            Media Kit
+            <span>
+              Media Kit
+            </span>
           </a>
         </li>
         <li>
           <a
             href="https://www.example.com/donate"
           >
-            Donate
+            <span>
+              Donate
+            </span>
           </a>
         </li>
       </ul>
@@ -820,7 +922,7 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
             <span
               aria-hidden={true}
               className="fa fa-reddit-square fa-2x"
-              id="Icon1"
+              id="edx-footer-icon-reddit"
             />
             <span
               className="sr-only"
@@ -863,13 +965,13 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
         </li>
       </ul>
       <p>
-        © 2012–
-        2019
-         
-        example
-         Inc.
+        <span>
+          © 2012–2019 example Inc.
+        </span>
         <br />
-        EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 粤ICP备17044299号-2
+        <span>
+          EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 粤ICP备17044299号-2
+        </span>
       </p>
     </div>
   </div>
