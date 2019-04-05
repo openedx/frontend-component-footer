@@ -13,6 +13,7 @@ module.exports = Merge.smart(commonConfig, {
     path: path.resolve(__dirname, '../dist'),
     library: 'frontend-component-footer',
     libraryTarget: 'umd',
+    globalObject: 'typeof self !== \'undefined\' ? self : this',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
