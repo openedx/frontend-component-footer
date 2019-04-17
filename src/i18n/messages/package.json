@@ -1,0 +1,29 @@
+{
+  "name": "@edx/frontend-component-footer-messages",
+  "version": "1.0.0-semantically-released",
+  "description": "Site footer component messages",
+  "main": "index.js",
+  "module": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "xxxbuild": "NODE_ENV=production BABEL_ENV=production webpack  --config=config/webpack.prod.config.js",
+    "build": "echo hi",
+    "gc": "commit",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "prepublishOnly": "npm run build",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edx/frontend-component-footer.git"
+  },
+  "author": "edX",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/edx/frontend-component-footer/issues"
+  },
+  "homepage": "https://github.com/edx/frontend-component-footer#readme"
+}

@@ -12,6 +12,7 @@
     "gc": "commit",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "publish-messages": "cd src/i18n/messages && ls",
     "i18n_extract": "BABEL_ENV=i18n babel src --quiet > /dev/null",
     "lint": "eslint --ext .js --ext .jsx .",
     "precommit": "npm run lint",

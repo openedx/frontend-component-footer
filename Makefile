@@ -30,7 +30,9 @@ push_translations: | i18n.extract
 
 # pull translations from Transifex
 pull_translations: ## must be exactly this name for edx tooling support, see ecommerce-scripts/transifex/pull.py
+    # Pulling reviewed translations...
 	tx pull -f --mode reviewed --language="ar,fr,es_419,zh_CN"
+	# Publishing translations module...
 
 validate-no-uncommitted-package-lock-changes:
 	git diff --exit-code package-lock.json
