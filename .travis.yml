@@ -6,11 +6,18 @@ cache:
     - "~/.npm"
 install:
   - npm install
-script:
-  - npm run lint
-  - npm run test
-  - npm run build
-  - npm run travis-deploy-once "npm run publish-messages"
+jobs:
+  include:
+    - stage: verify
+      script: npm run lint
+    - stage: verify
+      script: npm run test
+    - stage: build
+      script: npm run build
+    - stage: deploy
+      if: commit_message =~ /update translations/
+      script: npm run publish-messages
+
 env:
   global:
     - secure: dxQadqP6tsoJzHcqs/Hs5AjE42z45q8ZeWKP5HcjbXoJURB4gc1uIxLky0FA6ZpulaTgRVTLcWQbx9yOODc9PQuFnFEDWlCg5EP8tONzeu7BVlJvV5eakgGUhl9w2pekBKsTGhK5dDg2y2D8bGfIL55UX81uiWeytp8s/y8QNs/FNXx9ScJnfhnC+2RfW52fB7iW12F1VYdQfVe43o5PsHze+YhB3FU/ztGe3iMaQiq9QplZWpvqQMpI7pTjyUAX8ITiiPS6UvLFObgpXpfjZdgd+yveFoi3z8o8F0NkmzBphFeSYFjFZE0qJ8bnGNIZldanMeuUgHmDeTwVmKQFhH2LqqnfcdGgW6UsKcHkSN1G51zzad2dEwAHrgxj1NkMp3JfEed2C7Kvntl6KRjVDmYZqHJvt+e+AHNbpjzblOW8tYMIrdz0TeJdk4D9pP3B3tRCtP6fvQ3GLzAMnaCrSsN6hZ9YVxWku8sg8WNEDHl14sZsdgk312MlHIdiUw97FHGrqx/NCix4IkUlCBDbKYbKzbZp20FfzZcwNRNH74+k6xpOnMGSfq8gByEhm9y02MBL76HiAI2VGct2La1ExaUfoikYGoNaZpFcZyOZKo6PYTYHpiUJmqrEnDyVQEOOXUaVsxWXwnYq/mU4nOEPKCRbNpPoksZdNxf6jlmMi8s=
