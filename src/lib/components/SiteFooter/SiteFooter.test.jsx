@@ -3,58 +3,8 @@ import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 import { IntlProvider } from 'react-intl';
 
-import {
-  faFacebookSquare,
-  faTwitterSquare,
-  faYoutubeSquare,
-  faLinkedin,
-  faGooglePlusSquare,
-  faRedditSquare,
-} from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import FooterLogo from '../../../edx-footer.png';
 import SiteFooter, { EVENT_NAMES } from './index';
-
-
-const socialLinks = [
-  {
-    title: 'Facebook',
-    url: 'https://www.facebook.com',
-    icon: <FontAwesomeIcon icon={faFacebookSquare} className="social-icon" size="2x" />,
-    screenReaderText: 'Like edX on Facebook',
-  },
-  {
-    title: 'Twitter',
-    url: 'https://www.twitter.com',
-    icon: <FontAwesomeIcon icon={faTwitterSquare} className="social-icon" size="2x" />,
-    screenReaderText: 'Follow edX on Twitter',
-  },
-  {
-    title: 'Youtube',
-    url: 'https://www.youtube.com',
-    icon: <FontAwesomeIcon icon={faYoutubeSquare} className="social-icon" size="2x" />,
-    screenReaderText: 'Subscribe to the edX YouTube channel',
-  },
-  {
-    title: 'LinkedIn',
-    url: 'https://www.linkedin.com',
-    icon: <FontAwesomeIcon icon={faLinkedin} className="social-icon" size="2x" />,
-    screenReaderText: 'Follow edX on LinkedIn',
-  },
-  {
-    title: 'Google+',
-    url: 'https://plus.google.com',
-    icon: <FontAwesomeIcon icon={faGooglePlusSquare} className="social-icon" size="2x" />,
-    screenReaderText: 'Follow edX on Google+',
-  },
-  {
-    title: 'Reddit',
-    url: 'https://reddit.com',
-    icon: <FontAwesomeIcon icon={faRedditSquare} className="social-icon" size="2x" />,
-    screenReaderText: 'Subscribe to the edX subreddit',
-  },
-];
 
 const completeSiteFooterComponent = mockHandleAllTrackEvents =>
   (
@@ -68,7 +18,12 @@ const completeSiteFooterComponent = mockHandleAllTrackEvents =>
         openSourceUrl="https://www.example.com/open"
         termsOfServiceUrl="https://www.example.com/terms-of-service"
         privacyPolicyUrl="https://www.example.com/privacy-policy"
-        socialLinks={socialLinks}
+        facebookUrl="https://www.facebook.com"
+        twitterUrl="https://www.twitter.com"
+        youTubeUrl="https://www.youtube.com"
+        linkedInUrl="https://www.linkedin.com"
+        googlePlusUrl="https://plus.google.com"
+        redditUrl="https://reddit.com"
         appleAppStoreUrl="https://store.apple.com"
         googlePlayUrl="https://play.google.com"
         handleAllTrackEvents={mockHandleAllTrackEvents}
@@ -99,9 +54,16 @@ describe('<SiteFooter />', () => {
               openSourceUrl="https://www.example.com/open"
               termsOfServiceUrl="https://www.example.com/terms-of-service"
               privacyPolicyUrl="https://www.example.com/privacy-policy"
+              facebookUrl="https://www.facebook.com"
+              twitterUrl="https://www.twitter.com"
+              youTubeUrl="https://www.youtube.com"
+              linkedInUrl="https://www.linkedin.com"
+              googlePlusUrl="https://plus.google.com"
+              redditUrl="https://reddit.com"
               appleAppStoreUrl="https://store.apple.com"
               googlePlayUrl="https://play.google.com"
               handleAllTrackEvents={jest.fn()}
+              showSocialLinks={false}
             />
           </IntlProvider>
         )).toJSON();
@@ -121,7 +83,12 @@ describe('<SiteFooter />', () => {
               openSourceUrl="https://www.example.com/open"
               termsOfServiceUrl="https://www.example.com/terms-of-service"
               privacyPolicyUrl="https://www.example.com/privacy-policy"
-              socialLinks={socialLinks}
+              facebookUrl="https://www.facebook.com"
+              twitterUrl="https://www.twitter.com"
+              youTubeUrl="https://www.youtube.com"
+              linkedInUrl="https://www.linkedin.com"
+              googlePlusUrl="https://plus.google.com"
+              redditUrl="https://reddit.com"
               appleAppStoreUrl="https://store.apple.com"
               googlePlayUrl="https://play.google.com"
               handleAllTrackEvents={jest.fn()}
