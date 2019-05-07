@@ -219,27 +219,15 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
             target="_blank"
             title="Facebook"
           >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-facebook-square fa-w-14 fa-2x social-icon"
-              data-icon="facebook-square"
-              data-prefix="fab"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
+            <span
+              aria-hidden={true}
+              className="fa fa-facebook-square fa-2x"
+              id="edx-footer-icon-facebook"
+            />
             <span
               className="sr-only"
             >
-              Like edX on Facebook
+              Like example on Facebook
             </span>
           </a>
         </li>
@@ -251,27 +239,15 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
             target="_blank"
             title="Twitter"
           >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-twitter-square fa-w-14 fa-2x social-icon"
-              data-icon="twitter-square"
-              data-prefix="fab"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
+            <span
+              aria-hidden={true}
+              className="fa fa-twitter-square fa-2x"
+              id="edx-footer-icon-twitter"
+            />
             <span
               className="sr-only"
             >
-              Follow edX on Twitter
+              Follow example on Twitter
             </span>
           </a>
         </li>
@@ -283,27 +259,15 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
             target="_blank"
             title="Youtube"
           >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-youtube-square fa-w-14 fa-2x social-icon"
-              data-icon="youtube-square"
-              data-prefix="fab"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
+            <span
+              aria-hidden={true}
+              className="fa fa-youtube-square fa-2x"
+              id="edx-footer-icon-youtube"
+            />
             <span
               className="sr-only"
             >
-              Subscribe to the edX YouTube channel
+              Subscribe to the example YouTube channel
             </span>
           </a>
         </li>
@@ -315,27 +279,15 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
             target="_blank"
             title="LinkedIn"
           >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-linkedin fa-w-14 fa-2x social-icon"
-              data-icon="linkedin"
-              data-prefix="fab"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
+            <span
+              aria-hidden={true}
+              className="fa fa-linkedin-square fa-2x"
+              id="edx-footer-icon-linkedin"
+            />
             <span
               className="sr-only"
             >
-              Follow edX on LinkedIn
+              Follow example on LinkedIn
             </span>
           </a>
         </li>
@@ -347,27 +299,15 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
             target="_blank"
             title="Google+"
           >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-google-plus-square fa-w-14 fa-2x social-icon"
-              data-icon="google-plus-square"
-              data-prefix="fab"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM164 356c-55.3 0-100-44.7-100-100s44.7-100 100-100c27 0 49.5 9.8 67 26.2l-27.1 26.1c-7.4-7.1-20.3-15.4-39.8-15.4-34.1 0-61.9 28.2-61.9 63.2 0 34.9 27.8 63.2 61.9 63.2 39.6 0 54.4-28.5 56.8-43.1H164v-34.4h94.4c1 5 1.6 10.1 1.6 16.6 0 57.1-38.3 97.6-96 97.6zm220-81.8h-29v29h-29.2v-29h-29V245h29v-29H355v29h29v29.2z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
+            <span
+              aria-hidden={true}
+              className="fa fa-google-plus-square fa-2x"
+              id="edx-footer-icon-google"
+            />
             <span
               className="sr-only"
             >
-              Follow edX on Google+
+              Follow example on Google+
             </span>
           </a>
         </li>
@@ -379,27 +319,15 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
             target="_blank"
             title="Reddit"
           >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-reddit-square fa-w-14 fa-2x social-icon"
-              data-icon="reddit-square"
-              data-prefix="fab"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M283.2 345.5c2.7 2.7 2.7 6.8 0 9.2-24.5 24.5-93.8 24.6-118.4 0-2.7-2.4-2.7-6.5 0-9.2 2.4-2.4 6.5-2.4 8.9 0 18.7 19.2 81 19.6 100.5 0 2.4-2.3 6.6-2.3 9 0zm-91.3-53.8c0-14.9-11.9-26.8-26.5-26.8-14.9 0-26.8 11.9-26.8 26.8 0 14.6 11.9 26.5 26.8 26.5 14.6 0 26.5-11.9 26.5-26.5zm90.7-26.8c-14.6 0-26.5 11.9-26.5 26.8 0 14.6 11.9 26.5 26.5 26.5 14.9 0 26.8-11.9 26.8-26.5 0-14.9-11.9-26.8-26.8-26.8zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-99.7 140.6c-10.1 0-19 4.2-25.6 10.7-24.1-16.7-56.5-27.4-92.5-28.6l18.7-84.2 59.5 13.4c0 14.6 11.9 26.5 26.5 26.5 14.9 0 26.8-12.2 26.8-26.8 0-14.6-11.9-26.8-26.8-26.8-10.4 0-19.3 6.2-23.8 14.9l-65.7-14.6c-3.3-.9-6.5 1.5-7.4 4.8l-20.5 92.8c-35.7 1.5-67.8 12.2-91.9 28.9-6.5-6.8-15.8-11-25.9-11-37.5 0-49.8 50.4-15.5 67.5-1.2 5.4-1.8 11-1.8 16.7 0 56.5 63.7 102.3 141.9 102.3 78.5 0 142.2-45.8 142.2-102.3 0-5.7-.6-11.6-2.1-17 33.6-17.2 21.2-67.2-16.1-67.2z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
+            <span
+              aria-hidden={true}
+              className="fa fa-reddit-square fa-2x"
+              id="edx-footer-icon-reddit"
+            />
             <span
               className="sr-only"
             >
-              Subscribe to the edX subreddit
+              Subscribe to the example subreddit
             </span>
           </a>
         </li>
@@ -891,27 +819,15 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
             target="_blank"
             title="Facebook"
           >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-facebook-square fa-w-14 fa-2x social-icon"
-              data-icon="facebook-square"
-              data-prefix="fab"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
+            <span
+              aria-hidden={true}
+              className="fa fa-facebook-square fa-2x"
+              id="edx-footer-icon-facebook"
+            />
             <span
               className="sr-only"
             >
-              Like edX on Facebook
+              Like example on Facebook
             </span>
           </a>
         </li>
@@ -923,27 +839,15 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
             target="_blank"
             title="Twitter"
           >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-twitter-square fa-w-14 fa-2x social-icon"
-              data-icon="twitter-square"
-              data-prefix="fab"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
+            <span
+              aria-hidden={true}
+              className="fa fa-twitter-square fa-2x"
+              id="edx-footer-icon-twitter"
+            />
             <span
               className="sr-only"
             >
-              Follow edX on Twitter
+              Follow example on Twitter
             </span>
           </a>
         </li>
@@ -955,27 +859,15 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
             target="_blank"
             title="Youtube"
           >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-youtube-square fa-w-14 fa-2x social-icon"
-              data-icon="youtube-square"
-              data-prefix="fab"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
+            <span
+              aria-hidden={true}
+              className="fa fa-youtube-square fa-2x"
+              id="edx-footer-icon-youtube"
+            />
             <span
               className="sr-only"
             >
-              Subscribe to the edX YouTube channel
+              Subscribe to the example YouTube channel
             </span>
           </a>
         </li>
@@ -987,27 +879,15 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
             target="_blank"
             title="LinkedIn"
           >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-linkedin fa-w-14 fa-2x social-icon"
-              data-icon="linkedin"
-              data-prefix="fab"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
+            <span
+              aria-hidden={true}
+              className="fa fa-linkedin-square fa-2x"
+              id="edx-footer-icon-linkedin"
+            />
             <span
               className="sr-only"
             >
-              Follow edX on LinkedIn
+              Follow example on LinkedIn
             </span>
           </a>
         </li>
@@ -1019,27 +899,15 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
             target="_blank"
             title="Google+"
           >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-google-plus-square fa-w-14 fa-2x social-icon"
-              data-icon="google-plus-square"
-              data-prefix="fab"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM164 356c-55.3 0-100-44.7-100-100s44.7-100 100-100c27 0 49.5 9.8 67 26.2l-27.1 26.1c-7.4-7.1-20.3-15.4-39.8-15.4-34.1 0-61.9 28.2-61.9 63.2 0 34.9 27.8 63.2 61.9 63.2 39.6 0 54.4-28.5 56.8-43.1H164v-34.4h94.4c1 5 1.6 10.1 1.6 16.6 0 57.1-38.3 97.6-96 97.6zm220-81.8h-29v29h-29.2v-29h-29V245h29v-29H355v29h29v29.2z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
+            <span
+              aria-hidden={true}
+              className="fa fa-google-plus-square fa-2x"
+              id="edx-footer-icon-google"
+            />
             <span
               className="sr-only"
             >
-              Follow edX on Google+
+              Follow example on Google+
             </span>
           </a>
         </li>
@@ -1051,27 +919,15 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
             target="_blank"
             title="Reddit"
           >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-reddit-square fa-w-14 fa-2x social-icon"
-              data-icon="reddit-square"
-              data-prefix="fab"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M283.2 345.5c2.7 2.7 2.7 6.8 0 9.2-24.5 24.5-93.8 24.6-118.4 0-2.7-2.4-2.7-6.5 0-9.2 2.4-2.4 6.5-2.4 8.9 0 18.7 19.2 81 19.6 100.5 0 2.4-2.3 6.6-2.3 9 0zm-91.3-53.8c0-14.9-11.9-26.8-26.5-26.8-14.9 0-26.8 11.9-26.8 26.8 0 14.6 11.9 26.5 26.8 26.5 14.6 0 26.5-11.9 26.5-26.5zm90.7-26.8c-14.6 0-26.5 11.9-26.5 26.8 0 14.6 11.9 26.5 26.5 26.5 14.9 0 26.8-11.9 26.8-26.5 0-14.9-11.9-26.8-26.8-26.8zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-99.7 140.6c-10.1 0-19 4.2-25.6 10.7-24.1-16.7-56.5-27.4-92.5-28.6l18.7-84.2 59.5 13.4c0 14.6 11.9 26.5 26.5 26.5 14.9 0 26.8-12.2 26.8-26.8 0-14.6-11.9-26.8-26.8-26.8-10.4 0-19.3 6.2-23.8 14.9l-65.7-14.6c-3.3-.9-6.5 1.5-7.4 4.8l-20.5 92.8c-35.7 1.5-67.8 12.2-91.9 28.9-6.5-6.8-15.8-11-25.9-11-37.5 0-49.8 50.4-15.5 67.5-1.2 5.4-1.8 11-1.8 16.7 0 56.5 63.7 102.3 141.9 102.3 78.5 0 142.2-45.8 142.2-102.3 0-5.7-.6-11.6-2.1-17 33.6-17.2 21.2-67.2-16.1-67.2z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
+            <span
+              aria-hidden={true}
+              className="fa fa-reddit-square fa-2x"
+              id="edx-footer-icon-reddit"
+            />
             <span
               className="sr-only"
             >
-              Subscribe to the edX subreddit
+              Subscribe to the example subreddit
             </span>
           </a>
         </li>

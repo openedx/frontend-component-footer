@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
-import { Hyperlink } from '@edx/paragon';
+import { Hyperlink, Icon } from '@edx/paragon';
 import messages from './SiteFooter.messages';
 
 const EVENT_NAMES = {
@@ -38,6 +38,140 @@ class SiteFooter extends React.Component {
 
   renderMarketingSiteUrl(path) {
     return `${this.props.marketingSiteBaseUrl}${path}`;
+  }
+
+  renderSocialLinks() {
+    const {
+      intl,
+      siteName,
+      showSocialLinks,
+      facebookUrl,
+      twitterUrl,
+      youTubeUrl,
+      linkedInUrl,
+      googlePlusUrl,
+      redditUrl,
+    } = this.props;
+    let socialLinks = null;
+    if (showSocialLinks) {
+      socialLinks = (
+        <ul
+          className="d-flex flex-row justify-content-between list-unstyled max-width-222 p-0 mb-4"
+        >
+          {/* TODO: Use Paragon HyperLink with Icon. */}
+          {/*  Would need to add rel to paragon if we still need it. */}
+          <li>
+            <a
+              href={facebookUrl}
+              title={intl.formatMessage(messages['footer.site-footer.facebook.title'])}
+              rel="noopener noreferrer"
+              target="_blank"
+              onClick={this.externalLinkClickHandler}
+            >
+              <Icon
+                id="edx-footer-icon-facebook"
+                className={['fa', 'fa-facebook-square', 'fa-2x']}
+                screenReaderText={intl.formatMessage(
+                  messages['footer.site-footer.facebook.screen-reader-text'],
+                  { siteName },
+                )}
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href={twitterUrl}
+              title={intl.formatMessage(messages['footer.site-footer.twitter.title'])}
+              rel="noopener noreferrer"
+              target="_blank"
+              onClick={this.externalLinkClickHandler}
+            >
+              <Icon
+                id="edx-footer-icon-twitter"
+                className={['fa', 'fa-twitter-square', 'fa-2x']}
+                screenReaderText={intl.formatMessage(
+                  messages['footer.site-footer.twitter.screen-reader-text'],
+                  { siteName },
+                )}
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href={youTubeUrl}
+              title={intl.formatMessage(messages['footer.site-footer.youtube.title'])}
+              rel="noopener noreferrer"
+              target="_blank"
+              onClick={this.externalLinkClickHandler}
+            >
+              <Icon
+                id="edx-footer-icon-youtube"
+                className={['fa', 'fa-youtube-square', 'fa-2x']}
+                screenReaderText={intl.formatMessage(
+                  messages['footer.site-footer.youtube.screen-reader-text'],
+                  { siteName },
+                )}
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href={linkedInUrl}
+              title={intl.formatMessage(messages['footer.site-footer.linkedin.title'])}
+              rel="noopener noreferrer"
+              target="_blank"
+              onClick={this.externalLinkClickHandler}
+            >
+              <Icon
+                id="edx-footer-icon-linkedin"
+                className={['fa', 'fa-linkedin-square', 'fa-2x']}
+                screenReaderText={intl.formatMessage(
+                  messages['footer.site-footer.linkedin.screen-reader-text'],
+                  { siteName },
+                )}
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href={googlePlusUrl}
+              title={intl.formatMessage(messages['footer.site-footer.google-plus.title'])}
+              rel="noopener noreferrer"
+              target="_blank"
+              onClick={this.externalLinkClickHandler}
+            >
+              <Icon
+                id="edx-footer-icon-google"
+                className={['fa', 'fa-google-plus-square', 'fa-2x']}
+                screenReaderText={intl.formatMessage(
+                  messages['footer.site-footer.google-plus.screen-reader-text'],
+                  { siteName },
+                )}
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href={redditUrl}
+              title={intl.formatMessage(messages['footer.site-footer.reddit.title'])}
+              rel="noopener noreferrer"
+              target="_blank"
+              onClick={this.externalLinkClickHandler}
+            >
+              <Icon
+                id="edx-footer-icon-reddit"
+                className={['fa', 'fa-reddit-square', 'fa-2x']}
+                screenReaderText={intl.formatMessage(
+                  messages['footer.site-footer.reddit.screen-reader-text'],
+                  { siteName },
+                )}
+              />
+            </a>
+          </li>
+        </ul>
+      );
+    }
+    return socialLinks;
   }
 
   renderMobileLinks() {
@@ -91,7 +225,6 @@ class SiteFooter extends React.Component {
       privacyPolicyUrl,
       contactUrl,
       supportUrl,
-      socialLinks,
     } = this.props;
     return (
       <footer
@@ -269,24 +402,7 @@ class SiteFooter extends React.Component {
             </ul>
           </div>
           <div className="area-5">
-            {socialLinks.length > 0 &&
-              <ul className="d-flex flex-row justify-content-between list-unstyled max-width-222 p-0 mb-4">
-                {socialLinks.map(link => (
-                  <li key={link.url}>
-                    <a
-                      href={link.url}
-                      title={link.title}
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      onClick={this.externalLinkClickHandler}
-                    >
-                      {link.icon}
-                      <span className="sr-only">{link.screenReaderText}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            }
+            {this.renderSocialLinks()}
             {this.renderMobileLinks()}
             <p>
               <FormattedMessage
@@ -324,12 +440,13 @@ SiteFooter.propTypes = {
   openSourceUrl: PropTypes.string,
   termsOfServiceUrl: PropTypes.string,
   privacyPolicyUrl: PropTypes.string,
-  socialLinks: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
-    icon: PropTypes.element.isRequired,
-    screenReaderText: PropTypes.string.isRequired,
-  })),
+  showSocialLinks: PropTypes.bool,
+  facebookUrl: PropTypes.string,
+  twitterUrl: PropTypes.string,
+  youTubeUrl: PropTypes.string,
+  linkedInUrl: PropTypes.string,
+  googlePlusUrl: PropTypes.string,
+  redditUrl: PropTypes.string,
   showMobileLinks: PropTypes.bool,
   appleAppStoreUrl: PropTypes.string,
   googlePlayUrl: PropTypes.string,
@@ -346,7 +463,13 @@ SiteFooter.defaultProps = {
   openSourceUrl: null,
   termsOfServiceUrl: null,
   privacyPolicyUrl: null,
-  socialLinks: [],
+  showSocialLinks: true,
+  facebookUrl: null,
+  twitterUrl: null,
+  youTubeUrl: null,
+  linkedInUrl: null,
+  googlePlusUrl: null,
+  redditUrl: null,
   showMobileLinks: true,
   appleAppStoreUrl: null,
   googlePlayUrl: null,
