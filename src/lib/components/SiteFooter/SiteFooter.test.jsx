@@ -56,6 +56,23 @@ const socialLinks = [
   },
 ];
 
+const supportedLanguages = [
+  {
+    label: 'English',
+    value: 'en',
+  }, {
+    label: 'español',
+    value: 'es-419',
+  },
+];
+
+const languageForm = {
+  activeLanguage: 'en',
+  screenReaderLabel: 'Choose Language',
+  submitLabel: 'Apply',
+  onLanguageSelected: () => {},
+};
+
 const completeSiteFooterComponent = mockHandleAllTrackEvents =>
   (
     <IntlProvider locale="en">
@@ -72,6 +89,8 @@ const completeSiteFooterComponent = mockHandleAllTrackEvents =>
         appleAppStoreUrl="https://store.apple.com"
         googlePlayUrl="https://play.google.com"
         handleAllTrackEvents={mockHandleAllTrackEvents}
+        supportedLanguages={supportedLanguages}
+        languageForm={languageForm}
       />
     </IntlProvider>
   );
@@ -101,6 +120,8 @@ describe('<SiteFooter />', () => {
               privacyPolicyUrl="https://www.example.com/privacy-policy"
               appleAppStoreUrl="https://store.apple.com"
               googlePlayUrl="https://play.google.com"
+              supportedLanguages={supportedLanguages}
+              languageForm={languageForm}
               handleAllTrackEvents={jest.fn()}
             />
           </IntlProvider>
@@ -124,8 +145,32 @@ describe('<SiteFooter />', () => {
               socialLinks={socialLinks}
               appleAppStoreUrl="https://store.apple.com"
               googlePlayUrl="https://play.google.com"
+              supportedLanguages={supportedLanguages}
+              languageForm={languageForm}
               handleAllTrackEvents={jest.fn()}
               showMobileLinks={false}
+            />
+          </IntlProvider>
+        )).toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('does not render language selector', () => {
+      const tree = renderer
+        .create((
+          <IntlProvider locale="en">
+            <SiteFooter
+              siteName="example"
+              siteLogo={FooterLogo}
+              marketingSiteBaseUrl="https://www.example.com"
+              supportUrl="https://www.example.com/support"
+              contactUrl="https://www.example.com/contact"
+              openSourceUrl="https://www.example.com/open"
+              termsOfServiceUrl="https://www.example.com/terms-of-service"
+              privacyPolicyUrl="https://www.example.com/privacy-policy"
+              appleAppStoreUrl="https://store.apple.com"
+              googlePlayUrl="https://play.google.com"
+              handleAllTrackEvents={jest.fn()}
             />
           </IntlProvider>
         )).toJSON();

@@ -56,6 +56,7 @@ const socialLinks = [
   },
 ];
 
+
 const App = () => (
   <IntlProvider locale="en">
     <SiteFooter
@@ -71,6 +72,21 @@ const App = () => (
       googlePlayUrl="https://play.google.com"
       handleAllTrackEvents={() => {}}
       socialLinks={socialLinks}
+      supportedLanguages={[
+        {
+          label: 'English',
+          value: 'en',
+        }, {
+          label: 'español',
+          value: 'es-419',
+        },
+      ]}
+      languageForm={{
+        activeLanguage: 'en',
+        screenReaderLabel: 'Choose Language',
+        submitLabel: 'Apply',
+        onLanguageSelected: () => {},
+      }}
     />
   </IntlProvider>
 );

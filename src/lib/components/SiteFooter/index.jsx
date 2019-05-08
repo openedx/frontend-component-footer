@@ -2,16 +2,29 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
 import { Hyperlink } from '@edx/paragon';
+
+import { faLanguage } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import messages from './SiteFooter.messages';
 
 const EVENT_NAMES = {
   FOOTER_LINK: 'edx.bi.footer.link',
 };
 
+
 class SiteFooter extends React.Component {
   constructor(props) {
     super(props);
     this.externalLinkClickHandler = this.externalLinkClickHandler.bind(this);
+    this.applyLanguageSelection = this.applyLanguageSelection.bind(this);
+  }
+
+  applyLanguageSelection(event) {
+    event.preventDefault();
+    const languageCode = event.target.elements['site-footer-language-select'].value;
+    const { languageForm: { onLanguageSelected } } = this.props;
+    onLanguageSelected(languageCode);
   }
 
   externalLinkClickHandler(event) {
@@ -92,7 +105,11 @@ class SiteFooter extends React.Component {
       contactUrl,
       supportUrl,
       socialLinks,
+      supportedLanguages,
+      languageForm,
     } = this.props;
+    const showLanguageSelector = supportedLanguages.length > 0 &&
+                                 languageForm;
     return (
       <footer
         role="contentinfo"
@@ -109,6 +126,30 @@ class SiteFooter extends React.Component {
                 { siteName },
               )}
             />
+            {showLanguageSelector &&
+              <div className="i18n d-flex mt-2">
+                <form
+                  className="d-flex align-items-start"
+                  onSubmit={this.applyLanguageSelection}
+                >
+                  {/* eslint-disable-next-line jsx-a11y/label-has-for */}
+                  <label htmlFor="site-footer-language-select">
+                    <FontAwesomeIcon icon={faLanguage} size="2x" className="text-primary" />
+                    <div className="sr-only">{languageForm.screenReaderLabel}</div>
+                  </label>
+                  <select
+                    id="site-footer-language-select"
+                    className="mx-2 mt-1"
+                    name="site-footer-language-select"
+                    defaultValue={languageForm.activeLanguage}
+                  >
+                    {supportedLanguages.map(({ value, label }) =>
+                      <option key={value} value={value}>{label}</option>)}
+                  </select>
+                  <button className="mt-1" type="submit">{languageForm.submitLabel}</button>
+                </form>
+              </div>
+            }
           </div>
           <div className="area-2">
             <h2>{siteName}</h2>
@@ -333,6 +374,16 @@ SiteFooter.propTypes = {
   showMobileLinks: PropTypes.bool,
   appleAppStoreUrl: PropTypes.string,
   googlePlayUrl: PropTypes.string,
+  supportedLanguages: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+  })),
+  languageForm: PropTypes.shape({
+    screenReaderLabel: PropTypes.string.isRequired,
+    submitLabel: PropTypes.string.isRequired,
+    onLanguageSelected: PropTypes.func.isRequired,
+    activeLanguage: PropTypes.string,
+  }),
   handleAllTrackEvents: PropTypes.func.isRequired,
   intl: intlShape.isRequired,
 };
@@ -350,6 +401,8 @@ SiteFooter.defaultProps = {
   showMobileLinks: true,
   appleAppStoreUrl: null,
   googlePlayUrl: null,
+  supportedLanguages: [],
+  languageForm: null,
 };
 
 export default injectIntl(SiteFooter);
