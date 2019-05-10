@@ -11,6 +11,7 @@ import {
   faGooglePlusSquare,
   faRedditSquare,
 } from '@fortawesome/free-brands-svg-icons';
+import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import FooterLogo from '../../../edx-footer.png';
@@ -70,6 +71,7 @@ const languageForm = {
   activeLanguage: 'en',
   screenReaderLabel: 'Choose Language',
   submitLabel: 'Apply',
+  icon: <FontAwesomeIcon icon={faLanguage} size="2x" className="text-primary" />,
   onLanguageSelected: () => {},
 };
 

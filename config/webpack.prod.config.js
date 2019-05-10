@@ -35,6 +35,18 @@ module.exports = Merge.smart(commonConfig, {
       amd: 'ReactDOM',
       root: 'ReactDOM',
     },
+    'react-intl': {
+      commonjs: 'react-intl',
+      commonjs2: 'react-intl',
+      amd: 'ReactIntl',
+      root: 'ReactIntl',
+    },
+    '@edx/paragon': {
+      commonjs: '@edx/paragon',
+      commonjs2: '@edx/paragon',
+      amd: 'Paragon',
+      root: 'Paragon',
+    },
   },
   plugins: [
     // Cleans the dist directory before each build

@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
 import { Hyperlink } from '@edx/paragon';
 
-import { faLanguage } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import messages from './SiteFooter.messages';
 
 const EVENT_NAMES = {
@@ -134,7 +131,7 @@ class SiteFooter extends React.Component {
                 >
                   {/* eslint-disable-next-line jsx-a11y/label-has-for */}
                   <label htmlFor="site-footer-language-select">
-                    <FontAwesomeIcon icon={faLanguage} size="2x" className="text-primary" />
+                    {languageForm.icon}
                     <div className="sr-only">{languageForm.screenReaderLabel}</div>
                   </label>
                   <select
@@ -382,6 +379,7 @@ SiteFooter.propTypes = {
     screenReaderLabel: PropTypes.string.isRequired,
     submitLabel: PropTypes.string.isRequired,
     onLanguageSelected: PropTypes.func.isRequired,
+    icon: PropTypes.node.isRequired,
     activeLanguage: PropTypes.string,
   }),
   handleAllTrackEvents: PropTypes.func.isRequired,
