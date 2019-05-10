@@ -2,9 +2,9 @@
   "errors": [],
   "warnings": [],
   "version": "4.28.3",
-  "hash": "cbe1c98911b76a0f6056",
-  "time": 1226,
-  "builtAt": 1557497349590,
+  "hash": "6e2b9c418f69ed20b1d8",
+  "time": 668,
+  "builtAt": 1557498125510,
   "publicPath": "",
   "outputPath": "/Users/abutterworth/dev/frontend-component-footer/dist",
   "assetsByChunkName": {
@@ -16,7 +16,7 @@
   "assets": [
     {
       "name": "main.js",
-      "size": 16725,
+      "size": 16735,
       "chunks": [
         0
       ],
@@ -27,7 +27,7 @@
     },
     {
       "name": "main.js.map",
-      "size": 38479,
+      "size": 38501,
       "chunks": [
         0
       ],
@@ -78,7 +78,7 @@
         "main.js",
         "main.js.map"
       ],
-      "hash": "779b838ab2a79cce2863",
+      "hash": "7cbdddc284f1abc5a56a",
       "siblings": [],
       "parents": [],
       "children": [],
@@ -106,8 +106,8 @@
               "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
               "name": "./src/lib/index.js",
               "profile": {
-                "factory": 40,
-                "building": 362
+                "factory": 30,
+                "building": 237
               }
             },
             {
@@ -115,13 +115,13 @@
               "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
               "name": "./src/lib/components/SiteFooter/index.jsx",
               "profile": {
-                "factory": 3,
-                "building": 226
+                "factory": 7,
+                "building": 204
               }
             }
           ],
           "profile": {
-            "factory": 39,
+            "factory": 35,
             "building": 3,
             "dependencies": 0
           },
@@ -175,8 +175,8 @@
           "issuerName": null,
           "issuerPath": null,
           "profile": {
-            "factory": 40,
-            "building": 362
+            "factory": 30,
+            "building": 237
           },
           "failed": false,
           "errors": 0,
@@ -224,14 +224,14 @@
               "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
               "name": "./src/lib/index.js",
               "profile": {
-                "factory": 40,
-                "building": 362
+                "factory": 30,
+                "building": 237
               }
             }
           ],
           "profile": {
-            "factory": 3,
-            "building": 226
+            "factory": 7,
+            "building": 204
           },
           "failed": false,
           "errors": 0,
@@ -278,8 +278,8 @@
               "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
               "name": "./src/lib/index.js",
               "profile": {
-                "factory": 40,
-                "building": 362
+                "factory": 30,
+                "building": 237
               }
             },
             {
@@ -287,13 +287,13 @@
               "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
               "name": "./src/lib/components/SiteFooter/index.jsx",
               "profile": {
-                "factory": 3,
-                "building": 226
+                "factory": 7,
+                "building": 204
               }
             }
           ],
           "profile": {
-            "factory": 39,
+            "factory": 35,
             "building": 3,
             "dependencies": 0
           },
@@ -342,8 +342,8 @@
               "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
               "name": "./src/lib/index.js",
               "profile": {
-                "factory": 40,
-                "building": 362
+                "factory": 30,
+                "building": 237
               }
             },
             {
@@ -351,13 +351,13 @@
               "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
               "name": "./src/lib/components/SiteFooter/index.jsx",
               "profile": {
-                "factory": 3,
-                "building": 226
+                "factory": 7,
+                "building": 204
               }
             }
           ],
           "profile": {
-            "factory": 39,
+            "factory": 35,
             "building": 3,
             "dependencies": 0
           },
@@ -407,8 +407,8 @@
               "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
               "name": "./src/lib/index.js",
               "profile": {
-                "factory": 40,
-                "building": 362
+                "factory": 30,
+                "building": 237
               }
             },
             {
@@ -416,8 +416,8 @@
               "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
               "name": "./src/lib/components/SiteFooter/index.jsx",
               "profile": {
-                "factory": 3,
-                "building": 226
+                "factory": 7,
+                "building": 204
               }
             },
             {
@@ -425,7 +425,7 @@
               "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/index.js",
               "name": "./node_modules/prop-types/index.js",
               "profile": {
-                "factory": 39,
+                "factory": 35,
                 "building": 3,
                 "dependencies": 0
               }
@@ -481,8 +481,8 @@
               "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
               "name": "./src/lib/index.js",
               "profile": {
-                "factory": 40,
-                "building": 362
+                "factory": 30,
+                "building": 237
               }
             },
             {
@@ -490,8 +490,8 @@
               "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
               "name": "./src/lib/components/SiteFooter/index.jsx",
               "profile": {
-                "factory": 3,
-                "building": 226
+                "factory": 7,
+                "building": 204
               }
             },
             {
@@ -499,7 +499,7 @@
               "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/index.js",
               "name": "./node_modules/prop-types/index.js",
               "profile": {
-                "factory": 39,
+                "factory": 35,
                 "building": 3,
                 "dependencies": 0
               }
@@ -516,7 +516,7 @@
           ],
           "profile": {
             "factory": 1,
-            "building": 0
+            "building": 1
           },
           "failed": false,
           "errors": 0,
@@ -543,8 +543,8 @@
         },
         {
           "id": 7,
-          "identifier": "external {\"commonjs\":\"paragon\",\"commonjs2\":\"paragon\",\"amd\":\"Paragon\",\"root\":\"Paragon\"}",
-          "name": "external {\"commonjs\":\"paragon\",\"commonjs2\":\"paragon\",\"amd\":\"Paragon\",\"root\":\"Paragon\"}",
+          "identifier": "external {\"commonjs\":\"@edx/paragon\",\"commonjs2\":\"@edx/paragon\",\"amd\":\"Paragon\",\"root\":\"Paragon\"}",
+          "name": "external {\"commonjs\":\"@edx/paragon\",\"commonjs2\":\"@edx/paragon\",\"amd\":\"Paragon\",\"root\":\"Paragon\"}",
           "index": 7,
           "index2": 5,
           "size": 42,
@@ -563,8 +563,8 @@
               "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
               "name": "./src/lib/index.js",
               "profile": {
-                "factory": 40,
-                "building": 362
+                "factory": 30,
+                "building": 237
               }
             },
             {
@@ -572,13 +572,13 @@
               "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
               "name": "./src/lib/components/SiteFooter/index.jsx",
               "profile": {
-                "factory": 3,
-                "building": 226
+                "factory": 7,
+                "building": 204
               }
             }
           ],
           "profile": {
-            "factory": 39,
+            "factory": 35,
             "building": 3,
             "dependencies": 0
           },
@@ -627,8 +627,8 @@
               "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
               "name": "./src/lib/index.js",
               "profile": {
-                "factory": 40,
-                "building": 362
+                "factory": 30,
+                "building": 237
               }
             },
             {
@@ -636,13 +636,13 @@
               "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
               "name": "./src/lib/components/SiteFooter/index.jsx",
               "profile": {
-                "factory": 3,
-                "building": 226
+                "factory": 7,
+                "building": 204
               }
             }
           ],
           "profile": {
-            "factory": 39,
+            "factory": 35,
             "building": 3,
             "dependencies": 0
           },
@@ -706,8 +706,8 @@
           "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
           "name": "./src/lib/index.js",
           "profile": {
-            "factory": 40,
-            "building": 362
+            "factory": 30,
+            "building": 237
           }
         },
         {
@@ -715,13 +715,13 @@
           "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
           "name": "./src/lib/components/SiteFooter/index.jsx",
           "profile": {
-            "factory": 3,
-            "building": 226
+            "factory": 7,
+            "building": 204
           }
         }
       ],
       "profile": {
-        "factory": 39,
+        "factory": 35,
         "building": 3,
         "dependencies": 0
       },
@@ -775,8 +775,8 @@
       "issuerName": null,
       "issuerPath": null,
       "profile": {
-        "factory": 40,
-        "building": 362
+        "factory": 30,
+        "building": 237
       },
       "failed": false,
       "errors": 0,
@@ -824,14 +824,14 @@
           "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
           "name": "./src/lib/index.js",
           "profile": {
-            "factory": 40,
-            "building": 362
+            "factory": 30,
+            "building": 237
           }
         }
       ],
       "profile": {
-        "factory": 3,
-        "building": 226
+        "factory": 7,
+        "building": 204
       },
       "failed": false,
       "errors": 0,
@@ -878,8 +878,8 @@
           "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
           "name": "./src/lib/index.js",
           "profile": {
-            "factory": 40,
-            "building": 362
+            "factory": 30,
+            "building": 237
           }
         },
         {
@@ -887,13 +887,13 @@
           "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
           "name": "./src/lib/components/SiteFooter/index.jsx",
           "profile": {
-            "factory": 3,
-            "building": 226
+            "factory": 7,
+            "building": 204
           }
         }
       ],
       "profile": {
-        "factory": 39,
+        "factory": 35,
         "building": 3,
         "dependencies": 0
       },
@@ -942,8 +942,8 @@
           "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
           "name": "./src/lib/index.js",
           "profile": {
-            "factory": 40,
-            "building": 362
+            "factory": 30,
+            "building": 237
           }
         },
         {
@@ -951,13 +951,13 @@
           "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
           "name": "./src/lib/components/SiteFooter/index.jsx",
           "profile": {
-            "factory": 3,
-            "building": 226
+            "factory": 7,
+            "building": 204
           }
         }
       ],
       "profile": {
-        "factory": 39,
+        "factory": 35,
         "building": 3,
         "dependencies": 0
       },
@@ -1007,8 +1007,8 @@
           "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
           "name": "./src/lib/index.js",
           "profile": {
-            "factory": 40,
-            "building": 362
+            "factory": 30,
+            "building": 237
           }
         },
         {
@@ -1016,8 +1016,8 @@
           "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
           "name": "./src/lib/components/SiteFooter/index.jsx",
           "profile": {
-            "factory": 3,
-            "building": 226
+            "factory": 7,
+            "building": 204
           }
         },
         {
@@ -1025,7 +1025,7 @@
           "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/index.js",
           "name": "./node_modules/prop-types/index.js",
           "profile": {
-            "factory": 39,
+            "factory": 35,
             "building": 3,
             "dependencies": 0
           }
@@ -1081,8 +1081,8 @@
           "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
           "name": "./src/lib/index.js",
           "profile": {
-            "factory": 40,
-            "building": 362
+            "factory": 30,
+            "building": 237
           }
         },
         {
@@ -1090,8 +1090,8 @@
           "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
           "name": "./src/lib/components/SiteFooter/index.jsx",
           "profile": {
-            "factory": 3,
-            "building": 226
+            "factory": 7,
+            "building": 204
           }
         },
         {
@@ -1099,7 +1099,7 @@
           "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/index.js",
           "name": "./node_modules/prop-types/index.js",
           "profile": {
-            "factory": 39,
+            "factory": 35,
             "building": 3,
             "dependencies": 0
           }
@@ -1116,7 +1116,7 @@
       ],
       "profile": {
         "factory": 1,
-        "building": 0
+        "building": 1
       },
       "failed": false,
       "errors": 0,
@@ -1143,8 +1143,8 @@
     },
     {
       "id": 7,
-      "identifier": "external {\"commonjs\":\"paragon\",\"commonjs2\":\"paragon\",\"amd\":\"Paragon\",\"root\":\"Paragon\"}",
-      "name": "external {\"commonjs\":\"paragon\",\"commonjs2\":\"paragon\",\"amd\":\"Paragon\",\"root\":\"Paragon\"}",
+      "identifier": "external {\"commonjs\":\"@edx/paragon\",\"commonjs2\":\"@edx/paragon\",\"amd\":\"Paragon\",\"root\":\"Paragon\"}",
+      "name": "external {\"commonjs\":\"@edx/paragon\",\"commonjs2\":\"@edx/paragon\",\"amd\":\"Paragon\",\"root\":\"Paragon\"}",
       "index": 7,
       "index2": 5,
       "size": 42,
@@ -1163,8 +1163,8 @@
           "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
           "name": "./src/lib/index.js",
           "profile": {
-            "factory": 40,
-            "building": 362
+            "factory": 30,
+            "building": 237
           }
         },
         {
@@ -1172,13 +1172,13 @@
           "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
           "name": "./src/lib/components/SiteFooter/index.jsx",
           "profile": {
-            "factory": 3,
-            "building": 226
+            "factory": 7,
+            "building": 204
           }
         }
       ],
       "profile": {
-        "factory": 39,
+        "factory": 35,
         "building": 3,
         "dependencies": 0
       },
@@ -1227,8 +1227,8 @@
           "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
           "name": "./src/lib/index.js",
           "profile": {
-            "factory": 40,
-            "building": 362
+            "factory": 30,
+            "building": 237
           }
         },
         {
@@ -1236,13 +1236,13 @@
           "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
           "name": "./src/lib/components/SiteFooter/index.jsx",
           "profile": {
-            "factory": 3,
-            "building": 226
+            "factory": 7,
+            "building": 204
           }
         }
       ],
       "profile": {
-        "factory": 39,
+        "factory": 35,
         "building": 3,
         "dependencies": 0
       },

@@ -1,9 +1,9 @@
 // This is the prod Webpack config. All settings here should prefer smaller,
 // optimized bundles at the expense of a longer build time.
-const Merge = require('webpack-merge');
+const Merge = require('webpack-merge'); // eslint-disable-line import/no-extraneous-dependencies
 const commonConfig = require('./webpack.common.config.js');
 const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin'); // eslint-disable-line import/no-extraneous-dependencies
 
 module.exports = Merge.smart(commonConfig, {
   mode: 'production',
