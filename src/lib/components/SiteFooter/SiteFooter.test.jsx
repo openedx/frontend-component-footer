@@ -93,6 +93,10 @@ const completeSiteFooterComponent = mockHandleAllTrackEvents =>
         handleAllTrackEvents={mockHandleAllTrackEvents}
         supportedLanguages={supportedLanguages}
         languageForm={languageForm}
+        enterpriseMarketingLink={{
+          url: 'https://business.edx.org',
+          queryParams: { utm_test: 'utm_test_value' },
+        }}
       />
     </IntlProvider>
   );
@@ -125,6 +129,10 @@ describe('<SiteFooter />', () => {
               supportedLanguages={supportedLanguages}
               languageForm={languageForm}
               handleAllTrackEvents={jest.fn()}
+              enterpriseMarketingLink={{
+                url: 'https://business.edx.org',
+                queryParams: { utm_test: 'utm_test_value' },
+              }}
             />
           </IntlProvider>
         )).toJSON();
@@ -158,6 +166,28 @@ describe('<SiteFooter />', () => {
     });
 
     it('does not render language selector', () => {
+      const tree = renderer
+        .create((
+          <IntlProvider locale="en">
+            <SiteFooter
+              siteName="example"
+              siteLogo={FooterLogo}
+              marketingSiteBaseUrl="https://www.example.com"
+              supportUrl="https://www.example.com/support"
+              contactUrl="https://www.example.com/contact"
+              openSourceUrl="https://www.example.com/open"
+              termsOfServiceUrl="https://www.example.com/terms-of-service"
+              privacyPolicyUrl="https://www.example.com/privacy-policy"
+              appleAppStoreUrl="https://store.apple.com"
+              googlePlayUrl="https://play.google.com"
+              handleAllTrackEvents={jest.fn()}
+            />
+          </IntlProvider>
+        )).toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('does not render business links', () => {
       const tree = renderer
         .create((
           <IntlProvider locale="en">

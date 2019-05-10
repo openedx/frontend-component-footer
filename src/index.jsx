@@ -66,6 +66,10 @@ const App = () => (
       siteName="edX"
       siteLogo={FooterLogo}
       marketingSiteBaseUrl="https://www.example.com"
+      enterpriseMarketingLink={{
+        url: 'https://business.edx.org',
+        queryParams: { utm_test: 'utm_test_value' },
+      }}
       supportUrl="https://www.example.com/support"
       contactUrl="https://www.example.com/contact"
       openSourceUrl="https://www.example.com/open"
