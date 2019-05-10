@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { IntlProvider } from 'react-intl';
 
+/* eslint-disable import/no-extraneous-dependencies */
 import {
   faFacebookSquare,
   faTwitterSquare,
@@ -10,7 +11,9 @@ import {
   faGooglePlusSquare,
   faRedditSquare,
 } from '@fortawesome/free-brands-svg-icons';
+import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+/* eslint-enable import/no-extraneous-dependencies */
 
 import SiteFooter from './lib';
 import './index.scss';
@@ -85,6 +88,7 @@ const App = () => (
         activeLanguage: 'en',
         screenReaderLabel: 'Choose Language',
         submitLabel: 'Apply',
+        icon: <FontAwesomeIcon icon={faLanguage} size="2x" className="text-primary" />,
         onLanguageSelected: () => {},
       }}
     />

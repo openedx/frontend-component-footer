@@ -1,0 +1,1275 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.28.3",
+  "hash": "6e2b9c418f69ed20b1d8",
+  "time": 668,
+  "builtAt": 1557498125510,
+  "publicPath": "",
+  "outputPath": "/Users/abutterworth/dev/frontend-component-footer/dist",
+  "assetsByChunkName": {
+    "main": [
+      "main.js",
+      "main.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "name": "main.js",
+      "size": 16735,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "main.js.map",
+      "size": 38501,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js",
+        "main.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js",
+        "main.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 29039,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "main.js",
+        "main.js.map"
+      ],
+      "hash": "7cbdddc284f1abc5a56a",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "external {\"commonjs\":\"react-intl\",\"commonjs2\":\"react-intl\",\"amd\":\"ReactIntl\",\"root\":\"ReactIntl\"}",
+          "name": "external {\"commonjs\":\"react-intl\",\"commonjs2\":\"react-intl\",\"amd\":\"ReactIntl\",\"root\":\"ReactIntl\"}",
+          "index": 6,
+          "index2": 4,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "issuerId": 2,
+          "issuerName": "./src/lib/components/SiteFooter/index.jsx",
+          "issuerPath": [
+            {
+              "id": 1,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+              "name": "./src/lib/index.js",
+              "profile": {
+                "factory": 30,
+                "building": 237
+              }
+            },
+            {
+              "id": 2,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+              "name": "./src/lib/components/SiteFooter/index.jsx",
+              "profile": {
+                "factory": 7,
+                "building": 204
+              }
+            }
+          ],
+          "profile": {
+            "factory": 35,
+            "building": 3,
+            "dependencies": 0
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+              "module": "./src/lib/components/SiteFooter/index.jsx",
+              "moduleName": "./src/lib/components/SiteFooter/index.jsx",
+              "type": "cjs require",
+              "userRequest": "react-intl",
+              "loc": "18:17-38"
+            },
+            {
+              "moduleId": 8,
+              "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/SiteFooter.messages.js",
+              "module": "./src/lib/components/SiteFooter/SiteFooter.messages.js",
+              "moduleName": "./src/lib/components/SiteFooter/SiteFooter.messages.js",
+              "type": "cjs require",
+              "userRequest": "react-intl",
+              "loc": "7:17-38"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2
+        },
+        {
+          "id": 1,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+          "name": "./src/lib/index.js",
+          "index": 0,
+          "index2": 8,
+          "size": 329,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 30,
+            "building": 237
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src/lib/index.js",
+              "loc": "main"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0,
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _SiteFooter = require('./components/SiteFooter');\n\nvar _SiteFooter2 = _interopRequireDefault(_SiteFooter);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = _SiteFooter2.default;"
+        },
+        {
+          "id": 2,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "name": "./src/lib/components/SiteFooter/index.jsx",
+          "index": 1,
+          "index2": 7,
+          "size": 22239,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+          "issuerId": 1,
+          "issuerName": "./src/lib/index.js",
+          "issuerPath": [
+            {
+              "id": 1,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+              "name": "./src/lib/index.js",
+              "profile": {
+                "factory": 30,
+                "building": 237
+              }
+            }
+          ],
+          "profile": {
+            "factory": 7,
+            "building": 204
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+              "module": "./src/lib/index.js",
+              "moduleName": "./src/lib/index.js",
+              "type": "cjs require",
+              "userRequest": "./components/SiteFooter",
+              "loc": "7:18-52"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.EVENT_NAMES = undefined;\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactIntl = require('react-intl');\n\nvar _paragon = require('@edx/paragon');\n\nvar _SiteFooter = require('./SiteFooter.messages');\n\nvar _SiteFooter2 = _interopRequireDefault(_SiteFooter);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar EVENT_NAMES = {\n  FOOTER_LINK: 'edx.bi.footer.link'\n};\n\nvar SiteFooter = function (_React$Component) {\n  _inherits(SiteFooter, _React$Component);\n\n  function SiteFooter(props) {\n    _classCallCheck(this, SiteFooter);\n\n    var _this = _possibleConstructorReturn(this, (SiteFooter.__proto__ || Object.getPrototypeOf(SiteFooter)).call(this, props));\n\n    _this.externalLinkClickHandler = _this.externalLinkClickHandler.bind(_this);\n    _this.applyLanguageSelection = _this.applyLanguageSelection.bind(_this);\n    return _this;\n  }\n\n  _createClass(SiteFooter, [{\n    key: 'applyLanguageSelection',\n    value: function applyLanguageSelection(event) {\n      event.preventDefault();\n      var languageCode = event.target.elements['site-footer-language-select'].value;\n      var onLanguageSelected = this.props.languageForm.onLanguageSelected;\n\n      onLanguageSelected(languageCode);\n    }\n  }, {\n    key: 'externalLinkClickHandler',\n    value: function externalLinkClickHandler(event) {\n      var label = event.currentTarget.getAttribute('href');\n      var eventName = EVENT_NAMES.FOOTER_LINK;\n      var properties = {\n        category: 'outbound_link',\n        label: label\n      };\n      this.props.handleAllTrackEvents(eventName, properties);\n    }\n  }, {\n    key: 'renderSiteLogo',\n    value: function renderSiteLogo() {\n      return _react2.default.createElement('img', {\n        src: this.props.siteLogo,\n        alt: this.props.intl.formatMessage(_SiteFooter2.default['footer.site-footer.site-logo.alt-text'], { siteName: this.props.siteName })\n      });\n    }\n  }, {\n    key: 'renderMarketingSiteUrl',\n    value: function renderMarketingSiteUrl(path) {\n      return '' + this.props.marketingSiteBaseUrl + path;\n    }\n  }, {\n    key: 'renderMobileLinks',\n    value: function renderMobileLinks() {\n      var _props = this.props,\n          intl = _props.intl,\n          siteName = _props.siteName,\n          showMobileLinks = _props.showMobileLinks,\n          appleAppStoreUrl = _props.appleAppStoreUrl,\n          googlePlayUrl = _props.googlePlayUrl;\n\n      var mobileLinks = null;\n      if (showMobileLinks) {\n        mobileLinks = _react2.default.createElement(\n          'ul',\n          { className: 'd-flex flex-row justify-content-between list-unstyled max-width-264 p-0 mb-5' },\n          _react2.default.createElement(\n            'li',\n            null,\n            _react2.default.createElement(\n              'a',\n              { href: appleAppStoreUrl, rel: 'noopener noreferrer', target: '_blank', onClick: this.externalLinkClickHandler },\n              _react2.default.createElement('img', {\n                className: 'max-height-39',\n                alt: intl.formatMessage(_SiteFooter2.default['footer.site-footer.apple-app-store.alt-text'], { siteName: siteName }),\n                src: 'https://prod-edxapp.edx-cdn.org/static/images/app/app_store_badge_135x40.d0558d910630.svg'\n              })\n            )\n          ),\n          _react2.default.createElement(\n            'li',\n            null,\n            _react2.default.createElement(\n              'a',\n              { href: googlePlayUrl, rel: 'noopener noreferrer', target: '_blank', onClick: this.externalLinkClickHandler },\n              _react2.default.createElement('img', {\n                className: 'max-height-39',\n                alt: intl.formatMessage(_SiteFooter2.default['footer.site-footer.google-play.alt-text'], { siteName: siteName }),\n                src: 'https://prod-edxapp.edx-cdn.org/static/images/app/google_play_badge_45.6ea466e328da.png'\n              })\n            )\n          )\n        );\n      }\n      return mobileLinks;\n    }\n  }, {\n    key: 'render',\n    value: function render() {\n      var _this2 = this;\n\n      var _props2 = this.props,\n          intl = _props2.intl,\n          siteName = _props2.siteName,\n          openSourceUrl = _props2.openSourceUrl,\n          termsOfServiceUrl = _props2.termsOfServiceUrl,\n          privacyPolicyUrl = _props2.privacyPolicyUrl,\n          contactUrl = _props2.contactUrl,\n          supportUrl = _props2.supportUrl,\n          socialLinks = _props2.socialLinks,\n          supportedLanguages = _props2.supportedLanguages,\n          languageForm = _props2.languageForm;\n\n      var showLanguageSelector = supportedLanguages.length > 0 && languageForm;\n      return _react2.default.createElement(\n        'footer',\n        {\n          role: 'contentinfo',\n          'aria-label': intl.formatMessage(_SiteFooter2.default['footer.site-footer.footer.aria-label']),\n          className: 'footer d-flex justify-content-center border-top py-3 px-4'\n        },\n        _react2.default.createElement(\n          'div',\n          { className: 'max-width-1180 d-grid' },\n          _react2.default.createElement(\n            'div',\n            { className: 'area-1' },\n            _react2.default.createElement(_paragon.Hyperlink, {\n              destination: this.renderMarketingSiteUrl('/'),\n              content: this.renderSiteLogo(),\n              'aria-label': intl.formatMessage(_SiteFooter2.default['footer.site-footer.site-logo.aria-label'], { siteName: siteName })\n            }),\n            showLanguageSelector && _react2.default.createElement(\n              'div',\n              { className: 'i18n d-flex mt-2' },\n              _react2.default.createElement(\n                'form',\n                {\n                  className: 'd-flex align-items-start',\n                  onSubmit: this.applyLanguageSelection\n                },\n                _react2.default.createElement(\n                  'label',\n                  { htmlFor: 'site-footer-language-select' },\n                  languageForm.icon,\n                  _react2.default.createElement(\n                    'div',\n                    { className: 'sr-only' },\n                    languageForm.screenReaderLabel\n                  )\n                ),\n                _react2.default.createElement(\n                  'select',\n                  {\n                    id: 'site-footer-language-select',\n                    className: 'mx-2 mt-1',\n                    name: 'site-footer-language-select',\n                    defaultValue: languageForm.activeLanguage\n                  },\n                  supportedLanguages.map(function (_ref) {\n                    var value = _ref.value,\n                        label = _ref.label;\n                    return _react2.default.createElement(\n                      'option',\n                      { key: value, value: value },\n                      label\n                    );\n                  })\n                ),\n                _react2.default.createElement(\n                  'button',\n                  { className: 'mt-1', type: 'submit' },\n                  languageForm.submitLabel\n                )\n              )\n            )\n          ),\n          _react2.default.createElement(\n            'div',\n            { className: 'area-2' },\n            _react2.default.createElement(\n              'h2',\n              null,\n              siteName\n            ),\n            _react2.default.createElement(\n              'ul',\n              { className: 'list-unstyled p-0 m-0' },\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/about-us') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.about',\n                    defaultMessage: 'About'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/enterprise') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.business',\n                    defaultMessage: '{siteName} for Business',\n                    values: { siteName: siteName }\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/affiliate-program') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.affiliates',\n                    defaultMessage: 'Affiliates'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: openSourceUrl },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.open-source',\n                    defaultMessage: 'Open {siteName}',\n                    values: { siteName: siteName },\n                    description: 'Open Source link text'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/careers') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.careers',\n                    defaultMessage: 'Careers'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/news-announcements') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.news',\n                    defaultMessage: 'News'\n                  })\n                )\n              )\n            )\n          ),\n          _react2.default.createElement(\n            'div',\n            { className: 'area-3' },\n            _react2.default.createElement(\n              'h2',\n              null,\n              _react2.default.createElement(_reactIntl.FormattedMessage, {\n                id: 'footer.site-footer.link.header.legal',\n                defaultMessage: 'Legal',\n                description: 'Header for legal links'\n              })\n            ),\n            _react2.default.createElement(\n              'ul',\n              { className: 'list-unstyled p-0 m-0' },\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: termsOfServiceUrl },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.terms-of-service',\n                    defaultMessage: 'Terms of Service & Honor Code'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: privacyPolicyUrl },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.privacy',\n                    defaultMessage: 'Privacy Policy'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/accessibility') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.accessibility',\n                    defaultMessage: 'Accessibility Policy'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/trademarks') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.trademark',\n                    defaultMessage: 'Trademark Policy'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/sitemap') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.sitemap',\n                    defaultMessage: 'Sitemap'\n                  })\n                )\n              )\n            )\n          ),\n          _react2.default.createElement(\n            'div',\n            { className: 'area-4' },\n            _react2.default.createElement(\n              'h2',\n              null,\n              _react2.default.createElement(_reactIntl.FormattedMessage, {\n                id: 'footer.site-footer.link.header.connect',\n                defaultMessage: 'Connect',\n                description: 'Header for connect links'\n              })\n            ),\n            _react2.default.createElement(\n              'ul',\n              { className: 'list-unstyled p-0 m-0' },\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/blog') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.blog',\n                    defaultMessage: 'Blog'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: contactUrl },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.contact-us',\n                    defaultMessage: 'Contact Us'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: supportUrl },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.help-center',\n                    defaultMessage: 'Help Center'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/media-kit') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.media-kit',\n                    defaultMessage: 'Media Kit'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/donate') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.donate',\n                    defaultMessage: 'Donate'\n                  })\n                )\n              )\n            )\n          ),\n          _react2.default.createElement(\n            'div',\n            { className: 'area-5' },\n            socialLinks.length > 0 && _react2.default.createElement(\n              'ul',\n              { className: 'd-flex flex-row justify-content-between list-unstyled max-width-222 p-0 mb-4' },\n              socialLinks.map(function (link) {\n                return _react2.default.createElement(\n                  'li',\n                  { key: link.url },\n                  _react2.default.createElement(\n                    'a',\n                    {\n                      href: link.url,\n                      title: link.title,\n                      rel: 'noopener noreferrer',\n                      target: '_blank',\n                      onClick: _this2.externalLinkClickHandler\n                    },\n                    link.icon,\n                    _react2.default.createElement(\n                      'span',\n                      { className: 'sr-only' },\n                      link.screenReaderText\n                    )\n                  )\n                );\n              })\n            ),\n            this.renderMobileLinks(),\n            _react2.default.createElement(\n              'p',\n              null,\n              _react2.default.createElement(_reactIntl.FormattedMessage, {\n                id: 'footer.site-footer.copyright-text',\n                defaultMessage: '{copyrightSymbol} {startDate}\\u2013{endDate} {siteName} Inc.',\n                values: {\n                  copyrightSymbol: '©',\n                  startDate: '2012',\n                  endDate: '' + new Date().getFullYear(),\n                  siteName: siteName\n                },\n                description: 'Footer copyright text with copyright symbol and dates'\n              }),\n              _react2.default.createElement('br', null),\n              _react2.default.createElement(_reactIntl.FormattedMessage, {\n                id: 'footer.site-footer.trademark-text',\n                defaultMessage: 'EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | {icpLicense}',\n                values: { icpLicense: '粤ICP备17044299号-2' },\n                description: 'Footer trademark text'\n              })\n            )\n          )\n        )\n      );\n    }\n  }]);\n\n  return SiteFooter;\n}(_react2.default.Component);\n\nSiteFooter.propTypes = {\n  siteName: _propTypes2.default.string,\n  siteLogo: _propTypes2.default.node,\n  marketingSiteBaseUrl: _propTypes2.default.string,\n  supportUrl: _propTypes2.default.string,\n  contactUrl: _propTypes2.default.string,\n  openSourceUrl: _propTypes2.default.string,\n  termsOfServiceUrl: _propTypes2.default.string,\n  privacyPolicyUrl: _propTypes2.default.string,\n  socialLinks: _propTypes2.default.arrayOf(_propTypes2.default.shape({\n    title: _propTypes2.default.string.isRequired,\n    url: _propTypes2.default.string.isRequired,\n    icon: _propTypes2.default.element.isRequired,\n    screenReaderText: _propTypes2.default.string.isRequired\n  })),\n  showMobileLinks: _propTypes2.default.bool,\n  appleAppStoreUrl: _propTypes2.default.string,\n  googlePlayUrl: _propTypes2.default.string,\n  supportedLanguages: _propTypes2.default.arrayOf(_propTypes2.default.shape({\n    label: _propTypes2.default.string.isRequired,\n    value: _propTypes2.default.string.isRequired\n  })),\n  languageForm: _propTypes2.default.shape({\n    screenReaderLabel: _propTypes2.default.string.isRequired,\n    submitLabel: _propTypes2.default.string.isRequired,\n    onLanguageSelected: _propTypes2.default.func.isRequired,\n    icon: _propTypes2.default.node.isRequired,\n    activeLanguage: _propTypes2.default.string\n  }),\n  handleAllTrackEvents: _propTypes2.default.func.isRequired,\n  intl: _reactIntl.intlShape.isRequired\n};\n\nSiteFooter.defaultProps = {\n  siteName: null,\n  siteLogo: null,\n  marketingSiteBaseUrl: null,\n  supportUrl: null,\n  contactUrl: null,\n  openSourceUrl: null,\n  termsOfServiceUrl: null,\n  privacyPolicyUrl: null,\n  socialLinks: [],\n  showMobileLinks: true,\n  appleAppStoreUrl: null,\n  googlePlayUrl: null,\n  supportedLanguages: [],\n  languageForm: null\n};\n\nexports.default = (0, _reactIntl.injectIntl)(SiteFooter);\nexports.EVENT_NAMES = EVENT_NAMES;"
+        },
+        {
+          "id": 3,
+          "identifier": "external {\"commonjs\":\"react\",\"commonjs2\":\"react\",\"amd\":\"React\",\"root\":\"React\"}",
+          "name": "external {\"commonjs\":\"react\",\"commonjs2\":\"react\",\"amd\":\"React\",\"root\":\"React\"}",
+          "index": 2,
+          "index2": 0,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "issuerId": 2,
+          "issuerName": "./src/lib/components/SiteFooter/index.jsx",
+          "issuerPath": [
+            {
+              "id": 1,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+              "name": "./src/lib/index.js",
+              "profile": {
+                "factory": 30,
+                "building": 237
+              }
+            },
+            {
+              "id": 2,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+              "name": "./src/lib/components/SiteFooter/index.jsx",
+              "profile": {
+                "factory": 7,
+                "building": 204
+              }
+            }
+          ],
+          "profile": {
+            "factory": 35,
+            "building": 3,
+            "dependencies": 0
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+              "module": "./src/lib/components/SiteFooter/index.jsx",
+              "moduleName": "./src/lib/components/SiteFooter/index.jsx",
+              "type": "cjs require",
+              "userRequest": "react",
+              "loc": "10:13-29"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2
+        },
+        {
+          "id": 4,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/index.js",
+          "name": "./node_modules/prop-types/index.js",
+          "index": 3,
+          "index2": 3,
+          "size": 956,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "issuerId": 2,
+          "issuerName": "./src/lib/components/SiteFooter/index.jsx",
+          "issuerPath": [
+            {
+              "id": 1,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+              "name": "./src/lib/index.js",
+              "profile": {
+                "factory": 30,
+                "building": 237
+              }
+            },
+            {
+              "id": 2,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+              "name": "./src/lib/components/SiteFooter/index.jsx",
+              "profile": {
+                "factory": 7,
+                "building": 204
+              }
+            }
+          ],
+          "profile": {
+            "factory": 35,
+            "building": 3,
+            "dependencies": 0
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+              "module": "./src/lib/components/SiteFooter/index.jsx",
+              "moduleName": "./src/lib/components/SiteFooter/index.jsx",
+              "type": "cjs require",
+              "userRequest": "prop-types",
+              "loc": "14:17-38"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2,
+          "source": "/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\nif (process.env.NODE_ENV !== 'production') {\n  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&\n    Symbol.for &&\n    Symbol.for('react.element')) ||\n    0xeac7;\n\n  var isValidElement = function(object) {\n    return typeof object === 'object' &&\n      object !== null &&\n      object.$$typeof === REACT_ELEMENT_TYPE;\n  };\n\n  // By explicitly using `prop-types` you are opting into new development behavior.\n  // http://fb.me/prop-types-in-prod\n  var throwOnDirectAccess = true;\n  module.exports = require('./factoryWithTypeCheckers')(isValidElement, throwOnDirectAccess);\n} else {\n  // By explicitly using `prop-types` you are opting into new production behavior.\n  // http://fb.me/prop-types-in-prod\n  module.exports = require('./factoryWithThrowingShims')();\n}\n"
+        },
+        {
+          "id": 5,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/factoryWithThrowingShims.js",
+          "name": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "index": 4,
+          "index2": 2,
+          "size": 1469,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/index.js",
+          "issuerId": 4,
+          "issuerName": "./node_modules/prop-types/index.js",
+          "issuerPath": [
+            {
+              "id": 1,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+              "name": "./src/lib/index.js",
+              "profile": {
+                "factory": 30,
+                "building": 237
+              }
+            },
+            {
+              "id": 2,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+              "name": "./src/lib/components/SiteFooter/index.jsx",
+              "profile": {
+                "factory": 7,
+                "building": 204
+              }
+            },
+            {
+              "id": 4,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/index.js",
+              "name": "./node_modules/prop-types/index.js",
+              "profile": {
+                "factory": 35,
+                "building": 3,
+                "dependencies": 0
+              }
+            }
+          ],
+          "profile": {
+            "factory": 0,
+            "building": 2
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 4,
+              "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/index.js",
+              "module": "./node_modules/prop-types/index.js",
+              "moduleName": "./node_modules/prop-types/index.js",
+              "type": "cjs require",
+              "userRequest": "./factoryWithThrowingShims",
+              "loc": "27:19-56"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 3,
+          "source": "/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\n'use strict';\n\nvar ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');\n\nfunction emptyFunction() {}\n\nmodule.exports = function() {\n  function shim(props, propName, componentName, location, propFullName, secret) {\n    if (secret === ReactPropTypesSecret) {\n      // It is still safe when called from React.\n      return;\n    }\n    var err = new Error(\n      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +\n      'Use PropTypes.checkPropTypes() to call them. ' +\n      'Read more at http://fb.me/use-check-prop-types'\n    );\n    err.name = 'Invariant Violation';\n    throw err;\n  };\n  shim.isRequired = shim;\n  function getShim() {\n    return shim;\n  };\n  // Important!\n  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.\n  var ReactPropTypes = {\n    array: shim,\n    bool: shim,\n    func: shim,\n    number: shim,\n    object: shim,\n    string: shim,\n    symbol: shim,\n\n    any: shim,\n    arrayOf: getShim,\n    element: shim,\n    instanceOf: getShim,\n    node: shim,\n    objectOf: getShim,\n    oneOf: getShim,\n    oneOfType: getShim,\n    shape: getShim,\n    exact: getShim\n  };\n\n  ReactPropTypes.checkPropTypes = emptyFunction;\n  ReactPropTypes.PropTypes = ReactPropTypes;\n\n  return ReactPropTypes;\n};\n"
+        },
+        {
+          "id": 6,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/lib/ReactPropTypesSecret.js",
+          "name": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+          "index": 5,
+          "index2": 1,
+          "size": 314,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/factoryWithThrowingShims.js",
+          "issuerId": 5,
+          "issuerName": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "issuerPath": [
+            {
+              "id": 1,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+              "name": "./src/lib/index.js",
+              "profile": {
+                "factory": 30,
+                "building": 237
+              }
+            },
+            {
+              "id": 2,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+              "name": "./src/lib/components/SiteFooter/index.jsx",
+              "profile": {
+                "factory": 7,
+                "building": 204
+              }
+            },
+            {
+              "id": 4,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/index.js",
+              "name": "./node_modules/prop-types/index.js",
+              "profile": {
+                "factory": 35,
+                "building": 3,
+                "dependencies": 0
+              }
+            },
+            {
+              "id": 5,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/factoryWithThrowingShims.js",
+              "name": "./node_modules/prop-types/factoryWithThrowingShims.js",
+              "profile": {
+                "factory": 0,
+                "building": 2
+              }
+            }
+          ],
+          "profile": {
+            "factory": 1,
+            "building": 1
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 5,
+              "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/factoryWithThrowingShims.js",
+              "module": "./node_modules/prop-types/factoryWithThrowingShims.js",
+              "moduleName": "./node_modules/prop-types/factoryWithThrowingShims.js",
+              "type": "cjs require",
+              "userRequest": "./lib/ReactPropTypesSecret",
+              "loc": "10:27-64"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 4,
+          "source": "/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\n'use strict';\n\nvar ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';\n\nmodule.exports = ReactPropTypesSecret;\n"
+        },
+        {
+          "id": 7,
+          "identifier": "external {\"commonjs\":\"@edx/paragon\",\"commonjs2\":\"@edx/paragon\",\"amd\":\"Paragon\",\"root\":\"Paragon\"}",
+          "name": "external {\"commonjs\":\"@edx/paragon\",\"commonjs2\":\"@edx/paragon\",\"amd\":\"Paragon\",\"root\":\"Paragon\"}",
+          "index": 7,
+          "index2": 5,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "issuerId": 2,
+          "issuerName": "./src/lib/components/SiteFooter/index.jsx",
+          "issuerPath": [
+            {
+              "id": 1,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+              "name": "./src/lib/index.js",
+              "profile": {
+                "factory": 30,
+                "building": 237
+              }
+            },
+            {
+              "id": 2,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+              "name": "./src/lib/components/SiteFooter/index.jsx",
+              "profile": {
+                "factory": 7,
+                "building": 204
+              }
+            }
+          ],
+          "profile": {
+            "factory": 35,
+            "building": 3,
+            "dependencies": 0
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+              "module": "./src/lib/components/SiteFooter/index.jsx",
+              "moduleName": "./src/lib/components/SiteFooter/index.jsx",
+              "type": "cjs require",
+              "userRequest": "@edx/paragon",
+              "loc": "20:15-38"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2
+        },
+        {
+          "id": 8,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/SiteFooter.messages.js",
+          "name": "./src/lib/components/SiteFooter/SiteFooter.messages.js",
+          "index": 8,
+          "index2": 6,
+          "size": 3606,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "issuerId": 2,
+          "issuerName": "./src/lib/components/SiteFooter/index.jsx",
+          "issuerPath": [
+            {
+              "id": 1,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+              "name": "./src/lib/index.js",
+              "profile": {
+                "factory": 30,
+                "building": 237
+              }
+            },
+            {
+              "id": 2,
+              "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+              "name": "./src/lib/components/SiteFooter/index.jsx",
+              "profile": {
+                "factory": 7,
+                "building": 204
+              }
+            }
+          ],
+          "profile": {
+            "factory": 35,
+            "building": 3,
+            "dependencies": 0
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+              "module": "./src/lib/components/SiteFooter/index.jsx",
+              "moduleName": "./src/lib/components/SiteFooter/index.jsx",
+              "type": "cjs require",
+              "userRequest": "./SiteFooter.messages",
+              "loc": "22:18-50"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2,
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _reactIntl = require('react-intl');\n\nvar messages = (0, _reactIntl.defineMessages)({\n  'footer.site-footer.site-logo.alt-text': {\n    id: 'footer.site-footer.site-logo.alt-text',\n    defaultMessage: '{siteName} logo',\n    description: 'The alt description of the site logo'\n  },\n  'footer.site-footer.site-logo.aria-label': {\n    id: 'footer.site-footer.site-logo.aria-label',\n    defaultMessage: '{siteName} Home',\n    description: 'Aria label for the site logo which goes to the marketing site'\n  },\n  'footer.site-footer.facebook.title': {\n    id: 'footer.site-footer.facebook.title',\n    defaultMessage: 'Facebook',\n    description: 'Facebook button title'\n  },\n  'footer.site-footer.facebook.screen-reader-text': {\n    id: 'footer.site-footer.facebook.screen-reader-text',\n    defaultMessage: 'Like {siteName} on Facebook',\n    description: 'Facebook button screen reader text'\n  },\n  'footer.site-footer.twitter.title': {\n    id: 'footer.site-footer.twitter.title',\n    defaultMessage: 'Twitter',\n    description: 'Twitter button title'\n  },\n  'footer.site-footer.twitter.screen-reader-text': {\n    id: 'footer.site-footer.twitter.screen-reader-text',\n    defaultMessage: 'Follow {siteName} on Twitter',\n    description: 'Twitter button screen reader text'\n  },\n  'footer.site-footer.youtube.title': {\n    id: 'footer.site-footer.youtube.title',\n    defaultMessage: 'Youtube',\n    description: 'Youtube button title'\n  },\n  'footer.site-footer.youtube.screen-reader-text': {\n    id: 'footer.site-footer.youtube.screen-reader-text',\n    defaultMessage: 'Subscribe to the {siteName} YouTube channel',\n    description: 'Youtube button screen reader text'\n  },\n  'footer.site-footer.linkedin.title': {\n    id: 'footer.site-footer.linkedin.title',\n    defaultMessage: 'LinkedIn',\n    description: 'LinkedIn button title'\n  },\n  'footer.site-footer.linkedin.screen-reader-text': {\n    id: 'footer.site-footer.linkedin.screen-reader-text',\n    defaultMessage: 'Follow {siteName} on LinkedIn',\n    description: 'LinkedIn button screen reader text'\n  },\n  'footer.site-footer.google-plus.title': {\n    id: 'footer.site-footer.google-plus.title',\n    defaultMessage: 'Google+',\n    description: 'Google+ button title'\n  },\n  'footer.site-footer.google-plus.screen-reader-text': {\n    id: 'footer.site-footer.google-plus.screen-reader-text',\n    defaultMessage: 'Follow {siteName} on Google+',\n    description: 'Google+ button screen reader text'\n  },\n  'footer.site-footer.reddit.title': {\n    id: 'footer.site-footer.reddit.title',\n    defaultMessage: 'Reddit',\n    description: 'Reddit button title'\n  },\n  'footer.site-footer.reddit.screen-reader-text': {\n    id: 'footer.site-footer.reddit.screen-reader-text',\n    defaultMessage: 'Subscribe to the {siteName} subreddit',\n    description: 'Reddit button screen reader text'\n  },\n  'footer.site-footer.apple-app-store.alt-text': {\n    id: 'footer.site-footer.apple-app-store.alt-text',\n    defaultMessage: 'Download the {siteName} mobile app from the Apple App Store',\n    description: 'Apple App Store button alt description'\n  },\n  'footer.site-footer.google-play.alt-text': {\n    id: 'footer.site-footer.google-play.alt-text',\n    defaultMessage: 'Download the {siteName} mobile app from Google Play',\n    description: 'Google Play button alt description'\n  },\n  'footer.site-footer.footer.aria-label': {\n    id: 'footer.site-footer.footer.aria-label',\n    defaultMessage: 'Page Footer',\n    description: 'Aria label for the footer'\n  }\n});\n\nexports.default = messages;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./src/lib/index.js",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "external {\"commonjs\":\"react-intl\",\"commonjs2\":\"react-intl\",\"amd\":\"ReactIntl\",\"root\":\"ReactIntl\"}",
+      "name": "external {\"commonjs\":\"react-intl\",\"commonjs2\":\"react-intl\",\"amd\":\"ReactIntl\",\"root\":\"ReactIntl\"}",
+      "index": 6,
+      "index2": 4,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+      "issuerId": 2,
+      "issuerName": "./src/lib/components/SiteFooter/index.jsx",
+      "issuerPath": [
+        {
+          "id": 1,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+          "name": "./src/lib/index.js",
+          "profile": {
+            "factory": 30,
+            "building": 237
+          }
+        },
+        {
+          "id": 2,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "name": "./src/lib/components/SiteFooter/index.jsx",
+          "profile": {
+            "factory": 7,
+            "building": 204
+          }
+        }
+      ],
+      "profile": {
+        "factory": 35,
+        "building": 3,
+        "dependencies": 0
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "module": "./src/lib/components/SiteFooter/index.jsx",
+          "moduleName": "./src/lib/components/SiteFooter/index.jsx",
+          "type": "cjs require",
+          "userRequest": "react-intl",
+          "loc": "18:17-38"
+        },
+        {
+          "moduleId": 8,
+          "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/SiteFooter.messages.js",
+          "module": "./src/lib/components/SiteFooter/SiteFooter.messages.js",
+          "moduleName": "./src/lib/components/SiteFooter/SiteFooter.messages.js",
+          "type": "cjs require",
+          "userRequest": "react-intl",
+          "loc": "7:17-38"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2
+    },
+    {
+      "id": 1,
+      "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+      "name": "./src/lib/index.js",
+      "index": 0,
+      "index2": 8,
+      "size": 329,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "profile": {
+        "factory": 30,
+        "building": 237
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src/lib/index.js",
+          "loc": "main"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 0,
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _SiteFooter = require('./components/SiteFooter');\n\nvar _SiteFooter2 = _interopRequireDefault(_SiteFooter);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = _SiteFooter2.default;"
+    },
+    {
+      "id": 2,
+      "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+      "name": "./src/lib/components/SiteFooter/index.jsx",
+      "index": 1,
+      "index2": 7,
+      "size": 22239,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+      "issuerId": 1,
+      "issuerName": "./src/lib/index.js",
+      "issuerPath": [
+        {
+          "id": 1,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+          "name": "./src/lib/index.js",
+          "profile": {
+            "factory": 30,
+            "building": 237
+          }
+        }
+      ],
+      "profile": {
+        "factory": 7,
+        "building": 204
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+          "module": "./src/lib/index.js",
+          "moduleName": "./src/lib/index.js",
+          "type": "cjs require",
+          "userRequest": "./components/SiteFooter",
+          "loc": "7:18-52"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1,
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.EVENT_NAMES = undefined;\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require('prop-types');\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _reactIntl = require('react-intl');\n\nvar _paragon = require('@edx/paragon');\n\nvar _SiteFooter = require('./SiteFooter.messages');\n\nvar _SiteFooter2 = _interopRequireDefault(_SiteFooter);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar EVENT_NAMES = {\n  FOOTER_LINK: 'edx.bi.footer.link'\n};\n\nvar SiteFooter = function (_React$Component) {\n  _inherits(SiteFooter, _React$Component);\n\n  function SiteFooter(props) {\n    _classCallCheck(this, SiteFooter);\n\n    var _this = _possibleConstructorReturn(this, (SiteFooter.__proto__ || Object.getPrototypeOf(SiteFooter)).call(this, props));\n\n    _this.externalLinkClickHandler = _this.externalLinkClickHandler.bind(_this);\n    _this.applyLanguageSelection = _this.applyLanguageSelection.bind(_this);\n    return _this;\n  }\n\n  _createClass(SiteFooter, [{\n    key: 'applyLanguageSelection',\n    value: function applyLanguageSelection(event) {\n      event.preventDefault();\n      var languageCode = event.target.elements['site-footer-language-select'].value;\n      var onLanguageSelected = this.props.languageForm.onLanguageSelected;\n\n      onLanguageSelected(languageCode);\n    }\n  }, {\n    key: 'externalLinkClickHandler',\n    value: function externalLinkClickHandler(event) {\n      var label = event.currentTarget.getAttribute('href');\n      var eventName = EVENT_NAMES.FOOTER_LINK;\n      var properties = {\n        category: 'outbound_link',\n        label: label\n      };\n      this.props.handleAllTrackEvents(eventName, properties);\n    }\n  }, {\n    key: 'renderSiteLogo',\n    value: function renderSiteLogo() {\n      return _react2.default.createElement('img', {\n        src: this.props.siteLogo,\n        alt: this.props.intl.formatMessage(_SiteFooter2.default['footer.site-footer.site-logo.alt-text'], { siteName: this.props.siteName })\n      });\n    }\n  }, {\n    key: 'renderMarketingSiteUrl',\n    value: function renderMarketingSiteUrl(path) {\n      return '' + this.props.marketingSiteBaseUrl + path;\n    }\n  }, {\n    key: 'renderMobileLinks',\n    value: function renderMobileLinks() {\n      var _props = this.props,\n          intl = _props.intl,\n          siteName = _props.siteName,\n          showMobileLinks = _props.showMobileLinks,\n          appleAppStoreUrl = _props.appleAppStoreUrl,\n          googlePlayUrl = _props.googlePlayUrl;\n\n      var mobileLinks = null;\n      if (showMobileLinks) {\n        mobileLinks = _react2.default.createElement(\n          'ul',\n          { className: 'd-flex flex-row justify-content-between list-unstyled max-width-264 p-0 mb-5' },\n          _react2.default.createElement(\n            'li',\n            null,\n            _react2.default.createElement(\n              'a',\n              { href: appleAppStoreUrl, rel: 'noopener noreferrer', target: '_blank', onClick: this.externalLinkClickHandler },\n              _react2.default.createElement('img', {\n                className: 'max-height-39',\n                alt: intl.formatMessage(_SiteFooter2.default['footer.site-footer.apple-app-store.alt-text'], { siteName: siteName }),\n                src: 'https://prod-edxapp.edx-cdn.org/static/images/app/app_store_badge_135x40.d0558d910630.svg'\n              })\n            )\n          ),\n          _react2.default.createElement(\n            'li',\n            null,\n            _react2.default.createElement(\n              'a',\n              { href: googlePlayUrl, rel: 'noopener noreferrer', target: '_blank', onClick: this.externalLinkClickHandler },\n              _react2.default.createElement('img', {\n                className: 'max-height-39',\n                alt: intl.formatMessage(_SiteFooter2.default['footer.site-footer.google-play.alt-text'], { siteName: siteName }),\n                src: 'https://prod-edxapp.edx-cdn.org/static/images/app/google_play_badge_45.6ea466e328da.png'\n              })\n            )\n          )\n        );\n      }\n      return mobileLinks;\n    }\n  }, {\n    key: 'render',\n    value: function render() {\n      var _this2 = this;\n\n      var _props2 = this.props,\n          intl = _props2.intl,\n          siteName = _props2.siteName,\n          openSourceUrl = _props2.openSourceUrl,\n          termsOfServiceUrl = _props2.termsOfServiceUrl,\n          privacyPolicyUrl = _props2.privacyPolicyUrl,\n          contactUrl = _props2.contactUrl,\n          supportUrl = _props2.supportUrl,\n          socialLinks = _props2.socialLinks,\n          supportedLanguages = _props2.supportedLanguages,\n          languageForm = _props2.languageForm;\n\n      var showLanguageSelector = supportedLanguages.length > 0 && languageForm;\n      return _react2.default.createElement(\n        'footer',\n        {\n          role: 'contentinfo',\n          'aria-label': intl.formatMessage(_SiteFooter2.default['footer.site-footer.footer.aria-label']),\n          className: 'footer d-flex justify-content-center border-top py-3 px-4'\n        },\n        _react2.default.createElement(\n          'div',\n          { className: 'max-width-1180 d-grid' },\n          _react2.default.createElement(\n            'div',\n            { className: 'area-1' },\n            _react2.default.createElement(_paragon.Hyperlink, {\n              destination: this.renderMarketingSiteUrl('/'),\n              content: this.renderSiteLogo(),\n              'aria-label': intl.formatMessage(_SiteFooter2.default['footer.site-footer.site-logo.aria-label'], { siteName: siteName })\n            }),\n            showLanguageSelector && _react2.default.createElement(\n              'div',\n              { className: 'i18n d-flex mt-2' },\n              _react2.default.createElement(\n                'form',\n                {\n                  className: 'd-flex align-items-start',\n                  onSubmit: this.applyLanguageSelection\n                },\n                _react2.default.createElement(\n                  'label',\n                  { htmlFor: 'site-footer-language-select' },\n                  languageForm.icon,\n                  _react2.default.createElement(\n                    'div',\n                    { className: 'sr-only' },\n                    languageForm.screenReaderLabel\n                  )\n                ),\n                _react2.default.createElement(\n                  'select',\n                  {\n                    id: 'site-footer-language-select',\n                    className: 'mx-2 mt-1',\n                    name: 'site-footer-language-select',\n                    defaultValue: languageForm.activeLanguage\n                  },\n                  supportedLanguages.map(function (_ref) {\n                    var value = _ref.value,\n                        label = _ref.label;\n                    return _react2.default.createElement(\n                      'option',\n                      { key: value, value: value },\n                      label\n                    );\n                  })\n                ),\n                _react2.default.createElement(\n                  'button',\n                  { className: 'mt-1', type: 'submit' },\n                  languageForm.submitLabel\n                )\n              )\n            )\n          ),\n          _react2.default.createElement(\n            'div',\n            { className: 'area-2' },\n            _react2.default.createElement(\n              'h2',\n              null,\n              siteName\n            ),\n            _react2.default.createElement(\n              'ul',\n              { className: 'list-unstyled p-0 m-0' },\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/about-us') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.about',\n                    defaultMessage: 'About'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/enterprise') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.business',\n                    defaultMessage: '{siteName} for Business',\n                    values: { siteName: siteName }\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/affiliate-program') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.affiliates',\n                    defaultMessage: 'Affiliates'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: openSourceUrl },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.open-source',\n                    defaultMessage: 'Open {siteName}',\n                    values: { siteName: siteName },\n                    description: 'Open Source link text'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/careers') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.careers',\n                    defaultMessage: 'Careers'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/news-announcements') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.news',\n                    defaultMessage: 'News'\n                  })\n                )\n              )\n            )\n          ),\n          _react2.default.createElement(\n            'div',\n            { className: 'area-3' },\n            _react2.default.createElement(\n              'h2',\n              null,\n              _react2.default.createElement(_reactIntl.FormattedMessage, {\n                id: 'footer.site-footer.link.header.legal',\n                defaultMessage: 'Legal',\n                description: 'Header for legal links'\n              })\n            ),\n            _react2.default.createElement(\n              'ul',\n              { className: 'list-unstyled p-0 m-0' },\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: termsOfServiceUrl },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.terms-of-service',\n                    defaultMessage: 'Terms of Service & Honor Code'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: privacyPolicyUrl },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.privacy',\n                    defaultMessage: 'Privacy Policy'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/accessibility') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.accessibility',\n                    defaultMessage: 'Accessibility Policy'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/trademarks') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.trademark',\n                    defaultMessage: 'Trademark Policy'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/sitemap') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.sitemap',\n                    defaultMessage: 'Sitemap'\n                  })\n                )\n              )\n            )\n          ),\n          _react2.default.createElement(\n            'div',\n            { className: 'area-4' },\n            _react2.default.createElement(\n              'h2',\n              null,\n              _react2.default.createElement(_reactIntl.FormattedMessage, {\n                id: 'footer.site-footer.link.header.connect',\n                defaultMessage: 'Connect',\n                description: 'Header for connect links'\n              })\n            ),\n            _react2.default.createElement(\n              'ul',\n              { className: 'list-unstyled p-0 m-0' },\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/blog') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.blog',\n                    defaultMessage: 'Blog'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: contactUrl },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.contact-us',\n                    defaultMessage: 'Contact Us'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: supportUrl },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.help-center',\n                    defaultMessage: 'Help Center'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/media-kit') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.media-kit',\n                    defaultMessage: 'Media Kit'\n                  })\n                )\n              ),\n              _react2.default.createElement(\n                'li',\n                null,\n                _react2.default.createElement(\n                  'a',\n                  { href: this.renderMarketingSiteUrl('/donate') },\n                  _react2.default.createElement(_reactIntl.FormattedMessage, {\n                    id: 'footer.site-footer.link.donate',\n                    defaultMessage: 'Donate'\n                  })\n                )\n              )\n            )\n          ),\n          _react2.default.createElement(\n            'div',\n            { className: 'area-5' },\n            socialLinks.length > 0 && _react2.default.createElement(\n              'ul',\n              { className: 'd-flex flex-row justify-content-between list-unstyled max-width-222 p-0 mb-4' },\n              socialLinks.map(function (link) {\n                return _react2.default.createElement(\n                  'li',\n                  { key: link.url },\n                  _react2.default.createElement(\n                    'a',\n                    {\n                      href: link.url,\n                      title: link.title,\n                      rel: 'noopener noreferrer',\n                      target: '_blank',\n                      onClick: _this2.externalLinkClickHandler\n                    },\n                    link.icon,\n                    _react2.default.createElement(\n                      'span',\n                      { className: 'sr-only' },\n                      link.screenReaderText\n                    )\n                  )\n                );\n              })\n            ),\n            this.renderMobileLinks(),\n            _react2.default.createElement(\n              'p',\n              null,\n              _react2.default.createElement(_reactIntl.FormattedMessage, {\n                id: 'footer.site-footer.copyright-text',\n                defaultMessage: '{copyrightSymbol} {startDate}\\u2013{endDate} {siteName} Inc.',\n                values: {\n                  copyrightSymbol: '©',\n                  startDate: '2012',\n                  endDate: '' + new Date().getFullYear(),\n                  siteName: siteName\n                },\n                description: 'Footer copyright text with copyright symbol and dates'\n              }),\n              _react2.default.createElement('br', null),\n              _react2.default.createElement(_reactIntl.FormattedMessage, {\n                id: 'footer.site-footer.trademark-text',\n                defaultMessage: 'EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | {icpLicense}',\n                values: { icpLicense: '粤ICP备17044299号-2' },\n                description: 'Footer trademark text'\n              })\n            )\n          )\n        )\n      );\n    }\n  }]);\n\n  return SiteFooter;\n}(_react2.default.Component);\n\nSiteFooter.propTypes = {\n  siteName: _propTypes2.default.string,\n  siteLogo: _propTypes2.default.node,\n  marketingSiteBaseUrl: _propTypes2.default.string,\n  supportUrl: _propTypes2.default.string,\n  contactUrl: _propTypes2.default.string,\n  openSourceUrl: _propTypes2.default.string,\n  termsOfServiceUrl: _propTypes2.default.string,\n  privacyPolicyUrl: _propTypes2.default.string,\n  socialLinks: _propTypes2.default.arrayOf(_propTypes2.default.shape({\n    title: _propTypes2.default.string.isRequired,\n    url: _propTypes2.default.string.isRequired,\n    icon: _propTypes2.default.element.isRequired,\n    screenReaderText: _propTypes2.default.string.isRequired\n  })),\n  showMobileLinks: _propTypes2.default.bool,\n  appleAppStoreUrl: _propTypes2.default.string,\n  googlePlayUrl: _propTypes2.default.string,\n  supportedLanguages: _propTypes2.default.arrayOf(_propTypes2.default.shape({\n    label: _propTypes2.default.string.isRequired,\n    value: _propTypes2.default.string.isRequired\n  })),\n  languageForm: _propTypes2.default.shape({\n    screenReaderLabel: _propTypes2.default.string.isRequired,\n    submitLabel: _propTypes2.default.string.isRequired,\n    onLanguageSelected: _propTypes2.default.func.isRequired,\n    icon: _propTypes2.default.node.isRequired,\n    activeLanguage: _propTypes2.default.string\n  }),\n  handleAllTrackEvents: _propTypes2.default.func.isRequired,\n  intl: _reactIntl.intlShape.isRequired\n};\n\nSiteFooter.defaultProps = {\n  siteName: null,\n  siteLogo: null,\n  marketingSiteBaseUrl: null,\n  supportUrl: null,\n  contactUrl: null,\n  openSourceUrl: null,\n  termsOfServiceUrl: null,\n  privacyPolicyUrl: null,\n  socialLinks: [],\n  showMobileLinks: true,\n  appleAppStoreUrl: null,\n  googlePlayUrl: null,\n  supportedLanguages: [],\n  languageForm: null\n};\n\nexports.default = (0, _reactIntl.injectIntl)(SiteFooter);\nexports.EVENT_NAMES = EVENT_NAMES;"
+    },
+    {
+      "id": 3,
+      "identifier": "external {\"commonjs\":\"react\",\"commonjs2\":\"react\",\"amd\":\"React\",\"root\":\"React\"}",
+      "name": "external {\"commonjs\":\"react\",\"commonjs2\":\"react\",\"amd\":\"React\",\"root\":\"React\"}",
+      "index": 2,
+      "index2": 0,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+      "issuerId": 2,
+      "issuerName": "./src/lib/components/SiteFooter/index.jsx",
+      "issuerPath": [
+        {
+          "id": 1,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+          "name": "./src/lib/index.js",
+          "profile": {
+            "factory": 30,
+            "building": 237
+          }
+        },
+        {
+          "id": 2,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "name": "./src/lib/components/SiteFooter/index.jsx",
+          "profile": {
+            "factory": 7,
+            "building": 204
+          }
+        }
+      ],
+      "profile": {
+        "factory": 35,
+        "building": 3,
+        "dependencies": 0
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "module": "./src/lib/components/SiteFooter/index.jsx",
+          "moduleName": "./src/lib/components/SiteFooter/index.jsx",
+          "type": "cjs require",
+          "userRequest": "react",
+          "loc": "10:13-29"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2
+    },
+    {
+      "id": 4,
+      "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/index.js",
+      "name": "./node_modules/prop-types/index.js",
+      "index": 3,
+      "index2": 3,
+      "size": 956,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+      "issuerId": 2,
+      "issuerName": "./src/lib/components/SiteFooter/index.jsx",
+      "issuerPath": [
+        {
+          "id": 1,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+          "name": "./src/lib/index.js",
+          "profile": {
+            "factory": 30,
+            "building": 237
+          }
+        },
+        {
+          "id": 2,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "name": "./src/lib/components/SiteFooter/index.jsx",
+          "profile": {
+            "factory": 7,
+            "building": 204
+          }
+        }
+      ],
+      "profile": {
+        "factory": 35,
+        "building": 3,
+        "dependencies": 0
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "module": "./src/lib/components/SiteFooter/index.jsx",
+          "moduleName": "./src/lib/components/SiteFooter/index.jsx",
+          "type": "cjs require",
+          "userRequest": "prop-types",
+          "loc": "14:17-38"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2,
+      "source": "/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\nif (process.env.NODE_ENV !== 'production') {\n  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&\n    Symbol.for &&\n    Symbol.for('react.element')) ||\n    0xeac7;\n\n  var isValidElement = function(object) {\n    return typeof object === 'object' &&\n      object !== null &&\n      object.$$typeof === REACT_ELEMENT_TYPE;\n  };\n\n  // By explicitly using `prop-types` you are opting into new development behavior.\n  // http://fb.me/prop-types-in-prod\n  var throwOnDirectAccess = true;\n  module.exports = require('./factoryWithTypeCheckers')(isValidElement, throwOnDirectAccess);\n} else {\n  // By explicitly using `prop-types` you are opting into new production behavior.\n  // http://fb.me/prop-types-in-prod\n  module.exports = require('./factoryWithThrowingShims')();\n}\n"
+    },
+    {
+      "id": 5,
+      "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/factoryWithThrowingShims.js",
+      "name": "./node_modules/prop-types/factoryWithThrowingShims.js",
+      "index": 4,
+      "index2": 2,
+      "size": 1469,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/index.js",
+      "issuerId": 4,
+      "issuerName": "./node_modules/prop-types/index.js",
+      "issuerPath": [
+        {
+          "id": 1,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+          "name": "./src/lib/index.js",
+          "profile": {
+            "factory": 30,
+            "building": 237
+          }
+        },
+        {
+          "id": 2,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "name": "./src/lib/components/SiteFooter/index.jsx",
+          "profile": {
+            "factory": 7,
+            "building": 204
+          }
+        },
+        {
+          "id": 4,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/index.js",
+          "name": "./node_modules/prop-types/index.js",
+          "profile": {
+            "factory": 35,
+            "building": 3,
+            "dependencies": 0
+          }
+        }
+      ],
+      "profile": {
+        "factory": 0,
+        "building": 2
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 4,
+          "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/index.js",
+          "module": "./node_modules/prop-types/index.js",
+          "moduleName": "./node_modules/prop-types/index.js",
+          "type": "cjs require",
+          "userRequest": "./factoryWithThrowingShims",
+          "loc": "27:19-56"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 3,
+      "source": "/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\n'use strict';\n\nvar ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');\n\nfunction emptyFunction() {}\n\nmodule.exports = function() {\n  function shim(props, propName, componentName, location, propFullName, secret) {\n    if (secret === ReactPropTypesSecret) {\n      // It is still safe when called from React.\n      return;\n    }\n    var err = new Error(\n      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +\n      'Use PropTypes.checkPropTypes() to call them. ' +\n      'Read more at http://fb.me/use-check-prop-types'\n    );\n    err.name = 'Invariant Violation';\n    throw err;\n  };\n  shim.isRequired = shim;\n  function getShim() {\n    return shim;\n  };\n  // Important!\n  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.\n  var ReactPropTypes = {\n    array: shim,\n    bool: shim,\n    func: shim,\n    number: shim,\n    object: shim,\n    string: shim,\n    symbol: shim,\n\n    any: shim,\n    arrayOf: getShim,\n    element: shim,\n    instanceOf: getShim,\n    node: shim,\n    objectOf: getShim,\n    oneOf: getShim,\n    oneOfType: getShim,\n    shape: getShim,\n    exact: getShim\n  };\n\n  ReactPropTypes.checkPropTypes = emptyFunction;\n  ReactPropTypes.PropTypes = ReactPropTypes;\n\n  return ReactPropTypes;\n};\n"
+    },
+    {
+      "id": 6,
+      "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "name": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "index": 5,
+      "index2": 1,
+      "size": 314,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/factoryWithThrowingShims.js",
+      "issuerId": 5,
+      "issuerName": "./node_modules/prop-types/factoryWithThrowingShims.js",
+      "issuerPath": [
+        {
+          "id": 1,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+          "name": "./src/lib/index.js",
+          "profile": {
+            "factory": 30,
+            "building": 237
+          }
+        },
+        {
+          "id": 2,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "name": "./src/lib/components/SiteFooter/index.jsx",
+          "profile": {
+            "factory": 7,
+            "building": 204
+          }
+        },
+        {
+          "id": 4,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/index.js",
+          "name": "./node_modules/prop-types/index.js",
+          "profile": {
+            "factory": 35,
+            "building": 3,
+            "dependencies": 0
+          }
+        },
+        {
+          "id": 5,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/factoryWithThrowingShims.js",
+          "name": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "profile": {
+            "factory": 0,
+            "building": 2
+          }
+        }
+      ],
+      "profile": {
+        "factory": 1,
+        "building": 1
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 5,
+          "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/prop-types/factoryWithThrowingShims.js",
+          "module": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "moduleName": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "type": "cjs require",
+          "userRequest": "./lib/ReactPropTypesSecret",
+          "loc": "10:27-64"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 4,
+      "source": "/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\n'use strict';\n\nvar ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';\n\nmodule.exports = ReactPropTypesSecret;\n"
+    },
+    {
+      "id": 7,
+      "identifier": "external {\"commonjs\":\"@edx/paragon\",\"commonjs2\":\"@edx/paragon\",\"amd\":\"Paragon\",\"root\":\"Paragon\"}",
+      "name": "external {\"commonjs\":\"@edx/paragon\",\"commonjs2\":\"@edx/paragon\",\"amd\":\"Paragon\",\"root\":\"Paragon\"}",
+      "index": 7,
+      "index2": 5,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+      "issuerId": 2,
+      "issuerName": "./src/lib/components/SiteFooter/index.jsx",
+      "issuerPath": [
+        {
+          "id": 1,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+          "name": "./src/lib/index.js",
+          "profile": {
+            "factory": 30,
+            "building": 237
+          }
+        },
+        {
+          "id": 2,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "name": "./src/lib/components/SiteFooter/index.jsx",
+          "profile": {
+            "factory": 7,
+            "building": 204
+          }
+        }
+      ],
+      "profile": {
+        "factory": 35,
+        "building": 3,
+        "dependencies": 0
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "module": "./src/lib/components/SiteFooter/index.jsx",
+          "moduleName": "./src/lib/components/SiteFooter/index.jsx",
+          "type": "cjs require",
+          "userRequest": "@edx/paragon",
+          "loc": "20:15-38"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2
+    },
+    {
+      "id": 8,
+      "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/SiteFooter.messages.js",
+      "name": "./src/lib/components/SiteFooter/SiteFooter.messages.js",
+      "index": 8,
+      "index2": 6,
+      "size": 3606,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+      "issuerId": 2,
+      "issuerName": "./src/lib/components/SiteFooter/index.jsx",
+      "issuerPath": [
+        {
+          "id": 1,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/index.js",
+          "name": "./src/lib/index.js",
+          "profile": {
+            "factory": 30,
+            "building": 237
+          }
+        },
+        {
+          "id": 2,
+          "identifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "name": "./src/lib/components/SiteFooter/index.jsx",
+          "profile": {
+            "factory": 7,
+            "building": 204
+          }
+        }
+      ],
+      "profile": {
+        "factory": 35,
+        "building": 3,
+        "dependencies": 0
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "/Users/abutterworth/dev/frontend-component-footer/node_modules/babel-loader/lib/index.js!/Users/abutterworth/dev/frontend-component-footer/src/lib/components/SiteFooter/index.jsx",
+          "module": "./src/lib/components/SiteFooter/index.jsx",
+          "moduleName": "./src/lib/components/SiteFooter/index.jsx",
+          "type": "cjs require",
+          "userRequest": "./SiteFooter.messages",
+          "loc": "22:18-50"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2,
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _reactIntl = require('react-intl');\n\nvar messages = (0, _reactIntl.defineMessages)({\n  'footer.site-footer.site-logo.alt-text': {\n    id: 'footer.site-footer.site-logo.alt-text',\n    defaultMessage: '{siteName} logo',\n    description: 'The alt description of the site logo'\n  },\n  'footer.site-footer.site-logo.aria-label': {\n    id: 'footer.site-footer.site-logo.aria-label',\n    defaultMessage: '{siteName} Home',\n    description: 'Aria label for the site logo which goes to the marketing site'\n  },\n  'footer.site-footer.facebook.title': {\n    id: 'footer.site-footer.facebook.title',\n    defaultMessage: 'Facebook',\n    description: 'Facebook button title'\n  },\n  'footer.site-footer.facebook.screen-reader-text': {\n    id: 'footer.site-footer.facebook.screen-reader-text',\n    defaultMessage: 'Like {siteName} on Facebook',\n    description: 'Facebook button screen reader text'\n  },\n  'footer.site-footer.twitter.title': {\n    id: 'footer.site-footer.twitter.title',\n    defaultMessage: 'Twitter',\n    description: 'Twitter button title'\n  },\n  'footer.site-footer.twitter.screen-reader-text': {\n    id: 'footer.site-footer.twitter.screen-reader-text',\n    defaultMessage: 'Follow {siteName} on Twitter',\n    description: 'Twitter button screen reader text'\n  },\n  'footer.site-footer.youtube.title': {\n    id: 'footer.site-footer.youtube.title',\n    defaultMessage: 'Youtube',\n    description: 'Youtube button title'\n  },\n  'footer.site-footer.youtube.screen-reader-text': {\n    id: 'footer.site-footer.youtube.screen-reader-text',\n    defaultMessage: 'Subscribe to the {siteName} YouTube channel',\n    description: 'Youtube button screen reader text'\n  },\n  'footer.site-footer.linkedin.title': {\n    id: 'footer.site-footer.linkedin.title',\n    defaultMessage: 'LinkedIn',\n    description: 'LinkedIn button title'\n  },\n  'footer.site-footer.linkedin.screen-reader-text': {\n    id: 'footer.site-footer.linkedin.screen-reader-text',\n    defaultMessage: 'Follow {siteName} on LinkedIn',\n    description: 'LinkedIn button screen reader text'\n  },\n  'footer.site-footer.google-plus.title': {\n    id: 'footer.site-footer.google-plus.title',\n    defaultMessage: 'Google+',\n    description: 'Google+ button title'\n  },\n  'footer.site-footer.google-plus.screen-reader-text': {\n    id: 'footer.site-footer.google-plus.screen-reader-text',\n    defaultMessage: 'Follow {siteName} on Google+',\n    description: 'Google+ button screen reader text'\n  },\n  'footer.site-footer.reddit.title': {\n    id: 'footer.site-footer.reddit.title',\n    defaultMessage: 'Reddit',\n    description: 'Reddit button title'\n  },\n  'footer.site-footer.reddit.screen-reader-text': {\n    id: 'footer.site-footer.reddit.screen-reader-text',\n    defaultMessage: 'Subscribe to the {siteName} subreddit',\n    description: 'Reddit button screen reader text'\n  },\n  'footer.site-footer.apple-app-store.alt-text': {\n    id: 'footer.site-footer.apple-app-store.alt-text',\n    defaultMessage: 'Download the {siteName} mobile app from the Apple App Store',\n    description: 'Apple App Store button alt description'\n  },\n  'footer.site-footer.google-play.alt-text': {\n    id: 'footer.site-footer.google-play.alt-text',\n    defaultMessage: 'Download the {siteName} mobile app from Google Play',\n    description: 'Google Play button alt description'\n  },\n  'footer.site-footer.footer.aria-label': {\n    id: 'footer.site-footer.footer.aria-label',\n    defaultMessage: 'Page Footer',\n    description: 'Aria label for the footer'\n  }\n});\n\nexports.default = messages;"
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}

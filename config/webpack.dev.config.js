@@ -1,9 +1,9 @@
 // This is the dev Webpack config. All settings here should prefer a fast build
 // time at the expense of creating larger, unoptimized bundles.
-const Merge = require('webpack-merge');
+const Merge = require('webpack-merge'); // eslint-disable-line import/no-extraneous-dependencies
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin'); // eslint-disable-line import/no-extraneous-dependencies
+const webpack = require('webpack'); // eslint-disable-line import/no-extraneous-dependencies
 
 const commonConfig = require('./webpack.common.config.js');
 
