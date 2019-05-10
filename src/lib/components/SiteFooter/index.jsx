@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
 import { Hyperlink } from '@edx/paragon';
+import qs from 'query-string';
 
 import messages from './SiteFooter.messages';
 
@@ -50,6 +51,14 @@ class SiteFooter extends React.Component {
     return `${this.props.marketingSiteBaseUrl}${path}`;
   }
 
+  renderEnterpriseMarketingSiteUrl(enterpriseLinkData) {
+    const {
+      queryParams,
+      url,
+    } = enterpriseLinkData;
+    return queryParams ? `${url}/?${qs.stringify(queryParams)}` : url;
+  }
+
   renderMobileLinks() {
     const {
       intl,
@@ -90,6 +99,22 @@ class SiteFooter extends React.Component {
       );
     }
     return mobileLinks;
+  }
+
+  renderBusinessMarketingListItem() {
+    const { siteName, enterpriseMarketingLink } = this.props;
+    return enterpriseMarketingLink && (
+      <li>
+        <a href={this.renderEnterpriseMarketingSiteUrl(enterpriseMarketingLink)}>
+          <FormattedMessage
+            id="footer.site-footer.link.business"
+            defaultMessage="{siteName} for Business"
+            description="A link that points to a business marketing page for a specified website"
+            values={{ siteName }}
+          />
+        </a>
+      </li>
+    );
   }
 
   render() {
@@ -159,15 +184,7 @@ class SiteFooter extends React.Component {
                   />
                 </a>
               </li>
-              <li>
-                <a href={this.renderMarketingSiteUrl('/enterprise')}>
-                  <FormattedMessage
-                    id="footer.site-footer.link.business"
-                    defaultMessage="{siteName} for Business"
-                    values={{ siteName }}
-                  />
-                </a>
-              </li>
+              {this.renderBusinessMarketingListItem()}
               <li>
                 <a href={this.renderMarketingSiteUrl('/affiliate-program')}>
                   <FormattedMessage
@@ -357,6 +374,10 @@ SiteFooter.propTypes = {
   siteName: PropTypes.string,
   siteLogo: PropTypes.node,
   marketingSiteBaseUrl: PropTypes.string,
+  enterpriseMarketingLink: PropTypes.shape({
+    url: PropTypes.string,
+    queryParams: PropTypes.shape({}),
+  }),
   supportUrl: PropTypes.string,
   contactUrl: PropTypes.string,
   openSourceUrl: PropTypes.string,
@@ -390,6 +411,7 @@ SiteFooter.defaultProps = {
   siteName: null,
   siteLogo: null,
   marketingSiteBaseUrl: null,
+  enterpriseMarketingLink: null,
   supportUrl: null,
   contactUrl: null,
   openSourceUrl: null,
