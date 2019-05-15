@@ -237,7 +237,12 @@ exports[`<SiteFooter /> renders correctly does not render business links 1`] = `
         </span>
         <br />
         <span>
-          EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 粤ICP备17044299号-2
+          EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 深圳市恒宇博科技有限公司 
+          <a
+            href="http://www.beian.miit.gov.cn"
+          >
+            粤ICP备17044299号-2
+          </a>
         </span>
       </p>
     </div>
@@ -482,7 +487,12 @@ exports[`<SiteFooter /> renders correctly does not render language selector 1`] 
         </span>
         <br />
         <span>
-          EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 粤ICP备17044299号-2
+          EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 深圳市恒宇博科技有限公司 
+          <a
+            href="http://www.beian.miit.gov.cn"
+          >
+            粤ICP备17044299号-2
+          </a>
         </span>
       </p>
     </div>
@@ -949,7 +959,12 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
         </span>
         <br />
         <span>
-          EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 粤ICP备17044299号-2
+          EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 深圳市恒宇博科技有限公司 
+          <a
+            href="http://www.beian.miit.gov.cn"
+          >
+            粤ICP备17044299号-2
+          </a>
         </span>
       </p>
     </div>
@@ -1261,7 +1276,12 @@ exports[`<SiteFooter /> renders correctly does not render social links 1`] = `
         </span>
         <br />
         <span>
-          EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 粤ICP备17044299号-2
+          EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 深圳市恒宇博科技有限公司 
+          <a
+            href="http://www.beian.miit.gov.cn"
+          >
+            粤ICP备17044299号-2
+          </a>
         </span>
       </p>
     </div>
@@ -1769,7 +1789,12 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
         </span>
         <br />
         <span>
-          EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 粤ICP备17044299号-2
+          EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 深圳市恒宇博科技有限公司 
+          <a
+            href="http://www.beian.miit.gov.cn"
+          >
+            粤ICP备17044299号-2
+          </a>
         </span>
       </p>
     </div>

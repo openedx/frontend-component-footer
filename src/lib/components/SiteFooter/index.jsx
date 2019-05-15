@@ -358,8 +358,8 @@ class SiteFooter extends React.Component {
               <br />
               <FormattedMessage
                 id="footer.site-footer.trademark-text"
-                defaultMessage="EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | {icpLicense}"
-                values={{ icpLicense: '粤ICP备17044299号-2' }}
+                defaultMessage="EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 深圳市恒宇博科技有限公司 {icpLicense}"
+                values={{ icpLicense: <a href="http://www.beian.miit.gov.cn">粤ICP备17044299号-2</a> }}
                 description="Footer trademark text"
               />
             </p>
