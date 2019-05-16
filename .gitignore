@@ -4,3 +4,5 @@ node_modules
 temp
 
 .idea/
+
+src/i18n/transifex_input.json
