@@ -1,6 +1,6 @@
 {
-  "footer.site-footer.link.about": "About",
   "footer.site-footer.link.business": "{siteName} for Business",
+  "footer.site-footer.link.about": "About",
   "footer.site-footer.link.affiliates": "Affiliates",
   "footer.site-footer.link.open-source": "Open {siteName}",
   "footer.site-footer.link.careers": "Careers",
