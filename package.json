@@ -39,6 +39,7 @@
     "@commitlint/config-angular": "^6.0.2",
     "@commitlint/prompt": "^6.0.2",
     "@commitlint/prompt-cli": "^6.0.2",
+    "@edx/paragon": "^4.2.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
     "@fortawesome/free-regular-svg-icons": "^5.8.1",
@@ -67,7 +68,11 @@
     "image-webpack-loader": "^4.2.0",
     "jest": "23.6.0",
     "node-sass": "^4.7.2",
+    "prop-types": "^15.5.10",
+    "react": "^16.4.2",
     "react-dev-utils": "^5.0.0",
+    "react-dom": "^16.2.0",
+    "react-intl": "2.x",
     "react-test-renderer": "^16.6.0",
     "reactifex": "^1.1.1",
     "sass-loader": "^6.0.6",
@@ -82,9 +87,11 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "@edx/paragon": "^3.8.0",
+    "query-string": "^5.1.1"
+  },
+  "peerDependencies": {
+    "@edx/paragon": "^4.2.4",
     "prop-types": "^15.5.10",
-    "query-string": "^5.1.1",
     "react": "^16.4.2",
     "react-dom": "^16.2.0",
     "react-intl": "2.x"
