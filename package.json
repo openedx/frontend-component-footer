@@ -39,6 +39,8 @@
     "@commitlint/config-angular": "^6.0.2",
     "@commitlint/prompt": "^6.0.2",
     "@commitlint/prompt-cli": "^6.0.2",
+    "@edx/frontend-i18n": "^1.0.2",
+    "@edx/frontend-logging": "^2.0.2",
     "@edx/paragon": "^4.2.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
@@ -72,7 +74,6 @@
     "react": "^16.4.2",
     "react-dev-utils": "^5.0.0",
     "react-dom": "^16.2.0",
-    "react-intl": "2.x",
     "react-test-renderer": "^16.6.0",
     "reactifex": "^1.1.1",
     "sass-loader": "^6.0.6",
@@ -90,11 +91,12 @@
     "query-string": "^5.1.1"
   },
   "peerDependencies": {
+    "@edx/frontend-i18n": "^1.0.2",
+    "@edx/frontend-logging": "^2.0.2",
     "@edx/paragon": "^4.2.4",
     "prop-types": "^15.5.10",
     "react": "^16.4.2",
-    "react-dom": "^16.2.0",
-    "react-intl": "2.x"
+    "react-dom": "^16.2.0"
   },
   "jest": {
     "setupFiles": [

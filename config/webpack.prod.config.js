@@ -35,11 +35,17 @@ module.exports = Merge.smart(commonConfig, {
       amd: 'ReactDOM',
       root: 'ReactDOM',
     },
-    'react-intl': {
-      commonjs: 'react-intl',
-      commonjs2: 'react-intl',
-      amd: 'ReactIntl',
-      root: 'ReactIntl',
+    '@edx/frontend-i18n': {
+      commonjs: '@edx/frontend-i18n',
+      commonjs2: '@edx/frontend-i18n',
+      amd: '@edx/frontend-i18n',
+      root: '@edx/frontend-i18n',
+    },
+    '@edx/frontend-logging': {
+      commonjs: '@edx/frontend-logging',
+      commonjs2: '@edx/frontend-logging',
+      amd: '@edx/frontend-logging',
+      root: '@edx/frontend-logging',
     },
     '@edx/paragon': {
       commonjs: '@edx/paragon',
