@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
-import { IntlProvider } from 'react-intl';
+import { IntlProvider } from '@edx/frontend-i18n';
 
 import {
   faFacebookSquare,
