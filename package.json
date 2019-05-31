@@ -40,7 +40,7 @@
     "@commitlint/config-angular": "^6.0.2",
     "@commitlint/prompt": "^6.0.2",
     "@commitlint/prompt-cli": "^6.0.2",
-    "@edx/frontend-i18n": "^1.0.2",
+    "@edx/frontend-i18n": "^1.0.4",
     "@edx/frontend-logging": "^2.0.2",
     "@edx/paragon": "^4.2.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
@@ -93,7 +93,7 @@
     "query-string": "^5.1.1"
   },
   "peerDependencies": {
-    "@edx/frontend-i18n": "^1.0.2",
+    "@edx/frontend-i18n": "^1.0.4",
     "@edx/frontend-logging": "^2.0.2",
     "@edx/paragon": "^4.2.4",
     "prop-types": "^15.5.10",
