@@ -1,10 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FormattedMessage, injectIntl, intlShape } from '@edx/frontend-i18n';
 import { Hyperlink } from '@edx/paragon';
 import qs from 'query-string';
-
-import messages from './SiteFooter.messages';
 
 const EVENT_NAMES = {
   FOOTER_LINK: 'edx.bi.footer.link',
@@ -35,62 +32,57 @@ class SiteFooter extends React.Component {
     this.props.handleAllTrackEvents(eventName, properties);
   }
 
-  renderSiteLogo() {
-    return (
-      <img
-        src={this.props.siteLogo}
-        alt={this.props.intl.formatMessage(
-          messages['footer.site-footer.site-logo.alt-text'],
-          { siteName: this.props.siteName },
-        )}
-      />
-    );
-  }
-
-  renderMarketingSiteUrl(path) {
-    return `${this.props.marketingSiteBaseUrl}${path}`;
-  }
-
-  renderEnterpriseMarketingSiteUrl(enterpriseLinkData) {
+  formatUrl(linkData) {
     const {
       queryParams,
       url,
-    } = enterpriseLinkData;
+    } = linkData;
     return queryParams ? `${url}/?${qs.stringify(queryParams)}` : url;
+  }
+
+  renderLinkList({ title, linkList }) {
+    if (linkList.length > 0) {
+      return (
+        <React.Fragment>
+          <h2>{title}</h2>
+          <ul className="list-unstyled p-0 m-0">
+            {linkList.map(link => (
+              <li key={link.url}>
+                <a href={this.formatUrl(link)}>{link.title}</a>
+              </li>
+            ))}
+          </ul>
+        </React.Fragment>
+      );
+    }
+
+    return null;
   }
 
   renderMobileLinks() {
     const {
-      intl,
-      siteName,
       showMobileLinks,
-      appleAppStoreUrl,
-      googlePlayUrl,
+      appleAppStore,
+      googlePlay,
     } = this.props;
-    let mobileLinks = null;
+
     if (showMobileLinks) {
-      mobileLinks = (
+      return (
         <ul className="d-flex flex-row justify-content-between list-unstyled max-width-264 p-0 mb-5">
           <li>
-            <a href={appleAppStoreUrl} rel="noopener noreferrer" target="_blank" onClick={this.externalLinkClickHandler}>
+            <a href={appleAppStore.url} rel="noopener noreferrer" target="_blank" onClick={this.externalLinkClickHandler}>
               <img
                 className="max-height-39"
-                alt={intl.formatMessage(
-                  messages['footer.site-footer.apple-app-store.alt-text'],
-                  { siteName },
-                )}
+                alt={appleAppStore.altText}
                 src="https://prod-edxapp.edx-cdn.org/static/images/app/app_store_badge_135x40.d0558d910630.svg"
               />
             </a>
           </li>
           <li>
-            <a href={googlePlayUrl} rel="noopener noreferrer" target="_blank" onClick={this.externalLinkClickHandler}>
+            <a href={googlePlay.url} rel="noopener noreferrer" target="_blank" onClick={this.externalLinkClickHandler}>
               <img
                 className="max-height-39"
-                alt={intl.formatMessage(
-                  messages['footer.site-footer.google-play.alt-text'],
-                  { siteName },
-                )}
+                alt={googlePlay.altText}
                 src="https://prod-edxapp.edx-cdn.org/static/images/app/google_play_badge_45.6ea466e328da.png"
               />
             </a>
@@ -98,55 +90,38 @@ class SiteFooter extends React.Component {
         </ul>
       );
     }
-    return mobileLinks;
-  }
 
-  renderBusinessMarketingListItem() {
-    const { siteName, enterpriseMarketingLink } = this.props;
-    return enterpriseMarketingLink && (
-      <li>
-        <a href={this.renderEnterpriseMarketingSiteUrl(enterpriseMarketingLink)}>
-          <FormattedMessage
-            id="footer.site-footer.link.business"
-            defaultMessage="{siteName} for Business"
-            description="A link that points to a business marketing page for a specified website"
-            values={{ siteName }}
-          />
-        </a>
-      </li>
-    );
+    return null;
   }
 
   render() {
     const {
-      intl,
-      siteName,
-      openSourceUrl,
-      termsOfServiceUrl,
-      privacyPolicyUrl,
-      contactUrl,
-      supportUrl,
+      ariaLabel,
+      linkSectionOne,
+      linkSectionTwo,
+      linkSectionThree,
+      siteLogo,
       socialLinks,
       supportedLanguages,
       languageForm,
+      marketingSiteBaseUrl,
+      copyright,
+      trademark,
     } = this.props;
     const showLanguageSelector = supportedLanguages.length > 0 &&
                                  languageForm;
     return (
       <footer
         role="contentinfo"
-        aria-label={intl.formatMessage(messages['footer.site-footer.footer.aria-label'])}
+        aria-label={ariaLabel}
         className="footer d-flex justify-content-center border-top py-3 px-4"
       >
         <div className="max-width-1180 d-grid">
           <div className="area-1">
             <Hyperlink
-              destination={this.renderMarketingSiteUrl('/')}
-              content={this.renderSiteLogo()}
-              aria-label={intl.formatMessage(
-                messages['footer.site-footer.site-logo.aria-label'],
-                { siteName },
-              )}
+              destination={marketingSiteBaseUrl}
+              content={<img src={siteLogo.src} alt={siteLogo.altText} />}
+              aria-label={siteLogo.ariaLabel}
             />
             {showLanguageSelector &&
               <div className="i18n d-flex mt-2">
@@ -173,156 +148,9 @@ class SiteFooter extends React.Component {
               </div>
             }
           </div>
-          <div className="area-2">
-            <h2>{siteName}</h2>
-            <ul className="list-unstyled p-0 m-0">
-              <li>
-                <a href={this.renderMarketingSiteUrl('/about-us')}>
-                  <FormattedMessage
-                    id="footer.site-footer.link.about"
-                    defaultMessage="About"
-                  />
-                </a>
-              </li>
-              {this.renderBusinessMarketingListItem()}
-              <li>
-                <a href={this.renderMarketingSiteUrl('/affiliate-program')}>
-                  <FormattedMessage
-                    id="footer.site-footer.link.affiliates"
-                    defaultMessage="Affiliates"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href={openSourceUrl}>
-                  <FormattedMessage
-                    id="footer.site-footer.link.open-source"
-                    defaultMessage="Open {siteName}"
-                    values={{ siteName }}
-                    description="Open Source link text"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href={this.renderMarketingSiteUrl('/careers')}>
-                  <FormattedMessage
-                    id="footer.site-footer.link.careers"
-                    defaultMessage="Careers"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href={this.renderMarketingSiteUrl('/news-announcements')}>
-                  <FormattedMessage
-                    id="footer.site-footer.link.news"
-                    defaultMessage="News"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="area-3">
-            <h2>
-              <FormattedMessage
-                id="footer.site-footer.link.header.legal"
-                defaultMessage="Legal"
-                description="Header for legal links"
-              />
-            </h2>
-            <ul className="list-unstyled p-0 m-0">
-              <li>
-                <a href={termsOfServiceUrl}>
-                  <FormattedMessage
-                    id="footer.site-footer.link.terms-of-service"
-                    defaultMessage="Terms of Service & Honor Code"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href={privacyPolicyUrl}>
-                  <FormattedMessage
-                    id="footer.site-footer.link.privacy"
-                    defaultMessage="Privacy Policy"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href={this.renderMarketingSiteUrl('/accessibility')}>
-                  <FormattedMessage
-                    id="footer.site-footer.link.accessibility"
-                    defaultMessage="Accessibility Policy"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href={this.renderMarketingSiteUrl('/trademarks')}>
-                  <FormattedMessage
-                    id="footer.site-footer.link.trademark"
-                    defaultMessage="Trademark Policy"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href={this.renderMarketingSiteUrl('/sitemap')}>
-                  <FormattedMessage
-                    id="footer.site-footer.link.sitemap"
-                    defaultMessage="Sitemap"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="area-4">
-            <h2>
-              <FormattedMessage
-                id="footer.site-footer.link.header.connect"
-                defaultMessage="Connect"
-                description="Header for connect links"
-              />
-            </h2>
-            <ul className="list-unstyled p-0 m-0">
-              <li>
-                <a href={this.renderMarketingSiteUrl('/blog')}>
-                  <FormattedMessage
-                    id="footer.site-footer.link.blog"
-                    defaultMessage="Blog"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href={contactUrl}>
-                  <FormattedMessage
-                    id="footer.site-footer.link.contact-us"
-                    defaultMessage="Contact Us"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href={supportUrl}>
-                  <FormattedMessage
-                    id="footer.site-footer.link.help-center"
-                    defaultMessage="Help Center"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href={this.renderMarketingSiteUrl('/media-kit')}>
-                  <FormattedMessage
-                    id="footer.site-footer.link.media-kit"
-                    defaultMessage="Media Kit"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href={this.renderMarketingSiteUrl('/donate')}>
-                  <FormattedMessage
-                    id="footer.site-footer.link.donate"
-                    defaultMessage="Donate"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
+          <div className="area-2">{this.renderLinkList(linkSectionOne)}</div>
+          <div className="area-3">{this.renderLinkList(linkSectionTwo)}</div>
+          <div className="area-4">{this.renderLinkList(linkSectionThree)}</div>
           <div className="area-5">
             {socialLinks.length > 0 &&
               <ul className="d-flex flex-row justify-content-between list-unstyled max-width-222 p-0 mb-4">
@@ -344,24 +172,9 @@ class SiteFooter extends React.Component {
             }
             {this.renderMobileLinks()}
             <p>
-              <FormattedMessage
-                id="footer.site-footer.copyright-text"
-                defaultMessage="{copyrightSymbol} {startDate}–{endDate} {siteName} Inc."
-                values={{
-                  copyrightSymbol: '©',
-                  startDate: '2012',
-                  endDate: `${new Date().getFullYear()}`,
-                  siteName,
-                }}
-                description="Footer copyright text with copyright symbol and dates"
-              />
+              {copyright}
               <br />
-              <FormattedMessage
-                id="footer.site-footer.trademark-text"
-                defaultMessage="EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 深圳市恒宇博科技有限公司 {icpLicense}"
-                values={{ icpLicense: <a href="http://www.beian.miit.gov.cn">粤ICP备17044299号-2</a> }}
-                description="Footer trademark text"
-              />
+              {trademark}
             </p>
           </div>
         </div>
@@ -370,19 +183,26 @@ class SiteFooter extends React.Component {
   }
 }
 
-SiteFooter.propTypes = {
-  siteName: PropTypes.string,
-  siteLogo: PropTypes.node,
-  marketingSiteBaseUrl: PropTypes.string,
-  enterpriseMarketingLink: PropTypes.shape({
-    url: PropTypes.string,
+const linkSectionShape = PropTypes.shape({
+  title: PropTypes.string,
+  linkList: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
     queryParams: PropTypes.shape({}),
+  })),
+});
+
+SiteFooter.propTypes = {
+  ariaLabel: PropTypes.string.isRequired,
+  siteLogo: PropTypes.shape({
+    src: PropTypes.node,
+    altText: PropTypes.string,
+    ariaLabel: PropTypes.string,
   }),
-  supportUrl: PropTypes.string,
-  contactUrl: PropTypes.string,
-  openSourceUrl: PropTypes.string,
-  termsOfServiceUrl: PropTypes.string,
-  privacyPolicyUrl: PropTypes.string,
+  marketingSiteBaseUrl: PropTypes.string,
+  linkSectionOne: linkSectionShape,
+  linkSectionTwo: linkSectionShape,
+  linkSectionThree: linkSectionShape,
   socialLinks: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
@@ -390,8 +210,14 @@ SiteFooter.propTypes = {
     screenReaderText: PropTypes.string.isRequired,
   })),
   showMobileLinks: PropTypes.bool,
-  appleAppStoreUrl: PropTypes.string,
-  googlePlayUrl: PropTypes.string,
+  appleAppStore: PropTypes.shape({
+    url: PropTypes.string,
+    altText: PropTypes.string,
+  }),
+  googlePlay: PropTypes.shape({
+    url: PropTypes.string,
+    altText: PropTypes.string,
+  }),
   supportedLanguages: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string.isRequired,
     value: PropTypes.string.isRequired,
@@ -403,27 +229,37 @@ SiteFooter.propTypes = {
     icon: PropTypes.node.isRequired,
     activeLanguage: PropTypes.string,
   }),
+  copyright: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.node,
+  ]),
+  trademark: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.node,
+  ]),
   handleAllTrackEvents: PropTypes.func.isRequired,
-  intl: intlShape.isRequired,
+};
+
+const linkSectionDefault = {
+  title: null,
+  linkList: [],
 };
 
 SiteFooter.defaultProps = {
-  siteName: null,
   siteLogo: null,
   marketingSiteBaseUrl: null,
-  enterpriseMarketingLink: null,
-  supportUrl: null,
-  contactUrl: null,
-  openSourceUrl: null,
-  termsOfServiceUrl: null,
-  privacyPolicyUrl: null,
+  linkSectionOne: linkSectionDefault,
+  linkSectionTwo: linkSectionDefault,
+  linkSectionThree: linkSectionDefault,
   socialLinks: [],
   showMobileLinks: true,
-  appleAppStoreUrl: null,
-  googlePlayUrl: null,
+  appleAppStore: null,
+  googlePlay: null,
   supportedLanguages: [],
   languageForm: null,
+  copyright: null,
+  trademark: null,
 };
 
-export default injectIntl(SiteFooter);
+export default SiteFooter;
 export { EVENT_NAMES };
