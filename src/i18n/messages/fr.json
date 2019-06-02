@@ -18,7 +18,7 @@
   "footer.site-footer.link.media-kit": "Media Kit",
   "footer.site-footer.link.donate": "Donate",
   "footer.site-footer.copyright-text": "{copyrightSymbol} {startDate}–{endDate} {siteName} Inc.",
-  "footer.site-footer.trademark-text": "EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | {icpLicense}",
+  "footer.site-footer.trademark-text": "EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 深圳市恒宇博科技有限公司 {icpLicense}",
   "footer.site-footer.site-logo.alt-text": "{siteName} logo",
   "footer.site-footer.site-logo.aria-label": "{siteName} Home",
   "footer.site-footer.facebook.title": "Facebook",
