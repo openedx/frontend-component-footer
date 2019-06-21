@@ -120,9 +120,10 @@ class SiteFooter extends React.Component {
           <div className="area-1">
             <Hyperlink
               destination={marketingSiteBaseUrl}
-              content={<img src={siteLogo.src} alt={siteLogo.altText} />}
               aria-label={siteLogo.ariaLabel}
-            />
+            >
+              <img src={siteLogo.src} alt={siteLogo.altText} />
+            </Hyperlink>
             {showLanguageSelector &&
               <div className="i18n d-flex mt-2">
                 <form
