@@ -47,12 +47,6 @@ module.exports = Merge.smart(commonConfig, {
       amd: '@edx/frontend-logging',
       root: '@edx/frontend-logging',
     },
-    '@edx/paragon': {
-      commonjs: '@edx/paragon',
-      commonjs2: '@edx/paragon',
-      amd: 'Paragon',
-      root: 'Paragon',
-    },
   },
   plugins: [
     // Cleans the dist directory before each build

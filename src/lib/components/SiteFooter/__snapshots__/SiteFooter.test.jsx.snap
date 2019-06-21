@@ -15,8 +15,6 @@ exports[`<SiteFooter /> renders correctly does not render language selector 1`] 
       <a
         aria-label="edX Home"
         href="https://www.example.com"
-        onClick={[Function]}
-        target="_self"
       >
         <img
           alt="edx Logo"
@@ -398,8 +396,6 @@ exports[`<SiteFooter /> renders correctly does not render mobile links 1`] = `
       <a
         aria-label="edX Home"
         href="https://www.example.com"
-        onClick={[Function]}
-        target="_self"
       >
         <img
           alt="edx Logo"
@@ -807,8 +803,6 @@ exports[`<SiteFooter /> renders correctly does not render social links 1`] = `
       <a
         aria-label="edX Home"
         href="https://www.example.com"
-        onClick={[Function]}
-        target="_self"
       >
         <img
           alt="edx Logo"
@@ -1084,8 +1078,6 @@ exports[`<SiteFooter /> renders correctly renders with social and mobile links 1
       <a
         aria-label="edX Home"
         href="https://www.example.com"
-        onClick={[Function]}
-        target="_self"
       >
         <img
           alt="edx Logo"
