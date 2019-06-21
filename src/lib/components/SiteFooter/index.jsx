@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Hyperlink } from '@edx/paragon';
 import qs from 'query-string';
 
 const EVENT_NAMES = {
@@ -118,12 +117,12 @@ class SiteFooter extends React.Component {
       >
         <div className="max-width-1180 d-grid">
           <div className="area-1">
-            <Hyperlink
-              destination={marketingSiteBaseUrl}
+            <a
+              href={marketingSiteBaseUrl}
               aria-label={siteLogo.ariaLabel}
             >
               <img src={siteLogo.src} alt={siteLogo.altText} />
-            </Hyperlink>
+            </a>
             {showLanguageSelector &&
               <div className="i18n d-flex mt-2">
                 <form
