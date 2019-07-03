@@ -197,7 +197,7 @@ SiteFooter.propTypes = {
     src: PropTypes.node,
     altText: PropTypes.string,
     ariaLabel: PropTypes.string,
-  }),
+  }).isRequired,
   marketingSiteBaseUrl: PropTypes.string,
   linkSectionOne: linkSectionShape,
   linkSectionTwo: linkSectionShape,
@@ -245,13 +245,12 @@ const linkSectionDefault = {
 };
 
 SiteFooter.defaultProps = {
-  siteLogo: null,
   marketingSiteBaseUrl: null,
   linkSectionOne: linkSectionDefault,
   linkSectionTwo: linkSectionDefault,
   linkSectionThree: linkSectionDefault,
   socialLinks: [],
-  showMobileLinks: true,
+  showMobileLinks: false,
   appleAppStore: null,
   googlePlay: null,
   supportedLanguages: [],

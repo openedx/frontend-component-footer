@@ -2,8 +2,8 @@
   "name": "@edx/frontend-component-footer",
   "version": "1.0.0-semantically-released",
   "description": "Site footer component for use when building edX frontend applications",
-  "main": "dist/main.js",
-  "module": "dist/main.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "publishConfig": {
     "access": "public"
   },
