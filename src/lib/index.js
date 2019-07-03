@@ -1,3 +1,3 @@
-import SiteFooter from './components/SiteFooter';
+import SiteFooter from './SiteFooter';
 
 export default SiteFooter;

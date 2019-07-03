@@ -12,8 +12,8 @@ import {
 import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import FooterLogo from '../../../edx-footer.png';
-import SiteFooter, { EVENT_NAMES } from './index';
+import FooterLogo from '../config/edx-footer.png';
+import SiteFooter, { EVENT_NAMES } from './SiteFooter';
 
 
 const edXLinks = [

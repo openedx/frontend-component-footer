@@ -13,9 +13,9 @@ import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 /* eslint-enable import/no-extraneous-dependencies */
 
-import SiteFooter from './lib';
+import SiteFooter from '../lib/';
 import './index.scss';
-import FooterLogo from './edx-footer.png';
+import FooterLogo from '../config/edx-footer.png';
 
 
 const edXLinks = [

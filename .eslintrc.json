@@ -5,8 +5,7 @@
             "error",
             {
                 "devDependencies": [
-                    "webpack.config.js",
-                    "src/tests/setupTest.js",
+                    "src/lib/setupTest.js",
                     "**/*.test.jsx",
                     "**/*.test.js"
                 ]

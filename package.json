@@ -8,22 +8,18 @@
     "access": "public"
   },
   "scripts": {
-    "build": "NODE_ENV=production BABEL_ENV=production webpack  --config=config/webpack.prod.config.js",
-    "build:stats": "NODE_ENV=production BABEL_ENV=production webpack --config=config/webpack.prod.config.js --profile --progress --json > stats.json",
+    "build": "make build",
     "gc": "commit",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "is-es5": "es-check es5 ./dist/*.js",
-    "i18n_extract": "BABEL_ENV=i18n babel src --quiet > /dev/null",
     "lint": "eslint --ext .js --ext .jsx .",
     "precommit": "npm run lint",
     "prepublishOnly": "npm run build",
     "semantic-release": "semantic-release",
-    "start": "NODE_ENV=development BABEL_ENV=development node_modules/.bin/webpack-dev-server --config=config/webpack.dev.config.js --progress",
+    "start": "./node_modules/.bin/parcel src/example/index.html",
     "test": "jest --coverage",
     "snapshot": "jest --updateSnapshot",
-    "travis-deploy-once": "travis-deploy-once",
-    "watch": "watch 'npm run build' ./src"
+    "travis-deploy-once": "travis-deploy-once"
   },
   "repository": {
     "type": "git",
@@ -36,83 +32,65 @@
   },
   "homepage": "https://github.com/edx/frontend-component-footer#readme",
   "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
     "@commitlint/cli": "^7.1.2",
     "@commitlint/config-angular": "^6.0.2",
     "@commitlint/prompt": "^6.0.2",
     "@commitlint/prompt-cli": "^6.0.2",
-    "@edx/edx-bootstrap": "^2.2.1",
-    "@edx/frontend-i18n": "^2.1.0",
-    "@edx/frontend-logging": "^2.0.2",
+    "@edx/frontend-i18n": "^3.0.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
     "@fortawesome/free-regular-svg-icons": "^5.8.1",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-plugin-react-intl": "^3.0.1",
-    "babel-plugin-rewire": "^1.2.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "clean-webpack-plugin": "^0.1.19",
+    "babel-jest": "^24.8.0",
     "coveralls": "^3.0.0",
-    "css-loader": "^0.28.9",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "es-check": "^5.0.0",
-    "eslint": "^5.2.0",
+    "eslint": "^6.0.1",
     "eslint-config-edx": "^4.0.4",
     "eslint-plugin-jsx-a11y": "^6.1.2",
-    "file-loader": "^1.1.9",
     "glob": "^7.1.3",
-    "html-webpack-plugin": "^3.2.0",
     "husky": "^0.14.3",
-    "image-webpack-loader": "^4.2.0",
-    "jest": "23.6.0",
-    "node-sass": "^4.7.2",
-    "prop-types": "^15.5.10",
-    "react": "^16.4.2",
+    "jest": "^24.8.0",
+    "parcel-bundler": "^1.12.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
     "react-dev-utils": "^5.0.0",
-    "react-dom": "^16.2.0",
+    "react-dom": "^16.8.6",
     "react-test-renderer": "^16.6.0",
     "reactifex": "^1.1.1",
-    "sass-loader": "^6.0.6",
+    "sass": "^1.22.1",
     "semantic-release": "^15.1.7",
-    "source-map-loader": "^0.2.1",
-    "style-loader": "^0.20.2",
-    "travis-deploy-once": "^5.0.0",
-    "watch": "^1.0.2",
-    "webpack": "^4.19.1",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.9",
-    "webpack-merge": "^4.2.1"
+    "travis-deploy-once": "^5.0.0"
+  },
+  "sass": {
+    "includePaths": [
+      "./node_modules"
+    ]
   },
   "dependencies": {
+    "@edx/paragon": "^6.0.2",
+    "lodash.pick": "^4.4.0",
     "query-string": "^5.1.1"
-  },
-  "peerDependencies": {
-    "@edx/frontend-i18n": "^2.1.0",
-    "@edx/frontend-logging": "^2.0.2",
-    "@edx/paragon": "^4.2.4",
-    "prop-types": "^15.5.10",
-    "react": "^16.4.2",
-    "react-dom": "^16.2.0"
   },
   "jest": {
     "setupFiles": [
-      "./src/tests/setupTest.js"
+      "./src/lib/setupTest.js"
     ],
     "collectCoverageFrom": [
       "src/lib/**/*.{js,jsx}",
-      "!src/tests/setupTest.js",
-      "!src/index.js",
-      "!**/node_modules/**",
-      "!**/tests/**"
+      "!src/lib/setupTest.js",
+      "!src/lib/index.js",
+      "!**/node_modules/**"
     ],
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/lib/__mocks__/fileMock.js",
       "\\.(css|scss)$": "identity-obj-proxy"
     }
   }

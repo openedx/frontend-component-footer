@@ -1,9 +1,6 @@
 coverage
 dist
 node_modules
-temp
 
 .idea/
-
-src/i18n/transifex_input.json
-temp/babel-plugin-react-intl
+/.cache

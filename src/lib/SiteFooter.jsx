@@ -2,12 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import qs from 'query-string';
 
-const EVENT_NAMES = {
+export const EVENT_NAMES = {
   FOOTER_LINK: 'edx.bi.footer.link',
 };
 
-
-class SiteFooter extends React.Component {
+export default class SiteFooter extends React.Component {
   constructor(props) {
     super(props);
     this.externalLinkClickHandler = this.externalLinkClickHandler.bind(this);
@@ -260,6 +259,3 @@ SiteFooter.defaultProps = {
   copyright: null,
   trademark: null,
 };
-
-export default SiteFooter;
-export { EVENT_NAMES };
