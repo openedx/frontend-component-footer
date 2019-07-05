@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import qs from 'query-string';
+import { Hyperlink } from '@edx/paragon';
 
 const EVENT_NAMES = {
   FOOTER_LINK: 'edx.bi.footer.link',
@@ -47,7 +48,9 @@ class SiteFooter extends React.Component {
           <ul className="list-unstyled p-0 m-0">
             {linkList.map(link => (
               <li key={link.url}>
-                <a href={this.formatUrl(link)}>{link.title}</a>
+                <Hyperlink destination={this.formatUrl(link)}>
+                  {link.title}
+                </Hyperlink>
               </li>
             ))}
           </ul>
@@ -69,22 +72,32 @@ class SiteFooter extends React.Component {
       return (
         <ul className="d-flex flex-row justify-content-between list-unstyled max-width-264 p-0 mb-5">
           <li>
-            <a href={appleAppStore.url} rel="noopener noreferrer" target="_blank" onClick={this.externalLinkClickHandler}>
+            <Hyperlink
+              destination={appleAppStore.url}
+              rel="noreferrer"
+              target="_blank"
+              onClick={this.externalLinkClickHandler}
+            >
               <img
                 className="max-height-39"
                 alt={appleAppStore.altText}
                 src="https://prod-edxapp.edx-cdn.org/static/images/app/app_store_badge_135x40.d0558d910630.svg"
               />
-            </a>
+            </Hyperlink>
           </li>
           <li>
-            <a href={googlePlay.url} rel="noopener noreferrer" target="_blank" onClick={this.externalLinkClickHandler}>
+            <Hyperlink
+              destination={googlePlay.url}
+              rel="noreferrer"
+              target="_blank"
+              onClick={this.externalLinkClickHandler}
+            >
               <img
                 className="max-height-39"
                 alt={googlePlay.altText}
                 src="https://prod-edxapp.edx-cdn.org/static/images/app/google_play_badge_45.6ea466e328da.png"
               />
-            </a>
+            </Hyperlink>
           </li>
         </ul>
       );
@@ -117,12 +130,12 @@ class SiteFooter extends React.Component {
       >
         <div className="max-width-1180 d-grid">
           <div className="area-1">
-            <a
-              href={marketingSiteBaseUrl}
+            <Hyperlink
+              destination={marketingSiteBaseUrl}
               aria-label={siteLogo.ariaLabel}
             >
               <img src={siteLogo.src} alt={siteLogo.altText} />
-            </a>
+            </Hyperlink>
             {showLanguageSelector &&
               <div className="i18n d-flex mt-2">
                 <form
@@ -156,16 +169,16 @@ class SiteFooter extends React.Component {
               <ul className="d-flex flex-row justify-content-between list-unstyled max-width-222 p-0 mb-4">
                 {socialLinks.map(link => (
                   <li key={link.url}>
-                    <a
-                      href={link.url}
+                    <Hyperlink
+                      destination={link.url}
                       title={link.title}
-                      rel="noopener noreferrer"
+                      rel="noreferrer"
                       target="_blank"
                       onClick={this.externalLinkClickHandler}
                     >
                       {link.icon}
                       <span className="sr-only">{link.screenReaderText}</span>
-                    </a>
+                    </Hyperlink>
                   </li>
                 ))}
               </ul>
