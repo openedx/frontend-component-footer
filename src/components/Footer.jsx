@@ -7,7 +7,7 @@ import AppleAppStoreButton from './AppleAppStoreButton';
 import GooglePlayStoreButton from './GooglePlayStoreButton';
 import SocialIconLinks from './SocialIconLinks';
 import messages from './Footer.messages';
-import FooterLogo from '../../edx-footer.png';
+import FooterLogo from '../edx-footer.png';
 import LanguageSelector from './LanguageSelector';
 
 const EVENT_NAMES = {

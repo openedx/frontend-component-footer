@@ -1,9 +1,5 @@
 language: node_js
-node_js:
-  - 8
-cache:
-  directories:
-    - "~/.npm"
+node_js: 12
 install:
   - npm install
 script:
@@ -11,9 +7,8 @@ script:
   - npm run i18n_extract
   - npm run test
   - npm run build
-  - npm run is-es5
 after_success:
-  - npm run travis-deploy-once "npm run semantic-release"
+  - npx semantic-release
   - npm run coveralls
 env:
   global:

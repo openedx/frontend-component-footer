@@ -3,16 +3,16 @@ import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 import { IntlProvider } from '@edx/frontend-i18n';
 
-import SiteFooter, { EVENT_NAMES } from './index';
+import Footer, { EVENT_NAMES } from './Footer';
 
-describe('<SiteFooter />', () => {
+describe('<Footer />', () => {
   describe('renders correctly', () => {
     it('renders without a language selector', () => {
       const mockHandleAllTrackEvents = jest.fn();
       const tree = renderer
         .create((
           <IntlProvider locale="en">
-            <SiteFooter handleAllTrackEvents={mockHandleAllTrackEvents} />
+            <Footer handleAllTrackEvents={mockHandleAllTrackEvents} />
           </IntlProvider>
         ))
         .toJSON();
@@ -23,7 +23,7 @@ describe('<SiteFooter />', () => {
       const tree = renderer
         .create((
           <IntlProvider locale="es">
-            <SiteFooter handleAllTrackEvents={mockHandleAllTrackEvents} />
+            <Footer handleAllTrackEvents={mockHandleAllTrackEvents} />
           </IntlProvider>
         ))
         .toJSON();
@@ -34,7 +34,7 @@ describe('<SiteFooter />', () => {
       const tree = renderer
         .create((
           <IntlProvider locale="en">
-            <SiteFooter
+            <Footer
               handleAllTrackEvents={mockHandleAllTrackEvents}
               onLanguageSelected={() => {}}
               supportedLanguages={[
@@ -54,7 +54,7 @@ describe('<SiteFooter />', () => {
       const mockHandleAllTrackEvents = jest.fn();
       const wrapper = mount((
         <IntlProvider locale="en">
-          <SiteFooter handleAllTrackEvents={mockHandleAllTrackEvents} />
+          <Footer handleAllTrackEvents={mockHandleAllTrackEvents} />
         </IntlProvider>
       ));
       const externalLinks = wrapper.find("a[target='_blank']");
@@ -81,7 +81,7 @@ describe('<SiteFooter />', () => {
       const mockHandleLanguageSelected = jest.fn();
       const wrapper = mount((
         <IntlProvider locale="en">
-          <SiteFooter
+          <Footer
             handleAllTrackEvents={mockHandleAllTrackEvents}
             onLanguageSelected={mockHandleLanguageSelected}
             supportedLanguages={[
