@@ -16,9 +16,25 @@ To install frontend-component-footer into your project::
 
    npm i --save @edx/frontend-component-footer
 
-The component expects properties specifying the various URLs that are
-linked in the footer. See the sample app in `src/index.jsx <src/index.jsx>`__ for an example
-of how the SiteFooter component can be specified.
+Component Usage::
+
+   import Footer from '@edx/frontend-component-footer';
+   import footerMessages from '@edx/frontend-component-footer/src/i18n/index';
+
+   ...
+
+   <Footer
+      handleAllTrackEvents={(eventName, properties) => {/* track click event */}}
+      onLanguageSelected={(languageCode) => {/* set language */}}
+      supportedLanguages={[
+         { label: 'English', value: 'en'},
+         { label: 'Español', value: 'es' },
+      ]}
+   />
+
+- handleAllTrackEvents (required)
+- onLanguageSelected (optional)
+- supportedLanguages (optional)
 
 Requirements
 ------------

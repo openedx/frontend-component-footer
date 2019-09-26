@@ -1,24 +1,47 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import qs from 'query-string';
+import { FormattedMessage, injectIntl, intlShape } from '@edx/frontend-i18n';
+
+import LinkList from './LinkList';
+import AppleAppStoreButton from './AppleAppStoreButton';
+import GooglePlayStoreButton from './GooglePlayStoreButton';
+import SocialIconLinks from './SocialIconLinks';
+import messages from './Footer.messages';
+import FooterLogo from '../../edx-footer.png';
+import LanguageSelector from './LanguageSelector';
 
 const EVENT_NAMES = {
   FOOTER_LINK: 'edx.bi.footer.link',
 };
 
+const MARKETING_BASE_URL = 'https://edx.org';
 
 class SiteFooter extends React.Component {
   constructor(props) {
     super(props);
     this.externalLinkClickHandler = this.externalLinkClickHandler.bind(this);
-    this.applyLanguageSelection = this.applyLanguageSelection.bind(this);
+
+    this.state = {
+      // Used for constructing the enterprise market link.
+      utmSource: 'edx.org',
+    };
   }
 
-  applyLanguageSelection(event) {
-    event.preventDefault();
-    const languageCode = event.target.elements['site-footer-language-select'].value;
-    const { languageForm: { onLanguageSelected } } = this.props;
-    onLanguageSelected(languageCode);
+  componentDidMount() {
+    // eslint-disable-next-line react/no-did-mount-set-state
+    this.setState({
+      // Wait until component mount to get the hostname to preserve
+      // gatsby compatibility.
+      utmSource: global.location.hostname,
+    });
+  }
+
+  getLocalePrefix(locale) {
+    const twoLetterPrefix = locale.substring(0, 2).toLowerCase();
+    if (twoLetterPrefix === 'en') {
+      return '';
+    }
+    return `/${twoLetterPrefix}`;
   }
 
   externalLinkClickHandler(event) {
@@ -31,150 +54,152 @@ class SiteFooter extends React.Component {
     this.props.handleAllTrackEvents(eventName, properties);
   }
 
-  formatUrl(linkData) {
-    const {
-      queryParams,
-      url,
-    } = linkData;
-    return queryParams ? `${url}/?${qs.stringify(queryParams)}` : url;
-  }
-
-  renderLinkList({ title, linkList }) {
-    if (linkList.length > 0) {
-      return (
-        <React.Fragment>
-          <h2>{title}</h2>
-          <ul className="list-unstyled p-0 m-0">
-            {linkList.map(link => (
-              <li key={link.url}>
-                <a href={this.formatUrl(link)}>{link.title}</a>
-              </li>
-            ))}
-          </ul>
-        </React.Fragment>
-      );
-    }
-
-    return null;
-  }
-
-  renderMobileLinks() {
-    const {
-      showMobileLinks,
-      appleAppStore,
-      googlePlay,
-    } = this.props;
-
-    if (showMobileLinks) {
-      return (
-        <ul className="d-flex flex-row justify-content-between list-unstyled max-width-264 p-0 mb-5">
-          <li>
-            <a href={appleAppStore.url} rel="noopener noreferrer" target="_blank" onClick={this.externalLinkClickHandler}>
-              <img
-                className="max-height-39"
-                alt={appleAppStore.altText}
-                src="https://prod-edxapp.edx-cdn.org/static/images/app/app_store_badge_135x40.d0558d910630.svg"
-              />
-            </a>
-          </li>
-          <li>
-            <a href={googlePlay.url} rel="noopener noreferrer" target="_blank" onClick={this.externalLinkClickHandler}>
-              <img
-                className="max-height-39"
-                alt={googlePlay.altText}
-                src="https://prod-edxapp.edx-cdn.org/static/images/app/google_play_badge_45.6ea466e328da.png"
-              />
-            </a>
-          </li>
-        </ul>
-      );
-    }
-
-    return null;
-  }
-
   render() {
     const {
-      ariaLabel,
-      linkSectionOne,
-      linkSectionTwo,
-      linkSectionThree,
-      siteLogo,
-      socialLinks,
       supportedLanguages,
-      languageForm,
-      marketingSiteBaseUrl,
-      copyright,
-      trademark,
+      onLanguageSelected,
+      logo,
+      intl,
     } = this.props;
-    const showLanguageSelector = supportedLanguages.length > 0 &&
-                                 languageForm;
+    const showLanguageSelector = supportedLanguages.length > 0 && onLanguageSelected;
+    const localePrefix = this.getLocalePrefix(intl.locale);
+
     return (
       <footer
         role="contentinfo"
-        aria-label={ariaLabel}
+        aria-label={intl.formatMessage(messages['footer.logo.ariaLabel'])}
         className="footer d-flex justify-content-center border-top py-3 px-4"
       >
         <div className="max-width-1180 d-grid">
           <div className="area-1">
             <a
-              href={marketingSiteBaseUrl}
-              aria-label={siteLogo.ariaLabel}
+              href="https://edx.org"
+              aria-label={intl.formatMessage(messages['footer.logo.ariaLabel'])}
             >
-              <img src={siteLogo.src} alt={siteLogo.altText} />
+              <img src={logo || FooterLogo} alt={intl.formatMessage(messages['footer.logo.altText'])} />
             </a>
             {showLanguageSelector &&
               <div className="i18n d-flex mt-2">
-                <form
-                  className="d-flex align-items-start"
-                  onSubmit={this.applyLanguageSelection}
-                >
-                  {/* eslint-disable-next-line jsx-a11y/label-has-for */}
-                  <label htmlFor="site-footer-language-select">
-                    {languageForm.icon}
-                    <div className="sr-only">{languageForm.screenReaderLabel}</div>
-                  </label>
-                  <select
-                    id="site-footer-language-select"
-                    className="mx-2 mt-1"
-                    name="site-footer-language-select"
-                    defaultValue={languageForm.activeLanguage}
-                  >
-                    {supportedLanguages.map(({ value, label }) =>
-                      <option key={value} value={value}>{label}</option>)}
-                  </select>
-                  <button className="mt-1" type="submit">{languageForm.submitLabel}</button>
-                </form>
+                <LanguageSelector options={supportedLanguages} onSubmit={onLanguageSelected} />
               </div>
             }
           </div>
-          <div className="area-2">{this.renderLinkList(linkSectionOne)}</div>
-          <div className="area-3">{this.renderLinkList(linkSectionTwo)}</div>
-          <div className="area-4">{this.renderLinkList(linkSectionThree)}</div>
+          <LinkList
+            className="area-2"
+            title="edX"
+            links={[
+              {
+                href: `${MARKETING_BASE_URL}${localePrefix}/about-us`,
+                title: intl.formatMessage(messages['footer.edxLinks.about']),
+              },
+              {
+                href: `${MARKETING_BASE_URL}${localePrefix}/affiliate-program`,
+                title: intl.formatMessage(messages['footer.edxLinks.affiliates']),
+                hidden: intl.locale === 'es',
+              },
+              {
+                href: `https://business.edx.org/?utm_campaign=edX.org+Referral&utm_medium=Footer&utm_source=${this.state.utmSource}`,
+                title: intl.formatMessage(messages['footer.edxLinks.business']),
+              },
+              {
+                href: 'http://open.edx.org',
+                title: intl.formatMessage(messages['footer.edxLinks.openEdx']),
+                hidden: intl.locale === 'es',
+              },
+              {
+                href: `${MARKETING_BASE_URL}${localePrefix}/careers`,
+                title: intl.formatMessage(messages['footer.edxLinks.careers']),
+                hidden: intl.locale === 'es',
+              },
+              {
+                href: `${MARKETING_BASE_URL}${localePrefix}/news-announcements`,
+                title: intl.formatMessage(messages['footer.edxLinks.news']),
+              },
+            ]}
+          />
+          <LinkList
+            className="area-3"
+            title={intl.formatMessage(messages['footer.legalLinks.heading'])}
+            links={[
+              {
+                href: `${MARKETING_BASE_URL}${localePrefix}/edx-terms-service`,
+                title: intl.formatMessage(messages['footer.legalLinks.termsOfService']),
+              },
+              {
+                href: `${MARKETING_BASE_URL}${localePrefix}/edx-privacy-policy`,
+                title: intl.formatMessage(messages['footer.legalLinks.privacyPolicy']),
+              },
+              {
+                href: `${MARKETING_BASE_URL}${localePrefix}/accessibility`,
+                title: intl.formatMessage(messages['footer.legalLinks.a11yPolicy']),
+              },
+              {
+                href: `${MARKETING_BASE_URL}${localePrefix}/trademarks`,
+                title: intl.formatMessage(messages['footer.legalLinks.trademarkPolicy']),
+                hidden: intl.locale === 'es',
+              },
+              {
+                href: `${MARKETING_BASE_URL}${localePrefix}/sitemap`,
+                title: intl.formatMessage(messages['footer.legalLinks.sitemap']),
+                hidden: intl.locale === 'es',
+              },
+            ]}
+          />
+          <LinkList
+            className="area-4"
+            title={intl.formatMessage(messages['footer.connectLinks.heading'])}
+            links={[
+              {
+                href: 'https://blog.edx.org',
+                title: intl.formatMessage(messages['footer.connectLinks.blog']),
+              },
+              {
+                href: 'https://courses.edx.org/support/contact_us',
+                title: intl.formatMessage(messages['footer.connectLinks.contact']),
+              },
+              {
+                href: 'https://support.edx.org',
+                title: intl.formatMessage(messages['footer.connectLinks.help']),
+              },
+              {
+                href: `${MARKETING_BASE_URL}${localePrefix}/media-kit`,
+                title: intl.formatMessage(messages['footer.connectLinks.mediaKit']),
+                hidden: intl.locale === 'es',
+              },
+              {
+                href: `${MARKETING_BASE_URL}${localePrefix}/donate`,
+                title: intl.formatMessage(messages['footer.connectLinks.donate']),
+                hidden: intl.locale === 'es',
+              },
+            ]}
+          />
           <div className="area-5">
-            {socialLinks.length > 0 &&
-              <ul className="d-flex flex-row justify-content-between list-unstyled max-width-222 p-0 mb-4">
-                {socialLinks.map(link => (
-                  <li key={link.url}>
-                    <a
-                      href={link.url}
-                      title={link.title}
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      onClick={this.externalLinkClickHandler}
-                    >
-                      {link.icon}
-                      <span className="sr-only">{link.screenReaderText}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            }
-            {this.renderMobileLinks()}
+            <ul className="d-flex flex-row justify-content-between list-unstyled max-width-222 p-0 mb-4">
+              <SocialIconLinks onClick={this.externalLinkClickHandler} />
+            </ul>
+            <ul className="d-flex flex-row justify-content-between list-unstyled max-width-264 p-0 mb-5">
+              <li>
+                <GooglePlayStoreButton onClick={this.externalLinkClickHandler} />
+              </li>
+              <li>
+                <AppleAppStoreButton onClick={this.externalLinkClickHandler} />
+              </li>
+            </ul>
             <p>
-              {copyright}
+              © 2012–2019 edX Inc.
               <br />
-              {trademark}
+              <FormattedMessage
+                id="footer.trademarks"
+                defaultMessage="EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. {icpMessage}"
+                description="A description of the trademarks that belong to edX."
+                values={{
+                  icpMessage: (
+                    <React.Fragment>
+                      深圳市恒宇博科技有限公司 <a href="http://www.beian.miit.gov.cn">粤ICP备17044299号-2</a>
+                    </React.Fragment>
+                  ),
+                }}
+              />
             </p>
           </div>
         </div>
@@ -183,83 +208,22 @@ class SiteFooter extends React.Component {
   }
 }
 
-const linkSectionShape = PropTypes.shape({
-  title: PropTypes.string,
-  linkList: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
-    queryParams: PropTypes.shape({}),
-  })),
-});
-
 SiteFooter.propTypes = {
-  ariaLabel: PropTypes.string.isRequired,
-  siteLogo: PropTypes.shape({
-    src: PropTypes.node,
-    altText: PropTypes.string,
-    ariaLabel: PropTypes.string,
-  }),
-  marketingSiteBaseUrl: PropTypes.string,
-  linkSectionOne: linkSectionShape,
-  linkSectionTwo: linkSectionShape,
-  linkSectionThree: linkSectionShape,
-  socialLinks: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
-    icon: PropTypes.element.isRequired,
-    screenReaderText: PropTypes.string.isRequired,
-  })),
-  showMobileLinks: PropTypes.bool,
-  appleAppStore: PropTypes.shape({
-    url: PropTypes.string,
-    altText: PropTypes.string,
-  }),
-  googlePlay: PropTypes.shape({
-    url: PropTypes.string,
-    altText: PropTypes.string,
-  }),
+  intl: intlShape.isRequired,
+  logo: PropTypes.string,
+  onLanguageSelected: PropTypes.func,
   supportedLanguages: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string.isRequired,
     value: PropTypes.string.isRequired,
   })),
-  languageForm: PropTypes.shape({
-    screenReaderLabel: PropTypes.string.isRequired,
-    submitLabel: PropTypes.string.isRequired,
-    onLanguageSelected: PropTypes.func.isRequired,
-    icon: PropTypes.node.isRequired,
-    activeLanguage: PropTypes.string,
-  }),
-  copyright: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.node,
-  ]),
-  trademark: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.node,
-  ]),
   handleAllTrackEvents: PropTypes.func.isRequired,
 };
 
-const linkSectionDefault = {
-  title: null,
-  linkList: [],
-};
-
 SiteFooter.defaultProps = {
-  siteLogo: null,
-  marketingSiteBaseUrl: null,
-  linkSectionOne: linkSectionDefault,
-  linkSectionTwo: linkSectionDefault,
-  linkSectionThree: linkSectionDefault,
-  socialLinks: [],
-  showMobileLinks: true,
-  appleAppStore: null,
-  googlePlay: null,
+  logo: undefined,
+  onLanguageSelected: undefined,
   supportedLanguages: [],
-  languageForm: null,
-  copyright: null,
-  trademark: null,
 };
 
-export default SiteFooter;
+export default injectIntl(SiteFooter);
 export { EVENT_NAMES };
