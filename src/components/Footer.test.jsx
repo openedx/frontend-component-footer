@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 import { IntlProvider } from '@edx/frontend-i18n';
 
-import Footer, { EVENT_NAMES } from './Footer';
+import Footer from './Footer';
 
 describe('<Footer />', () => {
   describe('renders correctly', () => {
@@ -46,32 +46,6 @@ describe('<Footer />', () => {
         ))
         .toJSON();
       expect(tree).toMatchSnapshot();
-    });
-  });
-
-  describe('handles analytics', () => {
-    it('calls handleAllTrackEvents prop when external links clicked', () => {
-      const mockHandleAllTrackEvents = jest.fn();
-      const wrapper = mount((
-        <IntlProvider locale="en">
-          <Footer handleAllTrackEvents={mockHandleAllTrackEvents} />
-        </IntlProvider>
-      ));
-      const externalLinks = wrapper.find("a[target='_blank']");
-
-      expect(externalLinks.length).not.toEqual(0);
-
-      externalLinks.forEach((externalLink) => {
-        const callIndex = mockHandleAllTrackEvents.mock.calls.length;
-        externalLink.simulate('click');
-        expect(mockHandleAllTrackEvents.mock.calls[callIndex]).toEqual([
-          EVENT_NAMES.FOOTER_LINK,
-          {
-            category: 'outbound_link',
-            label: externalLink.prop('href'),
-          },
-        ]);
-      });
     });
   });
 

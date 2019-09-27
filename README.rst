@@ -5,9 +5,7 @@ frontend-component-footer
 |semantic-release|
 
 frontend-component-footer is a library containing a site footer
-component for use when building edX frontend applications.
-
-At this time, this component is hard-coded to match the legacy LMS site footer, including all of its links. As implemented, this component should probably be called the ``frontend-component-lms-footer``.
+component for use when building Open edX frontend applications.
 
 Usage
 -----
@@ -35,6 +33,11 @@ Component Usage::
 - handleAllTrackEvents (required)
 - onLanguageSelected (optional)
 - supportedLanguages (optional)
+
+Styles (project.scss)::
+
+   @import '@edx/frontend-component-footer/src/footer.scss';
+
 
 Requirements
 ------------

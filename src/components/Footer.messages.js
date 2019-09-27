@@ -138,7 +138,7 @@ const messages = defineMessages({
   },
   'footer.logo.altText': {
     id: 'footer.logo.altText',
-    defaultMessage: 'edX Logo',
+    defaultMessage: 'Powered by Open edX',
     description: 'alt text for the footer logo.',
   },
   'footer.logo.ariaLabel': {

@@ -46,8 +46,7 @@
     "react": "^16.4.2",
     "react-dom": "^16.2.0",
     "react-test-renderer": "^16.6.0",
-    "reactifex": "^1.1.1",
-    "watch": "^1.0.2"
+    "reactifex": "^1.1.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
