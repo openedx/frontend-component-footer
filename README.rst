@@ -5,9 +5,7 @@ frontend-component-footer
 |semantic-release|
 
 frontend-component-footer is a library containing a site footer
-component for use when building edX frontend applications.
-
-At this time, this component is hard-coded to match the legacy LMS site footer, including all of its links. As implemented, this component should probably be called the ``frontend-component-lms-footer``.
+component for use when building Open edX frontend applications.
 
 Usage
 -----
@@ -16,9 +14,30 @@ To install frontend-component-footer into your project::
 
    npm i --save @edx/frontend-component-footer
 
-The component expects properties specifying the various URLs that are
-linked in the footer. See the sample app in `src/index.jsx <src/index.jsx>`__ for an example
-of how the SiteFooter component can be specified.
+Component Usage::
+
+   import Footer from '@edx/frontend-component-footer';
+   import footerMessages from '@edx/frontend-component-footer/src/i18n/index';
+
+   ...
+
+   <Footer
+      handleAllTrackEvents={(eventName, properties) => {/* track click event */}}
+      onLanguageSelected={(languageCode) => {/* set language */}}
+      supportedLanguages={[
+         { label: 'English', value: 'en'},
+         { label: 'Español', value: 'es' },
+      ]}
+   />
+
+- handleAllTrackEvents (required)
+- onLanguageSelected (optional)
+- supportedLanguages (optional)
+
+Styles (project.scss)::
+
+   @import '@edx/frontend-component-footer/src/footer.scss';
+
 
 Requirements
 ------------
