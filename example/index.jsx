@@ -9,9 +9,6 @@ const App = () => (
   <div>
     <IntlProvider locale="en">
       <Footer
-        /* eslint-disable-next-line no-unused-vars */
-        handleAllTrackEvents={(eventName, properties) => {}}
-        /* eslint-disable-next-line no-unused-vars */
         onLanguageSelected={(languageCode) => {}}
         supportedLanguages={[
           { label: 'English', value: 'en' },

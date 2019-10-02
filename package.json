@@ -1,23 +1,27 @@
 {
   "name": "@edx/frontend-component-footer",
   "version": "1.0.0-semantically-released",
-  "description": "Site footer component for use when building edX frontend applications",
+  "description": "Footer component for use when building Open edX frontend applications",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "build": "make build",
-    "gc": "commit",
-    "commitmsg": "commitlint -e $GIT_PARAMS",
-    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "i18n_extract": "BABEL_ENV=i18n fedx-scripts babel src --quiet > /dev/null",
     "lint": "fedx-scripts eslint --ext .js --ext .jsx .",
-    "precommit": "npm run lint",
-    "prepublishOnly": "npm run build",
+    "snapshot": "fedx-scripts jest --updateSnapshot",
     "start": "fedx-scripts webpack-dev-server --progress",
-    "test": "fedx-scripts jest --coverage",
-    "snapshot": "fedx-scripts jest --updateSnapshot"
+    "test": "fedx-scripts jest --coverage"
+  },
+  "files": [
+    "/dist"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
   },
   "repository": {
     "type": "git",
@@ -30,37 +34,39 @@
   },
   "homepage": "https://github.com/edx/frontend-component-footer#readme",
   "devDependencies": {
-    "@commitlint/cli": "^7.1.2",
-    "@commitlint/config-angular": "^6.0.2",
-    "@commitlint/prompt": "^6.0.2",
-    "@commitlint/prompt-cli": "^6.0.2",
-    "@edx/frontend-build": "^1.0.1",
-    "@edx/frontend-i18n": "^2.1.0",
-    "@edx/frontend-logging": "^2.0.2",
-    "@edx/paragon": "^7.1.3",
-    "coveralls": "^3.0.0",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "husky": "^0.14.3",
-    "prop-types": "^15.5.10",
-    "react": "^16.4.2",
-    "react-dom": "^16.2.0",
-    "react-test-renderer": "^16.6.0",
-    "reactifex": "^1.1.1"
+    "@commitlint/cli": "8.2.0",
+    "@commitlint/config-angular": "8.2.0",
+    "@commitlint/prompt": "8.2.0",
+    "@commitlint/prompt-cli": "8.2.0",
+    "@edx/frontend-analytics": "3.0.0",
+    "@edx/frontend-build": "1.1.0",
+    "@edx/frontend-i18n": "3.0.3",
+    "@edx/frontend-logging": "3.0.1",
+    "@edx/paragon": "7.1.4",
+    "codecov": "3.6.1",
+    "enzyme": "3.10.0",
+    "enzyme-adapter-react-16": "1.14.0",
+    "husky": "3.0.8",
+    "prop-types": "15.7.2",
+    "react": "16.10.1",
+    "react-dom": "16.10.1",
+    "react-test-renderer": "16.10.1",
+    "reactifex": "1.1.1"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.17",
-    "@fortawesome/free-brands-svg-icons": "^5.8.1",
-    "@fortawesome/free-regular-svg-icons": "^5.8.1",
-    "@fortawesome/free-solid-svg-icons": "^5.8.1",
-    "@fortawesome/react-fontawesome": "^0.1.4"
+    "@fortawesome/fontawesome-svg-core": "1.2.17",
+    "@fortawesome/free-brands-svg-icons": "5.8.1",
+    "@fortawesome/free-regular-svg-icons": "5.8.1",
+    "@fortawesome/free-solid-svg-icons": "5.8.1",
+    "@fortawesome/react-fontawesome": "0.1.4"
   },
   "peerDependencies": {
-    "@edx/frontend-i18n": "^2.1.0",
-    "@edx/frontend-logging": "^2.0.2",
-    "@edx/paragon": "^7.1.3",
+    "@edx/frontend-analytics": "^3.0.0",
+    "@edx/frontend-i18n": "^3.0.0",
+    "@edx/frontend-logging": "^3.0.0",
+    "@edx/paragon": "^7.0.0",
     "prop-types": "^15.5.10",
-    "react": "^16.4.2",
-    "react-dom": "^16.2.0"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { injectIntl, intlShape } from '@edx/frontend-i18n';
+import { sendTrackEvent } from '@edx/frontend-analytics';
 
 import messages from './Footer.messages';
 import FooterLogo from '../edx-openedx-logo-tag.png';
@@ -31,7 +32,7 @@ class SiteFooter extends React.Component {
       category: 'outbound_link',
       label,
     };
-    this.props.handleAllTrackEvents(eventName, properties);
+    sendTrackEvent(eventName, properties);
   }
 
   render() {
@@ -82,7 +83,6 @@ SiteFooter.propTypes = {
     label: PropTypes.string.isRequired,
     value: PropTypes.string.isRequired,
   })),
-  handleAllTrackEvents: PropTypes.func.isRequired,
 };
 
 SiteFooter.defaultProps = {
