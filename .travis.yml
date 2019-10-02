@@ -6,8 +6,8 @@ install:
  - npm install
 script:
 - make validate-no-uncommitted-package-lock-changes
-- npm run i18n_extract
 - npm run lint
+- npm run i18n_extract
 - npm run test
 - npm run build
 after_success:
