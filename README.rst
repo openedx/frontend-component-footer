@@ -22,7 +22,6 @@ Component Usage::
    ...
 
    <Footer
-      handleAllTrackEvents={(eventName, properties) => {/* track click event */}}
       onLanguageSelected={(languageCode) => {/* set language */}}
       supportedLanguages={[
          { label: 'English', value: 'en'},
@@ -30,7 +29,6 @@ Component Usage::
       ]}
    />
 
-- handleAllTrackEvents (required)
 - onLanguageSelected (optional)
 - supportedLanguages (optional)
 
