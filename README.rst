@@ -16,8 +16,7 @@ To install frontend-component-footer into your project::
 
 Component Usage::
 
-   import Footer from '@edx/frontend-component-footer';
-   import footerMessages from '@edx/frontend-component-footer/src/i18n/index';
+   import Footer, { messages } from '@edx/frontend-component-footer';
 
    ...
 
