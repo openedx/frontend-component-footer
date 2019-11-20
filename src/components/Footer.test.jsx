@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
-import { IntlProvider } from '@edx/frontend-i18n';
+import { IntlProvider } from '@edx/frontend-platform/i18n';
 
 import Footer from './Footer';
 
