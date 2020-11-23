@@ -4,7 +4,6 @@ import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 import { sendTrackEvent } from '@edx/frontend-platform/analytics';
 
 import messages from './Footer.messages';
-import FooterLogo from '../edx-openedx-logo-tag.png';
 import LanguageSelector from './LanguageSelector';
 
 const EVENT_NAMES = {
@@ -58,17 +57,18 @@ class SiteFooter extends React.Component {
           >
             <img
               style={{ maxWidth: 150 }}
-              src={logo || FooterLogo}
+              src={logo || process.env.LOGO_TRADEMARK_URL}
               alt={intl.formatMessage(messages['footer.logo.altText'])}
             />
           </a>
           <div className="flex-grow-1" />
-          {showLanguageSelector &&
-            <LanguageSelector
-              options={supportedLanguages}
-              onSubmit={onLanguageSelected}
-            />
-          }
+          {showLanguageSelector
+            && (
+              <LanguageSelector
+                options={supportedLanguages}
+                onSubmit={onLanguageSelected}
+              />
+            )}
         </div>
       </footer>
     );
