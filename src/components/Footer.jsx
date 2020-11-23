@@ -62,13 +62,12 @@ class SiteFooter extends React.Component {
             />
           </a>
           <div className="flex-grow-1" />
-          {showLanguageSelector
-            && (
-              <LanguageSelector
-                options={supportedLanguages}
-                onSubmit={onLanguageSelected}
-              />
-            )}
+          {showLanguageSelector && (
+            <LanguageSelector
+              options={supportedLanguages}
+              onSubmit={onLanguageSelected}
+            />
+          )}
         </div>
       </footer>
     );
