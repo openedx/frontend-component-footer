@@ -7,19 +7,19 @@ exports[`<Footer /> renders correctly renders with a language selector 1`] = `
   role="contentinfo"
 >
   <div
-    className="container d-flex"
+    className="container-fluid d-flex"
   >
     <a
       aria-label="edX Home"
-      className="d-block mb-3"
+      className="d-block"
       href="https://open.edx.org"
     >
       <img
         alt="Powered by Open edX"
-        src="test-file-stub"
+        src="https://edx-cdn.org/v3/default/logo-trademark.svg"
         style={
           Object {
-            "maxWidth": 150,
+            "maxHeight": 45,
           }
         }
       />
@@ -80,19 +80,19 @@ exports[`<Footer /> renders correctly renders without a language selector 1`] = 
   role="contentinfo"
 >
   <div
-    className="container d-flex"
+    className="container-fluid d-flex"
   >
     <a
       aria-label="edX Home"
-      className="d-block mb-3"
+      className="d-block"
       href="https://open.edx.org"
     >
       <img
         alt="Powered by Open edX"
-        src="test-file-stub"
+        src="https://edx-cdn.org/v3/default/logo-trademark.svg"
         style={
           Object {
-            "maxWidth": 150,
+            "maxHeight": 45,
           }
         }
       />
@@ -111,19 +111,19 @@ exports[`<Footer /> renders correctly renders without a language selector in es 
   role="contentinfo"
 >
   <div
-    className="container d-flex"
+    className="container-fluid d-flex"
   >
     <a
       aria-label="edX Home"
-      className="d-block mb-3"
+      className="d-block"
       href="https://open.edx.org"
     >
       <img
         alt="Powered by Open edX"
-        src="test-file-stub"
+        src="https://edx-cdn.org/v3/default/logo-trademark.svg"
         style={
           Object {
-            "maxWidth": 150,
+            "maxHeight": 45,
           }
         }
       />
