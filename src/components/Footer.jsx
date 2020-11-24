@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 import { sendTrackEvent } from '@edx/frontend-platform/analytics';
-import { ensureConfig, getConfig } from '@edx/frontend-platform/config';
+import { ensureConfig } from '@edx/frontend-platform/config';
+import { AppContext } from '@edx/frontend-platform/react';
 
 import messages from './Footer.messages';
 import LanguageSelector from './LanguageSelector';
@@ -47,7 +48,7 @@ class SiteFooter extends React.Component {
       intl,
     } = this.props;
     const showLanguageSelector = supportedLanguages.length > 0 && onLanguageSelected;
-    const config = getConfig();
+    const { config } = this.context;
 
     return (
       <footer
@@ -79,6 +80,8 @@ class SiteFooter extends React.Component {
     );
   }
 }
+
+SiteFooter.contextType = AppContext;
 
 SiteFooter.propTypes = {
   intl: intlShape.isRequired,
