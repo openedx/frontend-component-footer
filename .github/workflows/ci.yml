@@ -1,4 +1,4 @@
-name: node_js CI
+name: Default CI
 on: [push, pull_request]
 jobs:
   build:
