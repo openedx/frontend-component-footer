@@ -9,3 +9,4 @@ temp
 src/i18n/transifex_input.json
 temp/babel-plugin-react-intl
 /.vscode
+module.config.js

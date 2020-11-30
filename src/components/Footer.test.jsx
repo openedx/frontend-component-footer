@@ -2,6 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 import { IntlProvider } from '@edx/frontend-platform/i18n';
+import { AppContext } from '@edx/frontend-platform/react';
 
 import Footer from './Footer';
 
@@ -11,7 +12,16 @@ describe('<Footer />', () => {
       const tree = renderer
         .create((
           <IntlProvider locale="en">
-            <Footer />
+            <AppContext.Provider
+              value={{
+                authenticatedUser: null,
+                config: {
+                  LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
+                },
+              }}
+            >
+              <Footer />
+            </AppContext.Provider>
           </IntlProvider>
         ))
         .toJSON();
@@ -21,7 +31,16 @@ describe('<Footer />', () => {
       const tree = renderer
         .create((
           <IntlProvider locale="es">
-            <Footer />
+            <AppContext.Provider
+              value={{
+                authenticatedUser: null,
+                config: {
+                  LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
+                },
+              }}
+            >
+              <Footer />
+            </AppContext.Provider>
           </IntlProvider>
         ))
         .toJSON();
@@ -31,13 +50,22 @@ describe('<Footer />', () => {
       const tree = renderer
         .create((
           <IntlProvider locale="en">
-            <Footer
-              onLanguageSelected={() => {}}
-              supportedLanguages={[
-                { label: 'English', value: 'en' },
-                { label: 'Español', value: 'es' },
-              ]}
-            />
+            <AppContext.Provider
+              value={{
+                authenticatedUser: null,
+                config: {
+                  LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
+                },
+              }}
+            >
+              <Footer
+                onLanguageSelected={() => {}}
+                supportedLanguages={[
+                  { label: 'English', value: 'en' },
+                  { label: 'Español', value: 'es' },
+                ]}
+              />
+            </AppContext.Provider>
           </IntlProvider>
         ))
         .toJSON();
@@ -50,13 +78,22 @@ describe('<Footer />', () => {
       const mockHandleLanguageSelected = jest.fn();
       const wrapper = mount((
         <IntlProvider locale="en">
-          <Footer
-            onLanguageSelected={mockHandleLanguageSelected}
-            supportedLanguages={[
-              { label: 'English', value: 'en' },
-              { label: 'Español', value: 'es' },
-            ]}
-          />
+          <AppContext.Provider
+            value={{
+              authenticatedUser: null,
+              config: {
+                LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
+              },
+            }}
+          >
+            <Footer
+              onLanguageSelected={mockHandleLanguageSelected}
+              supportedLanguages={[
+                { label: 'English', value: 'en' },
+                { label: 'Español', value: 'es' },
+              ]}
+            />
+          </AppContext.Provider>
         </IntlProvider>
       ));
 

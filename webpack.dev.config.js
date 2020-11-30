@@ -7,4 +7,9 @@ module.exports = createConfig('webpack-dev', {
     path: path.resolve(__dirname, 'example/dist'),
     publicPath: '/',
   },
+  resolve: {
+    alias: {
+      '@edx/frontend-component-footer': path.resolve(__dirname, 'src'),
+    },
+  },
 });

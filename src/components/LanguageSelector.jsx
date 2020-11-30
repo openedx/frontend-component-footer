@@ -17,8 +17,8 @@ const LanguageSelector = ({
       onSubmit={handleSubmit}
       {...props}
     >
-      {/* eslint-disable-next-line jsx-a11y/label-has-for */}
       <div className="form-group">
+        {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
         <label htmlFor="site-footer-language-select" className="d-inline-block m-0">
           <FormattedMessage
             id="footer.languageForm.select.label"
@@ -32,8 +32,7 @@ const LanguageSelector = ({
           name="site-footer-language-select"
           defaultValue={intl.locale}
         >
-          {options.map(({ value, label }) =>
-            <option key={value} value={value}>{label}</option>)}
+          {options.map(({ value, label }) => <option key={value} value={value}>{label}</option>)}
         </select>
         <button className="btn btn-outline-primary btn-sm" type="submit">
           <FormattedMessage

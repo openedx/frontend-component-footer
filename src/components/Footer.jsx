@@ -2,10 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 import { sendTrackEvent } from '@edx/frontend-platform/analytics';
+import { ensureConfig } from '@edx/frontend-platform/config';
+import { AppContext } from '@edx/frontend-platform/react';
 
 import messages from './Footer.messages';
-import FooterLogo from '../edx-openedx-logo-tag.png';
 import LanguageSelector from './LanguageSelector';
+
+ensureConfig([
+  'LOGO_TRADEMARK_URL',
+], 'Footer component');
 
 const EVENT_NAMES = {
   FOOTER_LINK: 'edx.bi.footer.link',
@@ -43,6 +48,7 @@ class SiteFooter extends React.Component {
       intl,
     } = this.props;
     const showLanguageSelector = supportedLanguages.length > 0 && onLanguageSelected;
+    const { config } = this.context;
 
     return (
       <footer
@@ -50,30 +56,32 @@ class SiteFooter extends React.Component {
         aria-label={intl.formatMessage(messages['footer.logo.ariaLabel'])}
         className="footer d-flex border-top py-3 px-4"
       >
-        <div className="container d-flex">
+        <div className="container-fluid d-flex">
           <a
-            className="d-block mb-3"
+            className="d-block"
             href="https://open.edx.org"
             aria-label={intl.formatMessage(messages['footer.logo.ariaLabel'])}
           >
             <img
-              style={{ maxWidth: 150 }}
-              src={logo || FooterLogo}
+              style={{ maxHeight: 45 }}
+              src={logo || config.LOGO_TRADEMARK_URL}
               alt={intl.formatMessage(messages['footer.logo.altText'])}
             />
           </a>
           <div className="flex-grow-1" />
-          {showLanguageSelector &&
+          {showLanguageSelector && (
             <LanguageSelector
               options={supportedLanguages}
               onSubmit={onLanguageSelected}
             />
-          }
+          )}
         </div>
       </footer>
     );
   }
 }
+
+SiteFooter.contextType = AppContext;
 
 SiteFooter.propTypes = {
   intl: intlShape.isRequired,
