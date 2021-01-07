@@ -2,7 +2,6 @@
 
 exports[`<Footer /> renders correctly renders with a language selector 1`] = `
 <footer
-  aria-label="edX Home"
   className="footer d-flex border-top py-3 px-4"
   role="contentinfo"
 >
@@ -75,7 +74,6 @@ exports[`<Footer /> renders correctly renders with a language selector 1`] = `
 
 exports[`<Footer /> renders correctly renders without a language selector 1`] = `
 <footer
-  aria-label="edX Home"
   className="footer d-flex border-top py-3 px-4"
   role="contentinfo"
 >
@@ -106,7 +104,6 @@ exports[`<Footer /> renders correctly renders without a language selector 1`] = 
 
 exports[`<Footer /> renders correctly renders without a language selector in es 1`] = `
 <footer
-  aria-label="edX Home"
   className="footer d-flex border-top py-3 px-4"
   role="contentinfo"
 >
