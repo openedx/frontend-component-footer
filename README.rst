@@ -39,7 +39,14 @@ Styles (project.scss)::
 Requirements
 ------------
 
-This component uses ``@edx/frontend-i18n``. Any containing app must provide ``@edx/frontend-i18n`` as a peer dependency, and be wrapped inside an ``IntlProvider`` element, whether or not your consuming application is actually localized. For a basic default locale (English) version, follow the ``IntlProvider`` example in the sample application in `src/index.jsx <src/index.jsx>`__.
+This component uses ``@edx/frontend-platform`` services such as i18n, analytics, configuration, and the AppContext React component, and expects that it has been loaded into a micro-frontend that has been properly initialized via ``@edx/frontend-platform``'s ``initialize`` function.  `Please visit the frontend template application to see an example. <https://github.com/edx/frontend-template-application/blob/master/src/index.jsx>`_ 
+
+Environment Variables
+^^^^^^^^^^^^^^^^^^^^^
+
+This component requires that the following environment variable be set by the consuming micro-frontend.  
+
+* ``LOGO_TRADEMARK_URL`` - This is a URL to a logo with trademark for use in the footer.  
 
 Development
 -----------
