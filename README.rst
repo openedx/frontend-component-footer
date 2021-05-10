@@ -39,7 +39,7 @@ Styles (project.scss)::
 Requirements
 ------------
 
-This component uses ``@edx/frontend-platform`` services such as i18n, analytics, configuration, and the AppContext React component, and expects that it has been loaded into a micro-frontend that has been properly initialized via ``@edx/frontend-platform``'s ``initialize`` function.  `Please visit the frontend template application to see an example. <https://github.com/edx/frontend-template-application/blob/master/src/index.jsx>`_ 
+This component uses ``@edx/frontend-platform`` services such as i18n, analytics, configuration, and the ``AppContext`` React component, and expects that it has been loaded into a micro-frontend that has been properly initialized via ``@edx/frontend-platform``'s ``initialize`` function.  `Please visit the frontend template application to see an example. <https://github.com/edx/frontend-template-application/blob/master/src/index.jsx>`_ 
 
 Environment Variables
 ^^^^^^^^^^^^^^^^^^^^^
