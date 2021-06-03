@@ -49,11 +49,11 @@
     "prop-types": "15.7.2",
     "react": "16.10.2",
     "react-dom": "16.10.2",
-    "react-redux": "^7.1.1",
-    "react-router-dom": "^5.1.2",
+    "react-redux": "7.1.1",
+    "react-router-dom": "5.1.2",
     "react-test-renderer": "16.10.2",
     "reactifex": "1.1.1",
-    "redux": "^4.0.4"
+    "redux": "4.0.4"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.34",
