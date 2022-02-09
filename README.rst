@@ -21,6 +21,7 @@ Environment Variables
 
 This component requires that the following environment variable be set by the consuming micro-frontend.
 
+* ``LMS_BASE_URL`` - The URL of the LMS of your Open edX instance.
 * ``LOGO_TRADEMARK_URL`` - This is a URL to a logo for use in the footer.  This is a different environment variable than ``LOGO_URL`` (used in frontend-component-header) to accommodate sites that would like to have additional trademark information on a logo in the footer, such as a (tm) or (r) symbol.
 
 ************

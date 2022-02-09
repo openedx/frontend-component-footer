@@ -17,6 +17,7 @@ describe('<Footer />', () => {
                 authenticatedUser: null,
                 config: {
                   LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
+                  LMS_BASE_URL: process.env.LMS_BASE_URL,
                 },
               }}
             >
@@ -36,6 +37,7 @@ describe('<Footer />', () => {
                 authenticatedUser: null,
                 config: {
                   LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
+                  LMS_BASE_URL: process.env.LMS_BASE_URL,
                 },
               }}
             >
@@ -55,6 +57,7 @@ describe('<Footer />', () => {
                 authenticatedUser: null,
                 config: {
                   LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
+                  LMS_BASE_URL: process.env.LMS_BASE_URL,
                 },
               }}
             >
@@ -83,6 +86,7 @@ describe('<Footer />', () => {
               authenticatedUser: null,
               config: {
                 LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
+                LMS_BASE_URL: process.env.LMS_BASE_URL,
               },
             }}
           >

@@ -11,7 +11,7 @@ exports[`<Footer /> renders correctly renders with a language selector 1`] = `
     <a
       aria-label="edX Home"
       className="d-block"
-      href="https://open.edx.org"
+      href="http://localhost:18000"
     >
       <img
         alt="Powered by Open edX"
@@ -83,7 +83,7 @@ exports[`<Footer /> renders correctly renders without a language selector 1`] = 
     <a
       aria-label="edX Home"
       className="d-block"
-      href="https://open.edx.org"
+      href="http://localhost:18000"
     >
       <img
         alt="Powered by Open edX"
@@ -113,7 +113,7 @@ exports[`<Footer /> renders correctly renders without a language selector in es 
     <a
       aria-label="edX Home"
       className="d-block"
-      href="https://open.edx.org"
+      href="http://localhost:18000"
     >
       <img
         alt="Powered by Open edX"
