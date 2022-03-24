@@ -9,6 +9,7 @@ import messages from './Footer.messages';
 import LanguageSelector from './LanguageSelector';
 
 ensureConfig([
+  'LMS_BASE_URL',
   'LOGO_TRADEMARK_URL',
 ], 'Footer component');
 
@@ -58,7 +59,7 @@ class SiteFooter extends React.Component {
         <div className="container-fluid d-flex">
           <a
             className="d-block"
-            href="https://open.edx.org"
+            href={config.LMS_BASE_URL}
             aria-label={intl.formatMessage(messages['footer.logo.ariaLabel'])}
           >
             <img
