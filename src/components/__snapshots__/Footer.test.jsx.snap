@@ -37,9 +37,7 @@ exports[`<Footer /> renders correctly renders with a language selector 1`] = `
           className="d-inline-block m-0"
           htmlFor="site-footer-language-select"
         >
-          <span>
-            Choose Language
-          </span>
+          Choose Language
         </label>
         <select
           className="form-control-sm mx-2"
@@ -62,9 +60,7 @@ exports[`<Footer /> renders correctly renders with a language selector 1`] = `
           className="btn btn-outline-primary btn-sm"
           type="submit"
         >
-          <span>
-            Apply
-          </span>
+          Apply
         </button>
       </div>
     </form>
