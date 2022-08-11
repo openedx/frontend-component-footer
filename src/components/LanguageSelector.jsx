@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { injectIntl, intlShape, FormattedMessage } from '@edx/frontend-platform/i18n';
 
-const LanguageSelector = ({
+function LanguageSelector({
   intl, options, onSubmit, ...props
-}) => {
+}) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const languageCode = e.target.elements['site-footer-language-select'].value;
@@ -44,7 +44,7 @@ const LanguageSelector = ({
       </div>
     </form>
   );
-};
+}
 
 LanguageSelector.propTypes = {
   intl: intlShape.isRequired,

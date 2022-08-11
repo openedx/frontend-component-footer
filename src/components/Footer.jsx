@@ -23,14 +23,6 @@ class SiteFooter extends React.Component {
     this.externalLinkClickHandler = this.externalLinkClickHandler.bind(this);
   }
 
-  getLocalePrefix(locale) {
-    const twoLetterPrefix = locale.substring(0, 2).toLowerCase();
-    if (twoLetterPrefix === 'en') {
-      return '';
-    }
-    return `/${twoLetterPrefix}`;
-  }
-
   externalLinkClickHandler(event) {
     const label = event.currentTarget.getAttribute('href');
     const eventName = EVENT_NAMES.FOOTER_LINK;
