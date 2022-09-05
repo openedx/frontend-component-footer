@@ -90,10 +90,10 @@ class SiteFooter extends React.Component {
                 <div class="col-sm container">              
                   <div class="row"> 
                   <div class="col text-right"> 
-                      <a id="" href="" class="social-icon linkedin"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>a</a>    
+                      <a id="" href="" class="social-icon linkedin text-white"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>    
                   </div>
                   <div class="col text-left">
-                      <a id="" href="" class="social-icon twitter"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>a</a>
+                      <a id="" href="" class="social-icon twitter text-white"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
                   </div>                 
                   </div> 
                 </div>
