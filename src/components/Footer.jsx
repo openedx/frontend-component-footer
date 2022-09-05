@@ -54,28 +54,60 @@ class SiteFooter extends React.Component {
     return (
       <footer
         role="contentinfo"
-        className="footer d-flex border-top py-3 px-4"
+        className="footer border-top py-3 px-4"
       >
-        <div className="container-fluid d-flex">
-          <a
-            className="d-block"
-            href={config.LMS_BASE_URL}
-            aria-label={intl.formatMessage(messages['footer.logo.ariaLabel'])}
-          >
-            <img
-              style={{ maxHeight: 45 }}
-              src={logo || config.LOGO_TRADEMARK_URL}
-              alt={intl.formatMessage(messages['footer.logo.altText'])}
-            />
-          </a>
-          <div className="flex-grow-1" />
-          {showLanguageSelector && (
-            <LanguageSelector
-              options={supportedLanguages}
-              onSubmit={onLanguageSelected}
-            />
-          )}
-        </div>
+        
+
+          <div class="container">
+          <div class="row">
+          <div class="col text-center">
+          <a>
+                <img
+                    style={{ maxHeight: 45 }}
+                    src={logo || config.LOGO_TRADEMARK_URL}
+                    alt={intl.formatMessage(messages['footer.logo.altText'])}
+                  />
+              </a>
+          </div>
+            
+            </div>
+            <div class="row">
+                <div class="col-sm">                
+                </div>
+                <div class="col-sm container">              
+                  <div class="row p-2"> 
+                  <div class="col text-right">About</div>
+                  <div class="col text-center">Blog</div>
+                  <div class="col text-left">Media</div>
+                  </div> 
+                </div>
+                <div class="col-sm">                
+                </div>
+            </div>
+            <div class="row p-2 ">
+                <div class="col-sm">                
+                </div>
+                <div class="col-sm container">              
+                  <div class="row"> 
+                  <div class="col text-right"> 
+                      <a id="" href="" class="social-icon linkedin"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>a</a>    
+                  </div>
+                  <div class="col text-left">
+                      <a id="" href="" class="social-icon twitter"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>a</a>
+                  </div>                 
+                  </div> 
+                </div>
+                <div class="col-sm">                
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col text-center">
+                      <p>&copy; 2022 All rights reserved.</p>
+                </div>
+            </div>
+          </div>
+          
+         
       </footer>
     );
   }
