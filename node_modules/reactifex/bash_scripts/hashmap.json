@@ -1,0 +1,18 @@
+[
+  {
+    "key": "testMessage",
+    "string_hash": "12345deadbeef"
+  },
+  {
+    "key": "anotherTestMessage",
+    "string_hash": "8badf00d"
+  },
+  {
+    "key": "testMessage_extra",
+    "string_hash": "bada55"
+  },
+  {
+    "key": "anotherTestMessage_extra",
+    "string_hash": "feedface9876"
+  }
+]

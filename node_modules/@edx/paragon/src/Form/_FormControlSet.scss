@@ -1,0 +1,24 @@
+.pgn__form-control-set {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  & > * + * {
+    margin: .75rem 0 0;
+  }
+}
+
+.pgn__form-control-set-inline {
+  flex-flow: row wrap;
+  align-items: flex-start;
+
+  & > * + * {
+    margin: 0 0 0 .5em;
+  }
+
+  [dir="rtl"] & {
+    & > * {
+      margin-left: .5em;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.pgn__stateful-btn-icon {
+  margin-inline-end: .5em;
+  margin-left: -.25em;
+
+  [dir="rtl"] & {
+    margin-right: -.25em;
+    margin-left: .5rem;
+  }
+}
+
+.pgn__stateful-btn-state-pending {
+  opacity: 1 !important;
+}

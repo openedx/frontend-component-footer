@@ -1,0 +1,34 @@
+{
+  "name": "babel-plugin-react-intl",
+  "version": "7.9.4",
+  "description": "Extracts string messages for translation from modules that use React Intl.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/formatjs/formatjs.git"
+  },
+  "license": "BSD-3-Clause",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "author": "Eric Ferraiuolo <edf@ericf.me>",
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/helper-plugin-utils": "^7.8.3",
+    "@babel/types": "^7.9.5",
+    "@formatjs/ts-transformer": "^2.6.0",
+    "@types/babel__core": "^7.1.7",
+    "@types/fs-extra": "^9.0.1",
+    "@types/schema-utils": "^2.4.0",
+    "fs-extra": "^9.0.0",
+    "intl-messageformat-parser": "^5.3.7",
+    "schema-utils": "^2.6.6"
+  },
+  "keywords": [
+    "babel-plugin",
+    "react-intl"
+  ],
+  "bugs": {
+    "url": "https://github.com/formatjs/formatjs/issues"
+  },
+  "homepage": "https://github.com/formatjs/formatjs#readme",
+  "gitHead": "8b0baec8eda5002715cf893274fe59782fc2d371"
+}
