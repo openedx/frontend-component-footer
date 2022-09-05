@@ -124,20 +124,20 @@ var SiteFooter = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/React.createElement("a", {
         id: "",
         href: "",
-        "class": "social-icon linkedin"
+        "class": "social-icon linkedin text-white"
       }, /*#__PURE__*/React.createElement("i", {
         "class": "fa fa-linkedin-square fa-2x",
         "aria-hidden": "true"
-      }), "a")), /*#__PURE__*/React.createElement("div", {
+      }))), /*#__PURE__*/React.createElement("div", {
         "class": "col text-left"
       }, /*#__PURE__*/React.createElement("a", {
         id: "",
         href: "",
-        "class": "social-icon twitter"
+        "class": "social-icon twitter text-white"
       }, /*#__PURE__*/React.createElement("i", {
         "class": "fa fa-twitter-square fa-2x",
         "aria-hidden": "true"
-      }), "a")))), /*#__PURE__*/React.createElement("div", {
+      }))))), /*#__PURE__*/React.createElement("div", {
         "class": "col-sm"
       })), /*#__PURE__*/React.createElement("div", {
         "class": "row p-2"
