@@ -1,4 +1,5 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
+import React, { useMemo } from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 import { IntlProvider } from '@edx/frontend-platform/i18n';
@@ -6,71 +7,69 @@ import { AppContext } from '@edx/frontend-platform/react';
 
 import Footer from './Footer';
 
+function FooterWithContext({ locale = 'es' }) {
+  const contextValue = useMemo(() => ({
+    authenticatedUser: null,
+    config: {
+      LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
+      LMS_BASE_URL: process.env.LMS_BASE_URL,
+    },
+  }), []);
+
+  return (
+    <IntlProvider locale={locale}>
+      <AppContext.Provider
+        value={contextValue}
+      >
+        <Footer />
+      </AppContext.Provider>
+    </IntlProvider>
+  );
+}
+
+function FooterWithLanguageSelector({ languageSelected = () => {} }) {
+  const contextValue = useMemo(() => ({
+    authenticatedUser: null,
+    config: {
+      LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
+      LMS_BASE_URL: process.env.LMS_BASE_URL,
+    },
+  }), []);
+
+  return (
+    <IntlProvider locale="en">
+      <AppContext.Provider
+        value={contextValue}
+      >
+        <Footer
+          onLanguageSelected={languageSelected}
+          supportedLanguages={[
+            { label: 'English', value: 'en' },
+            { label: 'Español', value: 'es' },
+          ]}
+        />
+      </AppContext.Provider>
+    </IntlProvider>
+  );
+}
+
 describe('<Footer />', () => {
   describe('renders correctly', () => {
     it('renders without a language selector', () => {
       const tree = renderer
-        .create((
-          <IntlProvider locale="en">
-            <AppContext.Provider
-              value={{
-                authenticatedUser: null,
-                config: {
-                  LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
-                  LMS_BASE_URL: process.env.LMS_BASE_URL,
-                },
-              }}
-            >
-              <Footer />
-            </AppContext.Provider>
-          </IntlProvider>
-        ))
+        .create(<FooterWithContext locale="en" />)
         .toJSON();
       expect(tree).toMatchSnapshot();
     });
     it('renders without a language selector in es', () => {
       const tree = renderer
-        .create((
-          <IntlProvider locale="es">
-            <AppContext.Provider
-              value={{
-                authenticatedUser: null,
-                config: {
-                  LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
-                  LMS_BASE_URL: process.env.LMS_BASE_URL,
-                },
-              }}
-            >
-              <Footer />
-            </AppContext.Provider>
-          </IntlProvider>
-        ))
+        .create(<FooterWithContext locale="es" />)
         .toJSON();
       expect(tree).toMatchSnapshot();
     });
     it('renders with a language selector', () => {
       const tree = renderer
-        .create((
-          <IntlProvider locale="en">
-            <AppContext.Provider
-              value={{
-                authenticatedUser: null,
-                config: {
-                  LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
-                  LMS_BASE_URL: process.env.LMS_BASE_URL,
-                },
-              }}
-            >
-              <Footer
-                onLanguageSelected={() => {}}
-                supportedLanguages={[
-                  { label: 'English', value: 'en' },
-                  { label: 'Español', value: 'es' },
-                ]}
-              />
-            </AppContext.Provider>
-          </IntlProvider>
-        ))
+        .create(<FooterWithLanguageSelector />)
         .toJSON();
       expect(tree).toMatchSnapshot();
     });
@@ -79,27 +78,7 @@ describe('<Footer />', () => {
   describe('handles language switching', () => {
     it('calls onLanguageSelected prop when a language is changed', () => {
       const mockHandleLanguageSelected = jest.fn();
-      const wrapper = mount((
-        <IntlProvider locale="en">
-          <AppContext.Provider
-            value={{
-              authenticatedUser: null,
-              config: {
-                LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
-                LMS_BASE_URL: process.env.LMS_BASE_URL,
-              },
-            }}
-          >
-            <Footer
-              onLanguageSelected={mockHandleLanguageSelected}
-              supportedLanguages={[
-                { label: 'English', value: 'en' },
-                { label: 'Español', value: 'es' },
-              ]}
-            />
-          </AppContext.Provider>
-        </IntlProvider>
-      ));
+      const wrapper = mount(<FooterWithLanguageSelector languageSelected={mockHandleLanguageSelected} />);
 
       wrapper.find('form').simulate('submit', {
         target: {
