@@ -14,7 +14,7 @@ A generic footer for Open edX micro-frontend applications.  It includes a logo a
 Requirements
 ************
 
-This component uses ``@edx/frontend-platform`` services such as i18n, analytics, configuration, and the ``AppContext`` React component, and expects that it has been loaded into a micro-frontend that has been properly initialized via ``@edx/frontend-platform``'s ``initialize`` function.  `Please visit the frontend template application to see an example. <https://github.com/edx/frontend-template-application/blob/3355bb3a96232390e9056f35b06ffa8f105ed7ca/src/index.jsx>`_
+This component uses ``@edx/frontend-platform`` services such as i18n, analytics, configuration, and the ``AppContext`` React component, and expects that it has been loaded into a micro-frontend that has been properly initialized via ``@edx/frontend-platform``'s ``initialize`` function.  `Please visit the frontend template application to see an example. <https://github.com/openedx/frontend-template-application/blob/3355bb3a96232390e9056f35b06ffa8f105ed7ca/src/index.jsx>`_
 
 Environment Variables
 =====================
@@ -68,8 +68,8 @@ Component Usage Example::
     ]}
   />
 
-* `An example of minimal component and messages usage. <https://github.com/edx/frontend-template-application/blob/3355bb3a96232390e9056f35b06ffa8f105ed7ca/src/index.jsx#L23>`_
-* `An example of SCSS file usage. <https://github.com/edx/frontend-template-application/blob/3cd5485bf387b8c479baf6b02bf59e3061dc3465/src/index.scss#L9>`_
+* `An example of minimal component and messages usage. <https://github.com/openedx/frontend-template-application/blob/3355bb3a96232390e9056f35b06ffa8f105ed7ca/src/index.jsx#L23>`_
+* `An example of SCSS file usage. <https://github.com/openedx/frontend-template-application/blob/3cd5485bf387b8c479baf6b02bf59e3061dc3465/src/index.scss#L9>`_
 
 ***********
 Development
