@@ -72,17 +72,23 @@ class SiteFooter extends React.Component {
             
             </div>
             <div class="row mt-3">
-                <div class="col-sm">                
-                </div>
-                <div class="col-sm container">              
-                  <div class="row p-2"> 
-                  <div class="col text-center text-color-white boder-right"><a href='https://www.gift-ed.com/about-us' target="_blank">About</a></div>
-                  <div class="col text-center boder-right"><a href='#' target="_blank">Blog</a></div>
-                  <div class="col text-center"><a href='https://www.gift-ed.com/about-us' target="_blank">Media</a></div>
+                
+                <div class="col-sm container">  
+                            
+                  <div class="row p-2 upper-menu"> 
+
+                    {/* <div class="col text-center text-color-white"><a class="boder-right" href='https://www.gift-ed.com/about-us' target="_blank">About</a></div>
+                    <div class="col text-center"><a class="boder-right" href='#' target="_blank">Blog</a></div>
+                    <div class="col text-center"><a  href='https://www.gift-ed.com/about-us' target="_blank">Media</a></div> */}
+
+                    <ul class="bottom-menu">
+                      <li><a class="boder-right" href="https://www.gift-ed.com/terms-and-conditions" target="_blank">About</a></li>
+                      <li><a class="boder-right" href='https://www.gift-ed.com/privacy-policy' target="_blank"> Media</a></li>
+                      <li><a class="" href='https://www.gift-ed.com/privacy-policy'>Contact</a></li>
+                  </ul>
                   </div> 
                 </div>
-                <div class="col-sm">                
-                </div>
+               
             </div>
             <div class="row p-2 mt-3">
                 <div class="col-sm">                
@@ -101,11 +107,12 @@ class SiteFooter extends React.Component {
                 </div>
             </div>
             <div class="row p-2 mt-3 mb-5">
-                <div class="col text-center bottom-menu">
-                  <li><a class="boder-right" href="https://www.gift-ed.com/terms-and-conditions" target="_blank">Terms of use</a></li>
-                  <li><a class="boder-right" href='https://www.gift-ed.com/privacy-policy' target="_blank"> Privacy policy</a></li>
-                  <li><a class="isDisabled" href='https://www.gift-ed.com/privacy-policy'> &copy; 2022 All rights reserved.</a></li>
-                      
+                <div class="col text-center">
+                  <ul class="bottom-menu">
+                      <li><a class="boder-right" href="https://www.gift-ed.com/terms-and-conditions" target="_blank">Terms of use</a></li>
+                      <li><a class="boder-right" href='https://www.gift-ed.com/privacy-policy' target="_blank"> Privacy policy</a></li>
+                      <li><a class="isDisabled" href='https://www.gift-ed.com/privacy-policy'> &copy; 2022 All rights reserved.</a></li>
+                  </ul>
                 </div>
             </div>
           </div>
