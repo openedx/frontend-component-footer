@@ -96,7 +96,7 @@ var SiteFooter = /*#__PURE__*/function (_React$Component) {
         src: logo || config.LOGO_TRADEMARK_URL,
         alt: intl.formatMessage(messages['footer.logo.altText'])
       })))), /*#__PURE__*/React.createElement("div", {
-        "class": "row mt-3"
+        "class": "row mt-2"
       }, /*#__PURE__*/React.createElement("div", {
         "class": "col-sm container"
       }, /*#__PURE__*/React.createElement("div", {
@@ -115,7 +115,7 @@ var SiteFooter = /*#__PURE__*/function (_React$Component) {
         "class": "",
         href: "https://www.gift-ed.com/privacy-policy"
       }, "Contact")))))), /*#__PURE__*/React.createElement("div", {
-        "class": "row p-2 mt-3"
+        "class": "row p-2 mt-2"
       }, /*#__PURE__*/React.createElement("div", {
         "class": "col-sm"
       }), /*#__PURE__*/React.createElement("div", {
@@ -143,7 +143,7 @@ var SiteFooter = /*#__PURE__*/function (_React$Component) {
       }))))), /*#__PURE__*/React.createElement("div", {
         "class": "col-sm"
       })), /*#__PURE__*/React.createElement("div", {
-        "class": "row p-2 mt-3 mb-5"
+        "class": "row p-2 mt-2 mb-5"
       }, /*#__PURE__*/React.createElement("div", {
         "class": "col text-center"
       }, /*#__PURE__*/React.createElement("ul", {

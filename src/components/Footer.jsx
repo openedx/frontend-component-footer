@@ -71,7 +71,7 @@ class SiteFooter extends React.Component {
           </div>
             
             </div>
-            <div class="row mt-3">
+            <div class="row mt-2">
                 
                 <div class="col-sm container">  
                             
@@ -90,7 +90,7 @@ class SiteFooter extends React.Component {
                 </div>
                
             </div>
-            <div class="row p-2 mt-3">
+            <div class="row p-2 mt-2">
                 <div class="col-sm">                
                 </div>
                 <div class="col-sm container">              
@@ -106,7 +106,7 @@ class SiteFooter extends React.Component {
                 <div class="col-sm">                
                 </div>
             </div>
-            <div class="row p-2 mt-3 mb-5">
+            <div class="row p-2 mt-2 mb-5">
                 <div class="col text-center">
                   <ul class="bottom-menu">
                       <li><a class="boder-right" href="https://www.gift-ed.com/terms-and-conditions" target="_blank">Terms of use</a></li>
