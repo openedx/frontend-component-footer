@@ -98,29 +98,23 @@ var SiteFooter = /*#__PURE__*/function (_React$Component) {
       })))), /*#__PURE__*/React.createElement("div", {
         "class": "row mt-3"
       }, /*#__PURE__*/React.createElement("div", {
-        "class": "col-sm"
-      }), /*#__PURE__*/React.createElement("div", {
         "class": "col-sm container"
       }, /*#__PURE__*/React.createElement("div", {
-        "class": "row p-2"
-      }, /*#__PURE__*/React.createElement("div", {
-        "class": "col text-center text-color-white boder-right"
-      }, /*#__PURE__*/React.createElement("a", {
-        href: "https://www.gift-ed.com/about-us",
+        "class": "row p-2 upper-menu"
+      }, /*#__PURE__*/React.createElement("ul", {
+        "class": "bottom-menu"
+      }, /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
+        "class": "boder-right",
+        href: "https://www.gift-ed.com/terms-and-conditions",
         target: "_blank"
-      }, "About")), /*#__PURE__*/React.createElement("div", {
-        "class": "col text-center boder-right"
-      }, /*#__PURE__*/React.createElement("a", {
-        href: "#",
+      }, "About")), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
+        "class": "boder-right",
+        href: "https://www.gift-ed.com/privacy-policy",
         target: "_blank"
-      }, "Blog")), /*#__PURE__*/React.createElement("div", {
-        "class": "col text-center"
-      }, /*#__PURE__*/React.createElement("a", {
-        href: "https://www.gift-ed.com/about-us",
-        target: "_blank"
-      }, "Media")))), /*#__PURE__*/React.createElement("div", {
-        "class": "col-sm"
-      })), /*#__PURE__*/React.createElement("div", {
+      }, " Media")), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
+        "class": "",
+        href: "https://www.gift-ed.com/privacy-policy"
+      }, "Contact")))))), /*#__PURE__*/React.createElement("div", {
         "class": "row p-2 mt-3"
       }, /*#__PURE__*/React.createElement("div", {
         "class": "col-sm"
@@ -151,7 +145,9 @@ var SiteFooter = /*#__PURE__*/function (_React$Component) {
       })), /*#__PURE__*/React.createElement("div", {
         "class": "row p-2 mt-3 mb-5"
       }, /*#__PURE__*/React.createElement("div", {
-        "class": "col text-center bottom-menu"
+        "class": "col text-center"
+      }, /*#__PURE__*/React.createElement("ul", {
+        "class": "bottom-menu"
       }, /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
         "class": "boder-right",
         href: "https://www.gift-ed.com/terms-and-conditions",
@@ -163,7 +159,7 @@ var SiteFooter = /*#__PURE__*/function (_React$Component) {
       }, " Privacy policy")), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
         "class": "isDisabled",
         href: "https://www.gift-ed.com/privacy-policy"
-      }, " \xA9 2022 All rights reserved."))))));
+      }, " \xA9 2022 All rights reserved.")))))));
     }
   }]);
 

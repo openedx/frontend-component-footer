@@ -2,11 +2,22 @@
 
 $gray-footer: #fcfcfc !default;
 $primary: #111111;
+$secondary: #df2644;
+$font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 .footer {
   background-color: $primary;
   color: $white;
   a {
     color: $white;
+    padding: 0 20px;
+    font-size: 0.875rem;
+    font-family: $font-family;
+  }
+  a:hover {
+    color: $secondary;
+  }
+  .upper-menu {
+    justify-content: center;
   }
 }
 .boder-right {
