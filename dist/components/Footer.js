@@ -96,7 +96,7 @@ var SiteFooter = /*#__PURE__*/function (_React$Component) {
         src: logo || config.LOGO_TRADEMARK_URL,
         alt: intl.formatMessage(messages['footer.logo.altText'])
       })))), /*#__PURE__*/React.createElement("div", {
-        "class": "row"
+        "class": "row mt-3"
       }, /*#__PURE__*/React.createElement("div", {
         "class": "col-sm"
       }), /*#__PURE__*/React.createElement("div", {
@@ -104,15 +104,24 @@ var SiteFooter = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/React.createElement("div", {
         "class": "row p-2"
       }, /*#__PURE__*/React.createElement("div", {
-        "class": "col text-right"
-      }, "About"), /*#__PURE__*/React.createElement("div", {
+        "class": "col text-center text-color-white boder-right"
+      }, /*#__PURE__*/React.createElement("a", {
+        href: "https://www.gift-ed.com/about-us",
+        target: "_blank"
+      }, "About")), /*#__PURE__*/React.createElement("div", {
+        "class": "col text-center boder-right"
+      }, /*#__PURE__*/React.createElement("a", {
+        href: "#",
+        target: "_blank"
+      }, "Blog")), /*#__PURE__*/React.createElement("div", {
         "class": "col text-center"
-      }, "Blog"), /*#__PURE__*/React.createElement("div", {
-        "class": "col text-left"
-      }, "Media"))), /*#__PURE__*/React.createElement("div", {
+      }, /*#__PURE__*/React.createElement("a", {
+        href: "https://www.gift-ed.com/about-us",
+        target: "_blank"
+      }, "Media")))), /*#__PURE__*/React.createElement("div", {
         "class": "col-sm"
       })), /*#__PURE__*/React.createElement("div", {
-        "class": "row p-2 "
+        "class": "row p-2 mt-3"
       }, /*#__PURE__*/React.createElement("div", {
         "class": "col-sm"
       }), /*#__PURE__*/React.createElement("div", {
@@ -135,15 +144,26 @@ var SiteFooter = /*#__PURE__*/function (_React$Component) {
         href: "",
         "class": "social-icon twitter text-white"
       }, /*#__PURE__*/React.createElement("i", {
-        "class": "fa fa-twitter-square fa-2x",
+        "class": "fa fa-youtube-play fa-2x",
         "aria-hidden": "true"
       }))))), /*#__PURE__*/React.createElement("div", {
         "class": "col-sm"
       })), /*#__PURE__*/React.createElement("div", {
-        "class": "row p-2"
+        "class": "row p-2 mt-3 mb-5"
       }, /*#__PURE__*/React.createElement("div", {
-        "class": "col text-center"
-      }, /*#__PURE__*/React.createElement("p", null, "\xA9 2022 All rights reserved.")))));
+        "class": "col text-center bottom-menu"
+      }, /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
+        "class": "boder-right",
+        href: "https://www.gift-ed.com/terms-and-conditions",
+        target: "_blank"
+      }, "Terms of use")), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
+        "class": "boder-right",
+        href: "https://www.gift-ed.com/privacy-policy",
+        target: "_blank"
+      }, " Privacy policy")), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
+        "class": "isDisabled",
+        href: "https://www.gift-ed.com/privacy-policy"
+      }, " \xA9 2022 All rights reserved."))))));
     }
   }]);
 
