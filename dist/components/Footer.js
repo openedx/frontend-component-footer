@@ -126,7 +126,8 @@ var SiteFooter = /*#__PURE__*/function (_React$Component) {
         "class": "col text-right"
       }, /*#__PURE__*/React.createElement("a", {
         id: "",
-        href: "",
+        href: "https://www.linkedin.com/company/gift-ed/",
+        target: "_blank",
         "class": "social-icon linkedin text-white"
       }, /*#__PURE__*/React.createElement("i", {
         "class": "fa fa-linkedin-square fa-2x",
@@ -135,7 +136,18 @@ var SiteFooter = /*#__PURE__*/function (_React$Component) {
         "class": "col text-left"
       }, /*#__PURE__*/React.createElement("a", {
         id: "",
-        href: "",
+        href: "https://twitter.com/Global_Inst_FT",
+        target: "_blank",
+        "class": "social-icon twitter text-white"
+      }, /*#__PURE__*/React.createElement("i", {
+        "class": "fa fa-twitter fa-2x",
+        "aria-hidden": "true"
+      }))), /*#__PURE__*/React.createElement("div", {
+        "class": "col text-left"
+      }, /*#__PURE__*/React.createElement("a", {
+        id: "",
+        href: "https://www.youtube.com/channel/UCtA4q3RUyUgEmXgmN74w2Pw",
+        target: "_blank",
         "class": "social-icon twitter text-white"
       }, /*#__PURE__*/React.createElement("i", {
         "class": "fa fa-youtube-play fa-2x",
