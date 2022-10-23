@@ -96,10 +96,13 @@ class SiteFooter extends React.Component {
                 <div class="col-sm container">              
                   <div class="row"> 
                   <div class="col text-right"> 
-                      <a id="" href="" class="social-icon linkedin text-white"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>    
+                      <a id="" href="https://www.linkedin.com/company/gift-ed/" target="_blank" class="social-icon linkedin text-white"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>    
                   </div>
                   <div class="col text-left">
-                      <a id="" href="" class="social-icon twitter text-white"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+                      <a id="" href="https://twitter.com/Global_Inst_FT" target="_blank" class="social-icon twitter text-white"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                  </div>                 
+                  <div class="col text-left">
+                      <a id="" href="https://www.youtube.com/channel/UCtA4q3RUyUgEmXgmN74w2Pw" target="_blank" class="social-icon twitter text-white"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
                   </div>                 
                   </div> 
                 </div>
