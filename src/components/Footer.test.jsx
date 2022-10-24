@@ -7,7 +7,7 @@ import { AppContext } from '@edx/frontend-platform/react';
 
 import Footer from './Footer';
 
-function FooterWithContext({ locale = 'es' }) {
+const FooterWithContext = ({ locale = 'es' }) => {
   const contextValue = useMemo(() => ({
     authenticatedUser: null,
     config: {
@@ -25,9 +25,9 @@ function FooterWithContext({ locale = 'es' }) {
       </AppContext.Provider>
     </IntlProvider>
   );
-}
+};
 
-function FooterWithLanguageSelector({ languageSelected = () => {} }) {
+const FooterWithLanguageSelector = ({ languageSelected = () => {} }) => {
   const contextValue = useMemo(() => ({
     authenticatedUser: null,
     config: {
@@ -51,7 +51,7 @@ function FooterWithLanguageSelector({ languageSelected = () => {} }) {
       </AppContext.Provider>
     </IntlProvider>
   );
-}
+};
 
 describe('<Footer />', () => {
   describe('renders correctly', () => {
