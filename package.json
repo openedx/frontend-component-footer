@@ -35,7 +35,7 @@
   "devDependencies": {
     "@edx/brand": "npm:@edx/brand-openedx@1.1.0",
     "@edx/frontend-build": "12.3.0",
-    "@edx/frontend-platform": "3.0.1",
+    "@edx/frontend-platform": "^2.6.2",
     "@edx/paragon": "19.25.3",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.6",
@@ -58,7 +58,7 @@
     "@fortawesome/react-fontawesome": "0.2.0"
   },
   "peerDependencies": {
-    "@edx/frontend-platform": "^3.0.0",
+    "@edx/frontend-platform": "^2.0.0",
     "prop-types": "^15.5.10",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
