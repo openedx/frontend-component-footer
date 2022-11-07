@@ -38,7 +38,7 @@
     "@edx/frontend-platform": "^2.6.2",
     "@edx/paragon": "19.25.3",
     "enzyme": "3.11.0",
-    "enzyme-adapter-react-16": "1.15.6",
+    "enzyme-adapter-react-16": "1.15.7",
     "husky": "7.0.4",
     "prop-types": "15.8.1",
     "react": "16.14.0",
