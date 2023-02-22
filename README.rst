@@ -43,6 +43,21 @@ This component requires that the following environment variable be set by the co
 * ``LMS_BASE_URL`` - The URL of the LMS of your Open edX instance.
 * ``LOGO_TRADEMARK_URL`` - This is a URL to a logo for use in the footer.  This is a different environment variable than ``LOGO_URL`` (used in frontend-component-header) to accommodate sites that would like to have additional trademark information on a logo in the footer, such as a (tm) or (r) symbol.
 
+Optional Environment Variables
+=====================
+Apart from the required environment variables, this component also supports the following optional environment variables. These variables add the ability to display
+custom legal links in the footer. Optional environment variables can also be set by the consuming micro-frontend.
+
+* ``ABOUT_US_URL`` - About Us page URL.
+* ``ACCESSIBILITY_URL`` - Accessibility page URL.
+* ``CONTACT_URL`` - Contact Us page URL.
+* ``HONOR_CODE_URL`` - Honor Code page URL.
+* ``FOOTER_LOGO_ALT_TEXT`` - Alt text for the footer logo.
+* ``SHOW_FOOTER_LOGO`` - Optionally display the logo.
+* ``SUPPORT_CENTER_TEXT`` - Text for the Support Center link i.e. `Help Center`.
+* ``SUPPORT_CENTER_URL`` - Support center URL.
+* ``TRADEMARK_TEXT`` - Trademark text.
+
 Installation
 ============
 

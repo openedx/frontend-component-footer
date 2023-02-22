@@ -24,6 +24,70 @@ exports[`<Footer /> renders correctly renders with a language selector 1`] = `
       />
     </a>
     <div
+      className="copyright-col"
+    >
+      <div
+        className="trademark-text"
+      >
+        Trade Mark text
+      </div>
+      <div>
+        <ul
+          className="footer-sub-nav"
+        >
+          <li>
+            <a
+              href="http://localhost:18000/about"
+            >
+              About Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/terms-of-service"
+            >
+              Terms of Service
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/privacy"
+            >
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/honor"
+            >
+              Honor Code
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/contact"
+            >
+              Contact Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.edx.org/accessibility"
+            >
+              Accessibility Policy
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/contact"
+            >
+              SUPPORT CENTER
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
       className="flex-grow-1"
     />
     <form
@@ -93,6 +157,70 @@ exports[`<Footer /> renders correctly renders without a language selector 1`] = 
       />
     </a>
     <div
+      className="copyright-col"
+    >
+      <div
+        className="trademark-text"
+      >
+        Trade Mark text
+      </div>
+      <div>
+        <ul
+          className="footer-sub-nav"
+        >
+          <li>
+            <a
+              href="http://localhost:18000/about"
+            >
+              About Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/terms-of-service"
+            >
+              Terms of Service
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/privacy"
+            >
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/honor"
+            >
+              Honor Code
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/contact"
+            >
+              Contact Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.edx.org/accessibility"
+            >
+              Accessibility Policy
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/contact"
+            >
+              SUPPORT CENTER
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
       className="flex-grow-1"
     />
   </div>
@@ -122,6 +250,70 @@ exports[`<Footer /> renders correctly renders without a language selector in es 
         }
       />
     </a>
+    <div
+      className="copyright-col"
+    >
+      <div
+        className="trademark-text"
+      >
+        Trade Mark text
+      </div>
+      <div>
+        <ul
+          className="footer-sub-nav"
+        >
+          <li>
+            <a
+              href="http://localhost:18000/about"
+            >
+              About Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/terms-of-service"
+            >
+              Terms of Service
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/privacy"
+            >
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/honor"
+            >
+              Honor Code
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/contact"
+            >
+              Contact Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.edx.org/accessibility"
+            >
+              Accessibility Policy
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://localhost:18000/contact"
+            >
+              SUPPORT CENTER
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div
       className="flex-grow-1"
     />

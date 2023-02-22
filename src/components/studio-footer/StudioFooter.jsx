@@ -22,7 +22,7 @@ ensureConfig([
   'SUPPORT_EMAIL',
   'SITE_NAME',
   'STUDIO_BASE_URL',
-  'ENABLE_ACCESSIBILITY_PAGE',
+  'ACCESSIBILITY_URL',
 ], 'Studio Footer component');
 
 const StudioFooter = ({
@@ -105,11 +105,8 @@ const StudioFooter = ({
               {intl.formatMessage(messages.privacyPolicyLinkLabel)}
             </Hyperlink>
           )}
-          {config.ENABLE_ACCESSIBILITY_PAGE === 'true' && (
-            <Hyperlink
-              destination={`${config.STUDIO_BASE_URL}/accessibility`}
-              data-testid="accessibilityRequest"
-            >
+          {!_.isEmpty(config.ACCESSIBILITY_URL) && (
+            <Hyperlink destination={config.ACCESSIBILITY_URL} data-testid="accessibilityRequest">
               {intl.formatMessage(messages.accessibilityRequestLinkLabel)}
             </Hyperlink>
           )}

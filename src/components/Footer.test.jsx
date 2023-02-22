@@ -13,6 +13,17 @@ const FooterWithContext = ({ locale = 'es' }) => {
     config: {
       LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
       LMS_BASE_URL: process.env.LMS_BASE_URL,
+      ABOUT_US_URL: process.env.ABOUT_US_URL,
+      ACCESSIBILITY_URL: process.env.ACCESSIBILITY_URL,
+      CONTACT_URL: process.env.CONTACT_URL,
+      HONOR_CODE_URL: process.env.HONOR_CODE_URL,
+      FOOTER_LOGO_ALT_TEXT: process.env.FOOTER_LOGO_ALT_TEXT,
+      PRIVACY_POLICY_URL: process.env.PRIVACY_POLICY_URL,
+      SHOW_FOOTER_LOGO: process.env.SHOW_FOOTER_LOGO,
+      SUPPORT_CENTER_TEXT: process.env.SUPPORT_CENTER_TEXT,
+      SUPPORT_CENTER_URL: process.env.SUPPORT_CENTER_URL,
+      TERMS_OF_SERVICE_URL: process.env.TERMS_OF_SERVICE_URL,
+      TRADEMARK_TEXT: process.env.TRADEMARK_TEXT,
     },
   }), []);
 
@@ -33,6 +44,17 @@ const FooterWithLanguageSelector = ({ languageSelected = () => {} }) => {
     config: {
       LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
       LMS_BASE_URL: process.env.LMS_BASE_URL,
+      ABOUT_US_URL: process.env.ABOUT_US_URL,
+      ACCESSIBILITY_URL: process.env.ACCESSIBILITY_URL,
+      CONTACT_URL: process.env.CONTACT_URL,
+      HONOR_CODE_URL: process.env.HONOR_CODE_URL,
+      FOOTER_LOGO_ALT_TEXT: process.env.FOOTER_LOGO_ALT_TEXT,
+      PRIVACY_POLICY_URL: process.env.PRIVACY_POLICY_URL,
+      SHOW_FOOTER_LOGO: process.env.SHOW_FOOTER_LOGO,
+      SUPPORT_CENTER_TEXT: process.env.SUPPORT_CENTER_TEXT,
+      SUPPORT_CENTER_URL: process.env.SUPPORT_CENTER_URL,
+      TERMS_OF_SERVICE_URL: process.env.TERMS_OF_SERVICE_URL,
+      TRADEMARK_TEXT: process.env.TRADEMARK_TEXT,
     },
   }), []);
 
