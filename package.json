@@ -51,7 +51,7 @@
     "semantic-release": "19.0.5"
   },
   "dependencies": {
-    "@edx/frontend-platform": "^4.0.1",
+    "@edx/frontend-platform": "^4.1.0",
     "@fortawesome/fontawesome-svg-core": "6.4.0",
     "@fortawesome/free-brands-svg-icons": "6.4.0",
     "@fortawesome/free-regular-svg-icons": "6.4.0",
