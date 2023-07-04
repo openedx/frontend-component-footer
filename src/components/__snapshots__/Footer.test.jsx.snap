@@ -2,128 +2,182 @@
 
 exports[`<Footer /> renders correctly renders with a language selector 1`] = `
 <footer
-  className="footer d-flex border-top py-3 px-4"
+  className="footer d-flex border-top py-3 px-4 "
   role="contentinfo"
 >
-  <div
-    className="container-fluid d-flex"
+  <a
+    aria-label="edX Home"
+    className="d-block"
+    href="http://localhost:18000"
   >
-    <a
-      aria-label="edX Home"
-      className="d-block"
-      href="http://localhost:18000"
-    >
-      <img
-        alt="Powered by Open edX"
-        src="https://edx-cdn.org/v3/default/logo-trademark.svg"
-        style={
-          Object {
-            "maxHeight": 45,
-          }
+    <img
+      alt="Powered by Open edX"
+      src="https://edx-cdn.org/v3/default/logo-trademark.svg"
+      style={
+        Object {
+          "maxHeight": 45,
         }
-      />
-    </a>
-    <div
-      className="flex-grow-1"
+      }
     />
-    <form
-      className="form-inline"
-      onSubmit={[Function]}
+  </a>
+  <div
+    className="flex-grow-1"
+  />
+  <form
+    className="form-inline justify-content-center"
+    onSubmit={[Function]}
+  >
+    <div
+      className="form-group"
     >
-      <div
-        className="form-group"
+      <label
+        className="d-inline-block m-0"
+        htmlFor="site-footer-language-select"
       >
-        <label
-          className="d-inline-block m-0"
-          htmlFor="site-footer-language-select"
+        Choose Language
+      </label>
+      <select
+        className="form-control-sm mx-2"
+        defaultValue="en"
+        id="site-footer-language-select"
+        name="site-footer-language-select"
+      >
+        <option
+          value="en"
         >
-          Choose Language
-        </label>
-        <select
-          className="form-control-sm mx-2"
-          defaultValue="en"
-          id="site-footer-language-select"
-          name="site-footer-language-select"
+          English
+        </option>
+        <option
+          value="es"
         >
-          <option
-            value="en"
-          >
-            English
-          </option>
-          <option
-            value="es"
-          >
-            Español
-          </option>
-        </select>
-        <button
-          className="btn btn-outline-primary btn-sm"
-          type="submit"
-        >
-          Apply
-        </button>
-      </div>
-    </form>
-  </div>
+          Español
+        </option>
+      </select>
+      <button
+        className="btn btn-outline-primary btn-sm"
+        type="submit"
+      >
+        Apply
+      </button>
+    </div>
+  </form>
 </footer>
 `;
 
 exports[`<Footer /> renders correctly renders without a language selector 1`] = `
 <footer
-  className="footer d-flex border-top py-3 px-4"
+  className="footer d-flex border-top py-3 px-4 text-center"
   role="contentinfo"
+  style={
+    Object {
+      "color": "black",
+    }
+  }
 >
+  <a
+    aria-label="edX Home"
+    className="d-block"
+    href="http://localhost:18000"
+  >
+    <img
+      alt="Powered by Open edX"
+      src="https://edx-cdn.org/v3/default/logo-trademark.svg"
+      style={
+        Object {
+          "color": "white",
+          "maxHeight": 45,
+        }
+      }
+    />
+  </a>
   <div
-    className="container-fluid d-flex"
+    className="flex-grow-1"
+  />
+  <div
+    className="d-flex align-items-center justify-content-center flex-wrap"
   >
     <a
-      aria-label="edX Home"
-      className="d-block"
-      href="http://localhost:18000"
+      className="px-3 text-dark font-weight-bold"
+      href="https://openedx.org/terms-of-use/"
+      target="blank"
     >
-      <img
-        alt="Powered by Open edX"
-        src="https://edx-cdn.org/v3/default/logo-trademark.svg"
-        style={
-          Object {
-            "maxHeight": 45,
-          }
-        }
-      />
+      Terms of service
     </a>
-    <div
-      className="flex-grow-1"
-    />
+    |
+    <a
+      className="px-3 text-dark font-weight-bold"
+      href="https://openedx.org/code-of-conduct/"
+      target="blank"
+    >
+      Code of conduct
+    </a>
+    |
+    <a
+      className="px-3 text-dark font-weight-bold"
+      href="https://openedx.org/privacy-policy/"
+      target="blank"
+    >
+      Privacy Policy
+    </a>
   </div>
 </footer>
 `;
 
 exports[`<Footer /> renders correctly renders without a language selector in es 1`] = `
 <footer
-  className="footer d-flex border-top py-3 px-4"
+  className="footer d-flex border-top py-3 px-4 text-center"
   role="contentinfo"
+  style={
+    Object {
+      "color": "black",
+    }
+  }
 >
+  <a
+    aria-label="edX Home"
+    className="d-block"
+    href="http://localhost:18000"
+  >
+    <img
+      alt="Powered by Open edX"
+      src="https://edx-cdn.org/v3/default/logo-trademark.svg"
+      style={
+        Object {
+          "color": "white",
+          "maxHeight": 45,
+        }
+      }
+    />
+  </a>
   <div
-    className="container-fluid d-flex"
+    className="flex-grow-1"
+  />
+  <div
+    className="d-flex align-items-center justify-content-center flex-wrap"
   >
     <a
-      aria-label="edX Home"
-      className="d-block"
-      href="http://localhost:18000"
+      className="px-3 text-dark font-weight-bold"
+      href="https://openedx.org/terms-of-use/"
+      target="blank"
     >
-      <img
-        alt="Powered by Open edX"
-        src="https://edx-cdn.org/v3/default/logo-trademark.svg"
-        style={
-          Object {
-            "maxHeight": 45,
-          }
-        }
-      />
+      Terms of service
     </a>
-    <div
-      className="flex-grow-1"
-    />
+    |
+    <a
+      className="px-3 text-dark font-weight-bold"
+      href="https://openedx.org/code-of-conduct/"
+      target="blank"
+    >
+      Code of conduct
+    </a>
+    |
+    <a
+      className="px-3 text-dark font-weight-bold"
+      href="https://openedx.org/privacy-policy/"
+      target="blank"
+    >
+      Privacy Policy
+    </a>
   </div>
 </footer>
 `;

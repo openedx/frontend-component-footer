@@ -13,7 +13,7 @@ const LanguageSelector = ({
 
   return (
     <form
-      className="form-inline"
+      className="form-inline justify-content-center"
       onSubmit={handleSubmit}
       {...props}
     >

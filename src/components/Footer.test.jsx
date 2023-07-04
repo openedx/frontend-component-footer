@@ -13,6 +13,16 @@ const FooterWithContext = ({ locale = 'es' }) => {
     config: {
       LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
       LMS_BASE_URL: process.env.LMS_BASE_URL,
+      FOOTER_CUSTOM_STYLE: { color: 'black' },
+      FOOTER_CUSTOM_CLASSNAMES: 'text-center',
+      FOOTER_LOGO_STYLE: { color: 'white' },
+      FOOTER_LINKS: [
+        { url: 'https://openedx.org/terms-of-use/', text: 'Terms of service' },
+        { url: 'https://openedx.org/code-of-conduct/', text: 'Code of conduct' },
+        { url: 'https://openedx.org/privacy-policy/', text: 'Privacy Policy' },
+      ],
+      FOOTER_LINKS_CONTAINER_CLASSNAMES: 'flex-wrap',
+      FOOTER_LINKS_CLASSNAMES: 'text-dark font-weight-bold',
     },
   }), []);
 
