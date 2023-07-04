@@ -35,7 +35,7 @@
   "devDependencies": {
     "@edx/brand": "npm:@edx/brand-openedx@1.2.0",
     "@edx/browserslist-config": "^1.1.1",
-    "@edx/frontend-build": "12.8.51",
+    "@edx/frontend-build": "12.8.57",
     "@edx/frontend-platform": "4.5.1",
     "@edx/paragon": "^20.44.0",
     "@edx/reactifex": "^2.1.1",
@@ -49,7 +49,7 @@
     "react-router-dom": "5.3.4",
     "react-test-renderer": "17.0.2",
     "redux": "4.2.1",
-    "semantic-release": "21.0.5"
+    "semantic-release": "21.0.6"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "6.4.0",
