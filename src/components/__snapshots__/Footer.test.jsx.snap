@@ -17,7 +17,7 @@ exports[`<Footer /> renders correctly renders with a language selector 1`] = `
         alt="Powered by Open edX"
         src="https://edx-cdn.org/v3/default/logo-trademark.svg"
         style={
-          Object {
+          {
             "maxHeight": 45,
           }
         }
@@ -85,7 +85,7 @@ exports[`<Footer /> renders correctly renders without a language selector 1`] = 
         alt="Powered by Open edX"
         src="https://edx-cdn.org/v3/default/logo-trademark.svg"
         style={
-          Object {
+          {
             "maxHeight": 45,
           }
         }
@@ -115,7 +115,7 @@ exports[`<Footer /> renders correctly renders without a language selector in es 
         alt="Powered by Open edX"
         src="https://edx-cdn.org/v3/default/logo-trademark.svg"
         style={
-          Object {
+          {
             "maxHeight": 45,
           }
         }
