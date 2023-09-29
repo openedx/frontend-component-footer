@@ -4,7 +4,6 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { IntlProvider } from '@edx/frontend-platform/i18n';
 import { AppContext } from '@edx/frontend-platform/react';
-import formatMessage from './testUtils';
 import StudioFooter from './StudioFooter';
 import messages from './messages';
 
@@ -36,9 +35,7 @@ const Component = ({ updateVariable }) => {
   return (
     <IntlProvider locale="en">
       <AppContext.Provider value={contextValue}>
-        <StudioFooter
-          intl={{ formatMessage }}
-        />
+        <StudioFooter />
       </AppContext.Provider>
     </IntlProvider>
   );
