@@ -16,11 +16,6 @@ const messages = defineMessages({
     defaultMessage: 'edX documentation',
     description: 'Label for button that links to the edX documentation site',
   },
-  parnterPortalButtonLabel: {
-    id: 'authoring.footer.help.parnterPortal.button.label',
-    defaultMessage: 'edX partner portal',
-    description: 'Label for button that links to the edX partner portal',
-  },
   openEdxPortalButtonLabel: {
     id: 'authoring.footer.help.openEdxPortal.button.label',
     defaultMessage: 'Open edX portal',
