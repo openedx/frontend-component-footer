@@ -71,7 +71,7 @@ Cloning and Startup
 
   3. Install npm dependencies:
 
-    ``cd frontend-component-footer && npm install``
+    ``cd frontend-component-footer && npm ci``
 
   4. Start the dev server:
 
