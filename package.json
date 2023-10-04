@@ -53,7 +53,7 @@
     "semantic-release": "21.1.2"
   },
   "dependencies": {
-    "@edx/paragon": "^21.3.1",
+    "@edx/paragon": "21.3.1",
     "@fortawesome/fontawesome-svg-core": "6.4.2",
     "@fortawesome/free-brands-svg-icons": "6.4.2",
     "@fortawesome/free-regular-svg-icons": "6.4.2",
