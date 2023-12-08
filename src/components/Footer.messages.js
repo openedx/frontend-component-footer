@@ -136,15 +136,30 @@ const messages = defineMessages({
     defaultMessage: 'Download the edX mobile app from Google Play',
     description: 'The label for the link to download the google version of the edX app.',
   },
+  'footer.poweredby.text': {
+    id: 'footer.poweredby.text',
+    defaultMessage: 'Powered by',
+    description: 'text for the footer',
+  },
   'footer.logo.altText': {
     id: 'footer.logo.altText',
     defaultMessage: 'Powered by Open edX',
     description: 'alt text for the footer logo.',
   },
+  'footer.tutorlogo.altText': {
+    id: 'footer.tutorlogo.altText',
+    defaultMessage: 'Runs on Tutor',
+    description: 'alt text for the footer tutor logo',
+  },
   'footer.logo.ariaLabel': {
     id: 'footer.logo.ariaLabel',
     defaultMessage: 'edX Home',
     description: 'aria-label for the footer logo.',
+  },
+  'footer.copyright.text': {
+    id: 'footer.copyright.text',
+    defaultMessage: 'Copyrights ©2023. All Rights Reserved.',
+    description: 'copyright text for the footer',
   },
   'footer.ariaLabel': {
     id: 'footer.ariaLabel',
