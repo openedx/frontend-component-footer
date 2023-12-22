@@ -94,7 +94,7 @@ const StudioFooter = ({
           ) : null}
         </TransitionReplace>
         <ActionRow className="pt-3 m-0 x-small">
-          © {new Date().getFullYear()} <Hyperlink destination={config.MARKETING_BASE_URL} target="_blank" className="ml-2">{config.SITE_NAME}</Hyperlink>
+          © {new Date().getFullYear()} <Hyperlink destination={config.MARKETING_SITE_BASE_URL} target="_blank" className="ml-2">{config.SITE_NAME}</Hyperlink>
           <ActionRow.Spacer />
           {!_.isEmpty(config.TERMS_OF_SERVICE_URL) && (
             <Hyperlink destination={config.TERMS_OF_SERVICE_URL} data-testid="termsOfService">
