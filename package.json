@@ -12,6 +12,7 @@
     "lint": "fedx-scripts eslint --ext .js --ext .jsx .",
     "snapshot": "fedx-scripts jest --updateSnapshot",
     "start": "fedx-scripts webpack-dev-server --progress",
+    "start:with-theme": "paragon install-theme && npm start && npm install",
     "test": "fedx-scripts jest --coverage"
   },
   "files": [
@@ -35,8 +36,8 @@
   "devDependencies": {
     "@edx/brand": "npm:@openedx/brand-openedx@^1.2.2",
     "@edx/browserslist-config": "^1.1.1",
-    "@edx/frontend-build": "13.0.8",
-    "@edx/frontend-platform": "6.1.1",
+    "@edx/frontend-build": "13.0.14",
+    "@edx/frontend-platform": "6.1.2",
     "@edx/reactifex": "^2.1.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.1",
@@ -45,17 +46,17 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-redux": "7.2.9",
-    "react-router-dom": "6.20.0",
+    "react-router-dom": "6.21.0",
     "react-test-renderer": "17.0.2",
     "redux": "4.2.1",
     "semantic-release": "21.1.2"
   },
   "dependencies": {
     "@edx/paragon": "^21.3.1",
-    "@fortawesome/fontawesome-svg-core": "6.4.2",
-    "@fortawesome/free-brands-svg-icons": "6.4.2",
-    "@fortawesome/free-regular-svg-icons": "6.4.2",
-    "@fortawesome/free-solid-svg-icons": "6.4.2",
+    "@fortawesome/fontawesome-svg-core": "6.5.1",
+    "@fortawesome/free-brands-svg-icons": "6.5.1",
+    "@fortawesome/free-regular-svg-icons": "6.5.1",
+    "@fortawesome/free-solid-svg-icons": "6.5.1",
     "@fortawesome/react-fontawesome": "0.2.0",
     "lodash": "^4.17.21"
   },
