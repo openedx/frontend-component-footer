@@ -41,7 +41,7 @@ const Component = ({ updateVariable }) => {
   );
 };
 
-jest.unmock('@edx/paragon');
+jest.unmock('@openedx/paragon');
 
 describe('Footer', () => {
   describe('help section default view', () => {

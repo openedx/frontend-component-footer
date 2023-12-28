@@ -10,8 +10,8 @@ import {
   Hyperlink,
   Image,
   TransitionReplace,
-} from '@edx/paragon';
-import { ExpandLess, ExpandMore, Help } from '@edx/paragon/icons';
+} from '@openedx/paragon';
+import { ExpandLess, ExpandMore, Help } from '@openedx/paragon/icons';
 import messages from './messages';
 
 ensureConfig([
