@@ -34,7 +34,7 @@ const LanguageSelector = ({
         >
           {options.map(({ value, label }) => <option key={value} value={value}>{label}</option>)}
         </select>
-        <button className="btn btn-outline-primary btn-sm" type="submit">
+        <button data-testid="site-footer-submit-btn" className="btn btn-outline-primary btn-sm" type="submit">
           <FormattedMessage
             id="footer.languageForm.submit.label"
             defaultMessage="Apply"

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useMemo } from 'react';
 import renderer from 'react-test-renderer';
-import { mount } from 'enzyme';
+import { render, fireEvent, screen } from '@testing-library/react';
 import { IntlProvider } from '@edx/frontend-platform/i18n';
 import { AppContext } from '@edx/frontend-platform/react';
 
@@ -78,9 +78,9 @@ describe('<Footer />', () => {
   describe('handles language switching', () => {
     it('calls onLanguageSelected prop when a language is changed', () => {
       const mockHandleLanguageSelected = jest.fn();
-      const wrapper = mount(<FooterWithLanguageSelector languageSelected={mockHandleLanguageSelected} />);
+      render(<FooterWithLanguageSelector languageSelected={mockHandleLanguageSelected} />);
 
-      wrapper.find('form').simulate('submit', {
+      fireEvent.submit(screen.getByTestId('site-footer-submit-btn'), {
         target: {
           elements: {
             'site-footer-language-select': {
