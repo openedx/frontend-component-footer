@@ -37,7 +37,7 @@
     "@edx/brand": "npm:@openedx/brand-openedx@^1.2.2",
     "@edx/browserslist-config": "^1.1.1",
     "@openedx/frontend-build": "^13.0.19",
-    "@openedx/paragon": "21.13.1",
+    "@openedx/paragon": "22.0.0",
     "@edx/frontend-platform": "6.2.0",
     "@edx/reactifex": "^2.1.1",
     "@testing-library/jest-dom": "^5.16.4",
@@ -62,7 +62,7 @@
   },
   "peerDependencies": {
     "@edx/frontend-platform": "^7.0.0",
-    "@openedx/paragon": ">= 21.11.3 < 22.0.0",
+    "@openedx/paragon": ">= 21.11.3 < 23.0.0",
     "prop-types": "^15.5.10",
     "react": "^16.9.0 || ^17.0.0",
     "react-dom": "^16.9.0 || ^17.0.0"
