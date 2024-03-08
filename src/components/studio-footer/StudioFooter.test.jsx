@@ -15,7 +15,7 @@ const config = {
   SUPPORT_EMAIL: process.env.SUPPORT_EMAIL,
   SITE_NAME: process.env.SITE_NAME,
   STUDIO_BASE_URL: process.env.STUDIO_BASE_URL,
-  SHOW_ACCESSIBILITY_PAGE: process.env.SHOW_ACCESSIBILITY_PAGE,
+  ENABLE_ACCESSIBILITY_PAGE: process.env.ENABLE_ACCESSIBILITY_PAGE,
 };
 
 let currentConfig = config;
@@ -111,7 +111,7 @@ describe('Footer', () => {
       expect(screen.queryByTestId('accessibilityRequest')).toBeNull();
     });
     it('should show accessibilty request link', () => {
-      render(<Component updateVariable={['SHOW_ACCESSIBILITY_PAGE', 'true']} />);
+      render(<Component updateVariable={['ENABLE_ACCESSIBILITY_PAGE', 'true']} />);
       expect(screen.getByText('LMS')).toBeVisible();
       expect(screen.queryByTestId('termsOfService')).toBeNull();
       expect(screen.queryByTestId('privacyPolicy')).toBeNull();
