@@ -8,11 +8,12 @@
   },
   "scripts": {
     "build": "make build",
-    "i18n_extract": "BABEL_ENV=i18n fedx-scripts babel src --quiet > /dev/null",
+    "i18n_extract": "fedx-scripts formatjs extract",
     "lint": "fedx-scripts eslint --ext .js --ext .jsx .",
     "snapshot": "fedx-scripts jest --updateSnapshot",
     "start": "fedx-scripts webpack-dev-server --progress",
-    "test": "fedx-scripts jest --coverage"
+    "start:with-theme": "paragon install-theme && npm start && npm install",
+    "test": "fedx-scripts jest"
   },
   "files": [
     "/dist"
@@ -33,33 +34,35 @@
   },
   "homepage": "https://github.com/openedx/frontend-component-footer#readme",
   "devDependencies": {
-    "@edx/brand": "npm:@edx/brand-openedx@1.2.0",
+    "@edx/brand": "npm:@openedx/brand-openedx@^1.2.2",
     "@edx/browserslist-config": "^1.1.1",
-    "@edx/frontend-build": "https://github.com/openedx/frontend-build/tarball/bilalqamar95/jest-v29-upgrade",
-    "@edx/frontend-platform": "4.6.0",
-    "@edx/paragon": "^20.44.0",
+    "@openedx/frontend-build": "^13.0.19",
+    "@openedx/paragon": "22.0.0",
+    "@edx/frontend-platform": "6.2.0",
     "@edx/reactifex": "^2.1.1",
-    "@wojtekmaj/enzyme-adapter-react-17": "0.8.0",
-    "enzyme": "3.11.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^12.1.1",
     "husky": "8.0.3",
     "prop-types": "15.8.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-redux": "7.2.9",
-    "react-router-dom": "5.3.4",
+    "react-router-dom": "6.21.3",
     "react-test-renderer": "17.0.2",
     "redux": "4.2.1",
-    "semantic-release": "21.0.7"
+    "semantic-release": "21.1.2"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "6.4.0",
-    "@fortawesome/free-brands-svg-icons": "6.4.0",
-    "@fortawesome/free-regular-svg-icons": "6.4.0",
-    "@fortawesome/free-solid-svg-icons": "6.4.0",
-    "@fortawesome/react-fontawesome": "0.2.0"
+    "@fortawesome/fontawesome-svg-core": "6.5.1",
+    "@fortawesome/free-brands-svg-icons": "6.5.1",
+    "@fortawesome/free-regular-svg-icons": "6.5.1",
+    "@fortawesome/free-solid-svg-icons": "6.5.1",
+    "@fortawesome/react-fontawesome": "0.2.0",
+    "lodash": "^4.17.21"
   },
   "peerDependencies": {
-    "@edx/frontend-platform": "^4.0.0",
+    "@edx/frontend-platform": "^7.0.0",
+    "@openedx/paragon": ">= 21.11.3 < 23.0.0",
     "prop-types": "^15.5.10",
     "react": "^16.9.0 || ^17.0.0",
     "react-dom": "^16.9.0 || ^17.0.0"

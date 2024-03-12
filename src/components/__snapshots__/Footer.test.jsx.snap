@@ -58,6 +58,7 @@ exports[`<Footer /> renders correctly renders with a language selector 1`] = `
         </select>
         <button
           className="btn btn-outline-primary btn-sm"
+          data-testid="site-footer-submit-btn"
           type="submit"
         >
           Apply
