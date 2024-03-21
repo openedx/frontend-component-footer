@@ -38,7 +38,7 @@
     "@edx/browserslist-config": "^1.1.1",
     "@edx/frontend-platform": "6.2.0",
     "@edx/reactifex": "^2.1.1",
-    "@openedx/frontend-build": "https://github.com/openedx/frontend-build/tarball/bilalqamar95/jest-v29-upgrade",
+    "@openedx/frontend-build": "14.0.0-alpha.1",
     "@openedx/paragon": "22.0.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.1",
@@ -58,7 +58,9 @@
     "@fortawesome/free-regular-svg-icons": "6.5.1",
     "@fortawesome/free-solid-svg-icons": "6.5.1",
     "@fortawesome/react-fontawesome": "0.2.0",
-    "lodash": "^4.17.21"
+    "jest-environment-jsdom": "^29.7.0",
+    "lodash": "^4.17.21",
+    "ts-jest": "^29.1.2"
   },
   "peerDependencies": {
     "@edx/frontend-platform": "^7.0.0",
