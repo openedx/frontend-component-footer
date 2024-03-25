@@ -1,5 +1,64 @@
 $gray-footer: #fcfcfc !default;
+$link-blue: #006daa;
 
 .footer {
   background-color: $gray-footer;
+
+  .copyright-col {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .trademark-text {
+      color: #707070 !important;
+      font-size: 87.5%;
+      font-weight: 400;
+    }
+  }
+}
+
+.footer-sub-nav {
+  padding: 0;
+  margin: 0 0 5px;
+  list-style: none;
+  font-size: 15px;
+  line-height: 20px;
+
+  @include media-breakpoint-down(md) {
+    text-align: left;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+
+    @include media-breakpoint-down(md) {
+      display: block;
+      margin: 0;
+      padding: 0 0 7px;
+      
+      &::before {
+        display: none;
+      }
+    }
+    
+    &::before {
+      content: "-";
+      padding-left: 5px;
+      padding-right: 5px;
+      color: $link-blue
+    }
+
+    &:first-child {
+      &::before {
+        display: none;
+      }
+    }
+  }
 }
