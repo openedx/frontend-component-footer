@@ -44,11 +44,11 @@
     "@testing-library/react": "^12.1.1",
     "husky": "8.0.3",
     "prop-types": "15.8.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-redux": "7.2.9",
     "react-router-dom": "6.21.3",
-    "react-test-renderer": "17.0.2",
+    "react-test-renderer": "18.2.0",
     "redux": "4.2.1",
     "semantic-release": "21.1.2"
   },
@@ -64,7 +64,7 @@
     "@edx/frontend-platform": "^7.0.0",
     "@openedx/paragon": ">= 21.11.3 < 23.0.0",
     "prop-types": "^15.5.10",
-    "react": "^16.9.0 || ^17.0.0",
-    "react-dom": "^16.9.0 || ^17.0.0"
+    "react": "^16.9.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.9.0 || ^17.0.0 || ^18.0.0"
   }
 }
