@@ -1,0 +1,18 @@
+{
+    "name": "@openedx-plugins/footer-links",
+    "version": "0.1.0",
+    "description": "Footer Links configuration",
+    "peerDependencies": {
+        "@edx/frontend-component-footer": "*",
+        "@edx/frontend-platform": "*",
+        "@edx/paragon": "*",
+        "@openedx/frontend-plugin-framework": "*",
+        "prop-types": "*",
+        "react": "*"
+    },
+    "peerDependenciesMeta": {
+        "@edx/frontend-component-footer": {
+            "optional": true
+        }
+    }
+}

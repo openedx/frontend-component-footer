@@ -6,6 +6,8 @@ import { ensureConfig } from '@edx/frontend-platform/config';
 import { AppContext } from '@edx/frontend-platform/react';
 import { Image } from '@edx/paragon';
 import { getConfig } from '@edx/frontend-platform';
+import { PluginSlot } from '@openedx/frontend-plugin-framework/src/index';
+import FooterLinks from '../plugins/footer-links';
 
 import messages from './Footer.messages';
 import LanguageSelector from './LanguageSelector';
@@ -51,35 +53,42 @@ class SiteFooter extends React.Component {
           <div className="footer-top">
             <div className="powered-area">
               <ul className="logo-list">
-                <li>{intl.formatMessage(messages['footer.poweredby.text'])}</li>
-                <li>
-                  <a href="https://docs.tutor.overhang.io" rel="noreferrer" target="_blank">
-                    <Image
-                      src={`${config.LMS_BASE_URL}/static/indigo/images/tutor-logo.png`}
-                      alt={intl.formatMessage(messages['footer.tutorlogo.altText'])}
-                      width="57"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://open.edx.org" rel="noreferrer" target="_blank">
-                    <Image
-                      src={logo || `${config.LMS_BASE_URL}/static/indigo/images/openedx-logo.png`}
-                      alt={intl.formatMessage(messages['footer.logo.altText'])}
-                      width="79"
-                    />
-                  </a>
-                </li>
+                <PluginSlot id="poweredby_text_slot"><li>{intl.formatMessage(messages['footer.poweredby.text'])}</li></PluginSlot>
+                <PluginSlot id="tutor_logo_slot">
+                  <li>
+                    <a href="https://docs.tutor.overhang.io" rel="noreferrer" target="_blank">
+                      <Image
+                        src={`${config.LMS_BASE_URL}/static/indigo/images/tutor-logo.png`}
+                        alt={intl.formatMessage(messages['footer.tutorlogo.altText'])}
+                        width="57"
+                      />
+                    </a>
+                  </li>
+                </PluginSlot>
+                <PluginSlot id="openedx_logo_slot">
+                  <li>
+                    <a href="https://open.edx.org" rel="noreferrer" target="_blank">
+                      <Image
+                        src={logo || `${config.LMS_BASE_URL}/static/indigo/images/openedx-logo.png`}
+                        alt={intl.formatMessage(messages['footer.logo.altText'])}
+                        width="79"
+                      />
+                    </a>
+                  </li>
+                </PluginSlot>
               </ul>
             </div>
           </div>
-          <span className="copyright-site">{intl.formatMessage(messages['footer.copyright.text'])}</span>
-          {showLanguageSelector && (
-            <LanguageSelector
-              options={supportedLanguages}
-              onSubmit={onLanguageSelected}
-            />
-          )}
+          <PluginSlot id="footer-middle"><FooterLinks /></PluginSlot>
+          <PluginSlot id="copyright_text_slot"><span className="copyright-site">{intl.formatMessage(messages['footer.copyright.text'])}</span></PluginSlot>
+          <PluginSlot id="lang_selector_slot">
+            {showLanguageSelector && (
+              <LanguageSelector
+                options={supportedLanguages}
+                onSubmit={onLanguageSelected}
+              />
+            )}
+          </PluginSlot>
         </footer>
       </div>
     );
