@@ -56,7 +56,9 @@
     "@fortawesome/free-brands-svg-icons": "6.4.2",
     "@fortawesome/free-regular-svg-icons": "6.4.2",
     "@fortawesome/free-solid-svg-icons": "6.4.2",
-    "@fortawesome/react-fontawesome": "0.2.0"
+    "@fortawesome/react-fontawesome": "0.2.0",
+    "@openedx-plugins/footer-links": "file:../src/plugins/footer-links",
+    "@openedx/frontend-plugin-framework": "file:../frontend-plugin-framework"
   },
   "peerDependencies": {
     "@edx/frontend-platform": "^4.0.0 || ^5.0.0",
