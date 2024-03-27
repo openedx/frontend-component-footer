@@ -1,6 +1,6 @@
 {
-  "name": "@edly-io/indigo-frontend-component-footer",
-  "version": "1.0.0",
+  "name": "@edx/frontend-component-footer",
+  "version": "1.0.0-semantically-released",
   "description": "Footer component for use when building Open edX frontend applications",
   "main": "dist/index.js",
   "publishConfig": {
@@ -25,14 +25,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edly-io/frontend-component-footer.git"
+    "url": "git+https://github.com/openedx/frontend-component-footer.git"
   },
   "author": "edX",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/edly-io/frontend-component-footer/issues"
+    "url": "https://github.com/openedx/frontend-component-footer/issues"
   },
-  "homepage": "https://github.com/edly-io/frontend-component-footer#readme",
+  "homepage": "https://github.com/openedx/frontend-component-footer#readme",
   "devDependencies": {
     "@edx/brand": "npm:@openedx/brand-openedx@^1.2.2",
     "@edx/browserslist-config": "^1.1.1",
@@ -59,7 +59,7 @@
     "@fortawesome/free-solid-svg-icons": "6.4.2",
     "@fortawesome/react-fontawesome": "0.2.0",
     "@openedx-plugins/footer-links": "file:../src/plugins/footer-links",
-    "@openedx/frontend-plugin-framework": "file:../frontend-plugin-framework"
+    "@openedx/frontend-plugin-framework": "1.0.2"
   },
   "peerDependencies": {
     "@edx/frontend-platform": "^7.0.0",
@@ -67,11 +67,5 @@
     "prop-types": "^15.5.10",
     "react": "^16.9.0 || ^17.0.0",
     "react-dom": "^16.9.0 || ^17.0.0"
-  },
-  "release": {
-    "branches": [
-      "master",
-      "quince/indigo"
-    ]
   }
 }
