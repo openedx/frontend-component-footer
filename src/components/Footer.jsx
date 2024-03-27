@@ -6,9 +6,9 @@ import { ensureConfig } from '@edx/frontend-platform/config';
 import { AppContext } from '@edx/frontend-platform/react';
 import { Image } from '@edx/paragon';
 import { getConfig } from '@edx/frontend-platform';
-import { PluginSlot } from '@openedx/frontend-plugin-framework/src/index';
-import FooterLinks from '../plugins/footer-links';
+import { PluginSlot } from '@openedx/frontend-plugin-framework';
 
+import FooterLinks from '../plugins/footer-links';
 import messages from './Footer.messages';
 import LanguageSelector from './LanguageSelector';
 
@@ -58,7 +58,7 @@ class SiteFooter extends React.Component {
                   <li>
                     <a href="https://docs.tutor.overhang.io" rel="noreferrer" target="_blank">
                       <Image
-                        src={`${config.LMS_BASE_URL}/static/indigo/images/tutor-logo.png`}
+                        src={`${config.LMS_BASE_URL}/theming/asset/images/tutor-logo.png`}
                         alt={intl.formatMessage(messages['footer.tutorlogo.altText'])}
                         width="57"
                       />
@@ -69,7 +69,7 @@ class SiteFooter extends React.Component {
                   <li>
                     <a href="https://open.edx.org" rel="noreferrer" target="_blank">
                       <Image
-                        src={logo || `${config.LMS_BASE_URL}/static/indigo/images/openedx-logo.png`}
+                        src={logo || `${config.LMS_BASE_URL}/theming/asset/images/openedx-logo.png`}
                         alt={intl.formatMessage(messages['footer.logo.altText'])}
                         width="79"
                       />

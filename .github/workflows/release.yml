@@ -2,7 +2,7 @@ name: Release CI
 on:
   push:
     branches:
-    - quince/indigo
+    - master
 jobs:
   release:
     name: Release
