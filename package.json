@@ -38,7 +38,7 @@
     "@edx/browserslist-config": "^1.1.1",
     "@edx/frontend-platform": "7.1.2",
     "@edx/reactifex": "^2.1.1",
-    "@openedx/frontend-build": "14.0.0-alpha.1",
+    "@openedx/frontend-build": "https://github.com/openedx/frontend-build/tarball/bilalqamar95/alpha-eslint-update",
     "@openedx/paragon": "22.0.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.1",
@@ -71,7 +71,7 @@
   },
   "overrides": {
     "@edx/frontend-platform": {
-      "@openedx/frontend-build": "14.0.0-alpha.1"
+      "@openedx/frontend-build": "https://github.com/openedx/frontend-build/tarball/bilalqamar95/alpha-eslint-update"
     }
   }
 }
