@@ -4,7 +4,6 @@ import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 import { sendTrackEvent } from '@edx/frontend-platform/analytics';
 import { ensureConfig } from '@edx/frontend-platform/config';
 import { AppContext } from '@edx/frontend-platform/react';
-import { Image } from '@edx/paragon';
 import { getConfig } from '@edx/frontend-platform';
 import { PluginSlot } from '@openedx/frontend-plugin-framework';
 
@@ -48,49 +47,31 @@ class SiteFooter extends React.Component {
     const config = getConfig();
 
     return (
-      <div className="wrapper wrapper-footer">
-        <footer id="footer" className="tutor-container">
-          <div className="footer-top">
-            <div className="powered-area">
-              <ul className="logo-list">
-                <PluginSlot id="poweredby_text_slot"><li>{intl.formatMessage(messages['footer.poweredby.text'])}</li></PluginSlot>
-                <PluginSlot id="tutor_logo_slot">
-                  <li>
-                    <a href="https://docs.tutor.overhang.io" rel="noreferrer" target="_blank">
-                      <Image
-                        src={`${config.LMS_BASE_URL}/theming/asset/images/tutor-logo.png`}
-                        alt={intl.formatMessage(messages['footer.tutorlogo.altText'])}
-                        width="57"
-                      />
-                    </a>
-                  </li>
-                </PluginSlot>
-                <PluginSlot id="openedx_logo_slot">
-                  <li>
-                    <a href="https://open.edx.org" rel="noreferrer" target="_blank">
-                      <Image
-                        src={logo || `${config.LMS_BASE_URL}/theming/asset/images/openedx-logo.png`}
-                        alt={intl.formatMessage(messages['footer.logo.altText'])}
-                        width="79"
-                      />
-                    </a>
-                  </li>
-                </PluginSlot>
-              </ul>
-            </div>
-          </div>
-          <PluginSlot id="footer-middle"><FooterLinks /></PluginSlot>
-          <PluginSlot id="copyright_text_slot"><span className="copyright-site">{intl.formatMessage(messages['footer.copyright.text'])}</span></PluginSlot>
-          <PluginSlot id="lang_selector_slot">
-            {showLanguageSelector && (
-              <LanguageSelector
-                options={supportedLanguages}
-                onSubmit={onLanguageSelected}
-              />
-            )}
-          </PluginSlot>
-        </footer>
-      </div>
+      <PluginSlot as="footer" id="mfe-global-footer" className="footer border-top py-3 px-4" role="contentinfo">
+        <PluginSlot id="default-poweredby-logo">
+          <a
+            className="d-block"
+            href={config.LMS_BASE_URL}
+            aria-label={intl.formatMessage(messages['footer.logo.ariaLabel'])}
+          >
+            <img
+              style={{ maxHeight: 45 }}
+              src={logo || config.LOGO_TRADEMARK_URL}
+              alt={intl.formatMessage(messages['footer.logo.altText'])}
+            />
+          </a>
+        </PluginSlot>
+        <PluginSlot id="footer-middle"><FooterLinks /></PluginSlot>
+        <PluginSlot id="language_selector">
+          {showLanguageSelector && (
+          <LanguageSelector
+            options={supportedLanguages}
+            onSubmit={onLanguageSelected}
+          />
+          )}
+        </PluginSlot>
+        <PluginSlot id="copyright_text"><span className="copyright-site mt-2">{intl.formatMessage(messages['footer.copyright.text'])}</span></PluginSlot>
+      </PluginSlot>
     );
   }
 }

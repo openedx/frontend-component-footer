@@ -1,3 +1,3 @@
-import FooterLinks from './footerLinks';
+import FooterLinks from './FooterLinks';
 
 export default FooterLinks;

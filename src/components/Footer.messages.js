@@ -158,7 +158,7 @@ const messages = defineMessages({
   },
   'footer.copyright.text': {
     id: 'footer.copyright.text',
-    defaultMessage: 'Copyrights ©2023. All Rights Reserved.',
+    defaultMessage: `Copyrights ©${new Date().getFullYear()}. All Rights Reserved.`,
     description: 'copyright text for the footer',
   },
   'footer.ariaLabel': {
