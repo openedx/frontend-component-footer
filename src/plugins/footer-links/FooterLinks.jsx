@@ -1,7 +1,7 @@
 import React from 'react';
 
-import useFooterLinks from '@edx/frontend-component-footer/components/data/fetchFooterLinks';
 import { PluginSlot } from '@openedx/frontend-plugin-framework';
+import useFooterLinks from '../../components/data/fetchFooterLinks';
 
 import { LinkComponent } from './LinkComponent';
 
