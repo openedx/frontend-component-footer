@@ -39,7 +39,7 @@
     "@edx/frontend-platform": "8.0.0",
     "@edx/reactifex": "^2.1.1",
     "@openedx/frontend-build": "14.0.3",
-    "@openedx/paragon": "22.0.0",
+    "@openedx/paragon": "22.2.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.1",
     "husky": "8.0.3",
@@ -53,10 +53,10 @@
     "semantic-release": "21.1.2"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "6.5.1",
-    "@fortawesome/free-brands-svg-icons": "6.5.1",
-    "@fortawesome/free-regular-svg-icons": "6.5.1",
-    "@fortawesome/free-solid-svg-icons": "6.5.1",
+    "@fortawesome/fontawesome-svg-core": "6.5.2",
+    "@fortawesome/free-brands-svg-icons": "6.5.2",
+    "@fortawesome/free-regular-svg-icons": "6.5.2",
+    "@fortawesome/free-solid-svg-icons": "6.5.2",
     "@fortawesome/react-fontawesome": "0.2.0",
     "jest-environment-jsdom": "^29.7.0",
     "lodash": "^4.17.21",
