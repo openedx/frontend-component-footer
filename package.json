@@ -39,7 +39,7 @@
     "@edx/frontend-platform": "8.0.1",
     "@edx/reactifex": "^2.1.1",
     "@openedx/frontend-build": "14.0.3",
-    "@openedx/paragon": "22.2.2",
+    "@openedx/paragon": "22.3.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.1",
     "husky": "8.0.3",
