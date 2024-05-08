@@ -85,6 +85,7 @@ This library has the following exports:
 * ``(default)``: The footer as a React component.
 * ``messages``: Internationalization messages suitable for use with `@edx/frontend-platform/i18n <https://edx.github.io/frontend-platform/module-Internationalization.html>`_
 * ``dist/footer.scss``: A SASS file which contains style information for the component.  It should be imported into the micro-frontend's own SCSS file.
+* ``FooterSlot``: The footer wrapped in a `Frontend Plugin Framework <https://github.com/openedx/frontend-plugin-framework>`_ ``PluginSlot``.
 
 <Footer /> component props
 ==========================
@@ -92,6 +93,12 @@ This library has the following exports:
 * onLanguageSelected: Provides the footer with an event handler for when the user selects a
   language from its dropdown.
 * supportedLanguages: An array of objects representing available languages.  See example below for object shape.
+
+Plugin
+======
+This package provides a wrapped version of the footer using `Frontend Plugin Framework <https://github.com/openedx/frontend-plugin-framework>`_.
+
+Information on how to utilize the ``FooterSlot`` is available `here </src/components/footer-slot>`_.
 
 Examples
 ========
@@ -112,6 +119,8 @@ Component Usage Example::
 
 * `An example of minimal component and messages usage. <https://github.com/openedx/frontend-template-application/blob/3355bb3a96232390e9056f35b06ffa8f105ed7ca/src/index.jsx#L23>`_
 * `An example of SCSS file usage. <https://github.com/openedx/frontend-template-application/blob/3cd5485bf387b8c479baf6b02bf59e3061dc3465/src/index.scss#L9>`_
+
+
 
 Development
 ===========
