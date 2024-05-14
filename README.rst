@@ -85,7 +85,6 @@ This library has the following exports:
 * ``(default)``: The footer as a React component.
 * ``messages``: Internationalization messages suitable for use with `@edx/frontend-platform/i18n <https://edx.github.io/frontend-platform/module-Internationalization.html>`_
 * ``dist/footer.scss``: A SASS file which contains style information for the component.  It should be imported into the micro-frontend's own SCSS file.
-* ``FooterSlot``: The footer wrapped in a `Frontend Plugin Framework <https://github.com/openedx/frontend-plugin-framework>`_ ``PluginSlot``.
 
 <Footer /> component props
 ==========================
@@ -96,9 +95,9 @@ This library has the following exports:
 
 Plugin
 ======
-This package provides a wrapped version of the footer using `Frontend Plugin Framework <https://github.com/openedx/frontend-plugin-framework>`_.
+The footer can be replaced using using `Frontend Plugin Framework <https://github.com/openedx/frontend-plugin-framework>`_.
 
-Information on how to utilize the ``FooterSlot`` is available `here </src/components/footer-slot>`_.
+Information on how to utilize the ``FooterSlot`` component to do so is available in the `frontend-slot-footer repository <https://github.com/openedx/frontend-slot-footer/>`_.
 
 Examples
 ========
