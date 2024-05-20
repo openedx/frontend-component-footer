@@ -58,7 +58,7 @@
     "@fortawesome/free-brands-svg-icons": "6.5.2",
     "@fortawesome/free-regular-svg-icons": "6.5.2",
     "@fortawesome/free-solid-svg-icons": "6.5.2",
-    "@fortawesome/react-fontawesome": "0.2.0",
+    "@fortawesome/react-fontawesome": "0.2.1",
     "jest-environment-jsdom": "^29.7.0",
     "lodash": "^4.17.21",
     "ts-jest": "^29.1.2"
