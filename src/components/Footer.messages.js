@@ -39,7 +39,12 @@ const messages = defineMessages({
   'footer.edxLinks.about': {
     id: 'footer.edxLinks.about',
     defaultMessage: 'About',
-    description: 'The label for the link to the about edX page.',
+    description: 'The label for the link to the about page.',
+  },
+  'footer.edxLinks.aboutUs': {
+    id: 'footer.edxLinks.aboutUs',
+    defaultMessage: 'About Us',
+    description: 'The label for the link to the about us page.',
   },
   'footer.edxLinks.business': {
     id: 'footer.edxLinks.business',
@@ -59,12 +64,12 @@ const messages = defineMessages({
   'footer.edxLinks.careers': {
     id: 'footer.edxLinks.careers',
     defaultMessage: 'Careers',
-    description: 'The label for the link to the edX Careers page.',
+    description: 'The label for the link to the Careers page.',
   },
   'footer.edxLinks.news': {
     id: 'footer.edxLinks.news',
     defaultMessage: 'News',
-    description: 'The label for the link to the edX news page.',
+    description: 'The label for the link to the news page.',
   },
   'footer.legalLinks.heading': {
     id: 'footer.legalLinks.heading',
@@ -73,28 +78,33 @@ const messages = defineMessages({
   },
   'footer.legalLinks.termsOfService': {
     id: 'footer.legalLinks.termsOfService',
-    defaultMessage: 'Terms of Service & Honor Code',
-    description: 'The label for the link to the edX terms of service page.',
+    defaultMessage: 'Terms of Service',
+    description: 'The label for the link to the terms of service page.',
+  },
+  'footer.legalLinks.honorCode': {
+    id: 'footer.legalLinks.honorCode',
+    defaultMessage: 'Honor Code',
+    description: 'The label for the link to the honor code page.',
   },
   'footer.legalLinks.privacyPolicy': {
     id: 'footer.legalLinks.privacyPolicy',
     defaultMessage: 'Privacy Policy',
-    description: 'The label for the link to the edX privacy policy page.',
+    description: 'The label for the link to the privacy policy page.',
   },
   'footer.legalLinks.a11yPolicy': {
     id: 'footer.legalLinks.a11yPolicy',
     defaultMessage: 'Accessibility Policy',
-    description: 'The label for the link to the edX accessibility policy page.',
+    description: 'The label for the link to the accessibility policy page.',
   },
   'footer.legalLinks.trademarkPolicy': {
     id: 'footer.legalLinks.trademarkPolicy',
     defaultMessage: 'Trademark Policy',
-    description: 'The label for the link to the edX trademark policy page.',
+    description: 'The label for the link to the trademark policy page.',
   },
   'footer.legalLinks.sitemap': {
     id: 'footer.legalLinks.sitemap',
     defaultMessage: 'Sitemap',
-    description: 'The label for the link to the edX sitemap page.',
+    description: 'The label for the link to the sitemap page.',
   },
   'footer.connectLinks.heading': {
     id: 'footer.connectLinks.heading',
@@ -109,12 +119,12 @@ const messages = defineMessages({
   'footer.connectLinks.contact': {
     id: 'footer.connectLinks.contact',
     defaultMessage: 'Contact Us',
-    description: 'The label for the link to the contact edX page.',
+    description: 'The label for the link to the contact page.',
   },
   'footer.connectLinks.help': {
     id: 'footer.connectLinks.help',
     defaultMessage: 'Help Center',
-    description: 'The label for the link to the edX help center.',
+    description: 'The label for the link to the help center.',
   },
   'footer.connectLinks.mediaKit': {
     id: 'footer.connectLinks.mediaKit',
