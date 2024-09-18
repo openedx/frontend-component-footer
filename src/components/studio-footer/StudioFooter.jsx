@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import _ from 'lodash';
-import { intlShape, injectIntl, FormattedMessage } from '@edx/frontend-platform/i18n';
+import { useIntl, FormattedMessage } from '@edx/frontend-platform/i18n';
 import { ensureConfig } from '@edx/frontend-platform';
 import { AppContext } from '@edx/frontend-platform/react';
 import {
@@ -12,6 +12,8 @@ import {
   TransitionReplace,
 } from '@openedx/paragon';
 import { ExpandLess, ExpandMore, Help } from '@openedx/paragon/icons';
+import classNames from 'classnames';
+
 import messages from './messages';
 
 ensureConfig([
@@ -26,11 +28,13 @@ ensureConfig([
 ], 'Studio Footer component');
 
 const StudioFooter = ({
-  // injected
-  intl,
+  containerProps,
 }) => {
+  const intl = useIntl();
   const [isOpen, setIsOpen] = useState(false);
   const { config } = useContext(AppContext);
+
+  const { containerClassName, ...restContainerProps } = containerProps || {};
 
   return (
     <>
@@ -49,7 +53,11 @@ const StudioFooter = ({
         </Button>
         <div className="col border-top ml-2" />
       </div>
-      <Container size="xl" className="px-4">
+      <Container
+        size="xl"
+        className={classNames('px-4', containerClassName)}
+        {...restContainerProps}
+      >
         <TransitionReplace>
           {isOpen ? (
             <ActionRow key="help-link-button-row" className="py-4" data-testid="helpButtonRow">
@@ -139,8 +147,10 @@ const StudioFooter = ({
 };
 
 StudioFooter.propTypes = {
-  // injected
-  intl: intlShape.isRequired,
+  containerProps: Container.propTypes,
 };
 
-export default injectIntl(StudioFooter);
+StudioFooter.defaultProps = {
+};
+
+export default StudioFooter;
