@@ -13,6 +13,7 @@ import {
 } from '@openedx/paragon';
 import { ExpandLess, ExpandMore, Help } from '@openedx/paragon/icons';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 import messages from './messages';
 
@@ -147,10 +148,11 @@ const StudioFooter = ({
 };
 
 StudioFooter.propTypes = {
-  containerProps: Container.propTypes,
+  containerProps: PropTypes.shape(Container.propTypes),
 };
 
 StudioFooter.defaultProps = {
+  containerProps: {},
 };
 
 export default StudioFooter;
