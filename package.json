@@ -36,11 +36,11 @@
   "devDependencies": {
     "@edx/brand": "npm:@openedx/brand-openedx@^1.2.2",
     "@edx/browserslist-config": "^1.1.1",
-    "@edx/frontend-platform": "8.1.1",
+    "@edx/frontend-platform": "8.1.2",
     "@edx/reactifex": "^2.1.1",
-    "@openedx/frontend-build": "14.1.4",
+    "@openedx/frontend-build": "14.1.5",
     "@openedx/frontend-plugin-framework": "^1.1.2",
-    "@openedx/paragon": "22.8.1",
+    "@openedx/paragon": "^22.8.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.1",
     "husky": "8.0.3",
@@ -48,7 +48,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-redux": "7.2.9",
-    "react-router-dom": "6.26.2",
+    "react-router-dom": "6.27.0",
     "react-test-renderer": "17.0.2",
     "redux": "4.2.1",
     "semantic-release": "21.1.2"
@@ -59,6 +59,7 @@
     "@fortawesome/free-regular-svg-icons": "6.6.0",
     "@fortawesome/free-solid-svg-icons": "6.6.0",
     "@fortawesome/react-fontawesome": "0.2.2",
+    "classnames": "^2.5.1",
     "jest-environment-jsdom": "^29.7.0",
     "lodash": "^4.17.21",
     "ts-jest": "^29.1.2"
