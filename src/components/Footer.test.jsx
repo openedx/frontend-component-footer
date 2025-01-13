@@ -5,7 +5,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { IntlProvider } from '@edx/frontend-platform/i18n';
 import { AppContext } from '@edx/frontend-platform/react';
-import '@testing-library/jest-dom';
+import { initializeMockApp } from '@edx/frontend-platform/testing';
 
 import Footer from './Footer';
 import FooterSlot from '../plugin-slots/FooterSlot';
@@ -56,11 +56,6 @@ const FooterWithLanguageSelector = ({ authenticatedUser = null }) => {
 };
 
 describe('<Footer />', () => {
-  beforeEach(() => {
-    jest.clearAllMocks();
-    initializeMockApp();
-  });
-
   describe('renders correctly', () => {
     it('renders without a language selector', () => {
       const tree = renderer
@@ -75,6 +70,7 @@ describe('<Footer />', () => {
       expect(tree).toMatchSnapshot();
     });
     it('renders with a language selector', () => {
+      initializeMockApp();
       const tree = renderer
         .create(<FooterWithLanguageSelector />)
         .toJSON();

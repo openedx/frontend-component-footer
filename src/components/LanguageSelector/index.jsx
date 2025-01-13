@@ -44,7 +44,7 @@ const LanguageSelector = ({
 
   const currentLocaleLabel = useMemo(() => {
     if (width < 576) {
-      return null;
+      return '';
     }
     if (width < 768) {
       return getPrimaryLanguageSubtag(currentLocale).toUpperCase();
