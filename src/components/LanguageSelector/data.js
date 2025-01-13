@@ -12,8 +12,6 @@ export async function patchPreferences(username, params) {
     .patch(`${getConfig().LMS_BASE_URL}/api/user/v1/preferences/${username}`, processedParams, {
       headers: { 'Content-Type': 'application/merge-patch+json' },
     });
-
-  return params;
 }
 
 export async function postSetLang(code) {
