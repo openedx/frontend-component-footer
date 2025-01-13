@@ -35,14 +35,10 @@ class SiteFooter extends React.Component {
 
   render() {
     const {
-      supportedLanguages,
-      onLanguageSelected,
       logo,
       intl,
     } = this.props;
-    const showLanguageSelector = supportedLanguages.length > 0 && onLanguageSelected;
-    const { config } = this.context;
-
+    const { config, authenticatedUser } = this.context;
     return (
       <footer
         role="contentinfo"
@@ -61,11 +57,14 @@ class SiteFooter extends React.Component {
             />
           </a>
           <div className="flex-grow-1" />
-          {showLanguageSelector && (
-            <LanguageSelector
-              options={supportedLanguages}
-              onSubmit={onLanguageSelected}
-            />
+          {config.ENABLE_FOOTER_LANG_SELECTOR && (
+            <div className="mb-2">
+              <LanguageSelector
+                options={config.SITE_SUPPORTED_LANGUAGES}
+                username={authenticatedUser?.username}
+                langCookieName={config.LANGUAGE_PREFERENCE_COOKIE_NAME}
+              />
+            </div>
           )}
         </div>
       </footer>
@@ -78,17 +77,10 @@ SiteFooter.contextType = AppContext;
 SiteFooter.propTypes = {
   intl: intlShape.isRequired,
   logo: PropTypes.string,
-  onLanguageSelected: PropTypes.func,
-  supportedLanguages: PropTypes.arrayOf(PropTypes.shape({
-    label: PropTypes.string.isRequired,
-    value: PropTypes.string.isRequired,
-  })),
 };
 
 SiteFooter.defaultProps = {
   logo: undefined,
-  onLanguageSelected: undefined,
-  supportedLanguages: [],
 };
 
 export default injectIntl(SiteFooter);
