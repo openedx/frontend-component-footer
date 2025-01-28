@@ -1,3 +1,7 @@
+var _excluded = ["containerClassName"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var s = Object.getOwnPropertySymbols(e); for (r = 0; r < s.length; r++) o = s[r], t.includes(o) || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.includes(n)) continue; t[n] = r[n]; } return t; }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -6,21 +10,27 @@ function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" !=
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 import React, { useContext, useState } from 'react';
 import _ from 'lodash';
-import { intlShape, injectIntl, FormattedMessage } from '@edx/frontend-platform/i18n';
+import { useIntl, FormattedMessage } from '@edx/frontend-platform/i18n';
 import { ensureConfig } from '@edx/frontend-platform';
 import { AppContext } from '@edx/frontend-platform/react';
 import { ActionRow, Button, Container, Hyperlink, Image, TransitionReplace } from '@openedx/paragon';
 import { ExpandLess, ExpandMore, Help } from '@openedx/paragon/icons';
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
 import messages from './messages';
 ensureConfig(['LMS_BASE_URL', 'MARKETING_SITE_BASE_URL', 'TERMS_OF_SERVICE_URL', 'PRIVACY_POLICY_URL', 'SUPPORT_EMAIL', 'SITE_NAME', 'STUDIO_BASE_URL', 'ENABLE_ACCESSIBILITY_PAGE'], 'Studio Footer component');
 var StudioFooter = function StudioFooter(_ref) {
-  var intl = _ref.intl;
+  var containerProps = _ref.containerProps;
+  var intl = useIntl();
   var _useState = useState(false),
     _useState2 = _slicedToArray(_useState, 2),
     isOpen = _useState2[0],
     setIsOpen = _useState2[1];
   var _useContext = useContext(AppContext),
     config = _useContext.config;
+  var _ref2 = containerProps || {},
+    containerClassName = _ref2.containerClassName,
+    restContainerProps = _objectWithoutProperties(_ref2, _excluded);
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
     className: "m-0 mt-6 row align-items-center justify-content-center"
   }, /*#__PURE__*/React.createElement("div", {
@@ -36,10 +46,10 @@ var StudioFooter = function StudioFooter(_ref) {
     size: "sm"
   }, isOpen ? intl.formatMessage(messages.closeHelpButtonLabel) : intl.formatMessage(messages.openHelpButtonLabel)), /*#__PURE__*/React.createElement("div", {
     className: "col border-top ml-2"
-  })), /*#__PURE__*/React.createElement(Container, {
+  })), /*#__PURE__*/React.createElement(Container, _extends({
     size: "xl",
-    className: "px-4"
-  }, /*#__PURE__*/React.createElement(TransitionReplace, null, isOpen ? /*#__PURE__*/React.createElement(ActionRow, {
+    className: classNames('px-4', containerClassName)
+  }, restContainerProps), /*#__PURE__*/React.createElement(TransitionReplace, null, isOpen ? /*#__PURE__*/React.createElement(ActionRow, {
     key: "help-link-button-row",
     className: "py-4",
     "data-testid": "helpButtonRow"
@@ -97,8 +107,10 @@ var StudioFooter = function StudioFooter(_ref) {
   })))));
 };
 StudioFooter.propTypes = {
-  // injected
-  intl: intlShape.isRequired
+  containerProps: PropTypes.shape(Container.propTypes)
 };
-export default injectIntl(StudioFooter);
+StudioFooter.defaultProps = {
+  containerProps: {}
+};
+export default StudioFooter;
 //# sourceMappingURL=StudioFooter.js.map
