@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import React, { useMemo } from 'react';
 import renderer from 'react-test-renderer';
-import { render, fireEvent, screen } from '@testing-library/react';
+import { act, render, screen, waitFor } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { IntlProvider } from '@edx/frontend-platform/i18n';
 import { AppContext } from '@edx/frontend-platform/react';
 
@@ -76,19 +77,12 @@ describe('<Footer />', () => {
   });
 
   describe('handles language switching', () => {
-    it('calls onLanguageSelected prop when a language is changed', () => {
+    it('calls onLanguageSelected prop when a language is changed', async () => {
       const mockHandleLanguageSelected = jest.fn();
       render(<FooterWithLanguageSelector languageSelected={mockHandleLanguageSelected} />);
 
-      fireEvent.submit(screen.getByTestId('site-footer-submit-btn'), {
-        target: {
-          elements: {
-            'site-footer-language-select': {
-              value: 'es',
-            },
-          },
-        },
-      });
+      await userEvent.selectOptions(screen.getByRole('combobox'), 'es');
+      await userEvent.click(screen.getByTestId('site-footer-submit-btn'));
 
       expect(mockHandleLanguageSelected).toHaveBeenCalledWith('es');
     });
