@@ -36,20 +36,22 @@
   "devDependencies": {
     "@edx/brand": "npm:@openedx/brand-openedx@^1.2.2",
     "@edx/browserslist-config": "^1.1.1",
-    "@edx/frontend-platform": "8.1.5",
+    "@edx/frontend-platform": "npm:@adamstankiewicz/openedx-frontend-platform@8",
     "@edx/reactifex": "^2.1.1",
-    "@openedx/frontend-build": "14.2.2",
-    "@openedx/frontend-plugin-framework": "^1.1.2",
+    "@openedx/frontend-build": "npm:@adamstankiewicz/openedx-frontend-build@14",
+    "@openedx/frontend-plugin-framework": "npm:@adamstankiewicz/openedx-frontend-plugin-framework@^1.5.0",
     "@openedx/paragon": "^22.8.1",
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^12.1.1",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/user-event": "14.6.1",
     "husky": "8.0.3",
     "prop-types": "15.8.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-redux": "7.2.9",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-redux": "8.1.1",
     "react-router-dom": "6.28.2",
-    "react-test-renderer": "17.0.2",
+    "react-test-renderer": "18.3.1",
     "redux": "4.2.1",
     "semantic-release": "21.1.2"
   },
@@ -68,7 +70,7 @@
     "@edx/frontend-platform": "^7.0.0 || ^8.0.0",
     "@openedx/paragon": ">= 21.11.3 < 23.0.0",
     "prop-types": "^15.5.10",
-    "react": "^16.9.0 || ^17.0.0",
-    "react-dom": "^16.9.0 || ^17.0.0"
+    "react": "^16.9.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.9.0 || ^17.0.0 || ^18.0.0"
   }
 }
