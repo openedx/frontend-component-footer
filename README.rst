@@ -86,12 +86,19 @@ This library has the following exports:
 * ``messages``: Internationalization messages suitable for use with `@edx/frontend-platform/i18n <https://edx.github.io/frontend-platform/module-Internationalization.html>`_
 * ``dist/footer.scss``: A SASS file which contains style information for the component.  It should be imported into the micro-frontend's own SCSS file.
 
-<Footer /> component props
-==========================
+Language Selector
+-----------------
 
-* onLanguageSelected: Provides the footer with an event handler for when the user selects a
-  language from its dropdown.
-* supportedLanguages: An array of objects representing available languages.  See example below for object shape.
+The language selector dropdown is optional and can be enabled by setting the MFE configuration variable ``ENABLE_FOOTER_LANG_SELECTOR`` to ``true``.
+Secondly, configue the languages that should be displayed in the dropdown by setting the MFE configuration variable ``SITE_SUPPORTED_LANGUAGES`` to an array of locale languages.
+Example:
+
+.. code-block:: python 
+
+  MFE_CONFIG["EDX_FRONTEND_APP_CONFIG"] = {
+    "ENABLE_FOOTER_LANG_SELECTOR": True,
+    "SITE_SUPPORTED_LANGUAGES": ['en', 'es', 'fr', 'pt-br'],
+  }
 
 Plugin
 ======
@@ -108,13 +115,7 @@ Component Usage Example::
 
   ...
 
-  <Footer
-    onLanguageSelected={(languageCode) => {/* set language */}}
-    supportedLanguages={[
-      { label: 'English', value: 'en'},
-      { label: 'Español', value: 'es' },
-    ]}
-  />
+  <Footer />
 
 * `An example of minimal component and messages usage. <https://github.com/openedx/frontend-template-application/blob/3355bb3a96232390e9056f35b06ffa8f105ed7ca/src/index.jsx#L23>`_
 * `An example of SCSS file usage. <https://github.com/openedx/frontend-template-application/blob/3cd5485bf387b8c479baf6b02bf59e3061dc3465/src/index.scss#L9>`_
