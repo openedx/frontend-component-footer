@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useMemo } from 'react';
-import { act, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom/extend-expect';
 import { IntlProvider } from '@edx/frontend-platform/i18n';
@@ -58,44 +58,39 @@ describe('Footer', () => {
   });
   describe('help section expanded view', () => {
     it('help button should read Hide Studio help', async () => {
+      const user = userEvent.setup();
       render(<Component />);
       const helpToggleButton = screen.getByText(messages.openHelpButtonLabel.defaultMessage);
-      await act(async () => {
-        await userEvent.click(helpToggleButton);
-      });
+      await user.click(helpToggleButton);
       expect(screen.getByText(messages.closeHelpButtonLabel.defaultMessage))
         .toBeVisible();
     });
     it('help button link row should be visible', async () => {
+      const user = userEvent.setup();
       render(<Component />);
       const helpToggleButton = screen.getByText(messages.openHelpButtonLabel.defaultMessage);
-      await act(async () => {
-        await userEvent.click(helpToggleButton);
-      });
+      await user.click(helpToggleButton);
       expect(screen.getByTestId('helpButtonRow')).toBeVisible();
     });
     it('Open edX portal button should be visible', async () => {
+      const user = userEvent.setup();
       render(<Component />);
       const helpToggleButton = screen.getByText(messages.openHelpButtonLabel.defaultMessage);
-      await act(async () => {
-        await userEvent.click(helpToggleButton);
-      });
+      await user.click(helpToggleButton);
       expect(screen.getByTestId('openEdXPortalButton')).toBeVisible();
     });
     it('should not show contact us button', async () => {
+      const user = userEvent.setup();
       render(<Component />);
       const helpToggleButton = screen.getByText(messages.openHelpButtonLabel.defaultMessage);
-      await act(async () => {
-        await userEvent.click(helpToggleButton);
-      });
+      await user.click(helpToggleButton);
       expect(screen.queryByTestId('contactUsButton')).toBeNull();
     });
     it('should show contact us button', async () => {
+      const user = userEvent.setup();
       render(<Component updateVariable={['SUPPORT_EMAIL', 'support@email.com']} />);
       const helpToggleButton = screen.getByText(messages.openHelpButtonLabel.defaultMessage);
-      await act(async () => {
-        await userEvent.click(helpToggleButton);
-      });
+      await user.click(helpToggleButton);
       expect(screen.getByTestId('contactUsButton')).toBeVisible();
     });
   });

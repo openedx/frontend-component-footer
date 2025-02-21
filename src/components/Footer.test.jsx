@@ -78,11 +78,12 @@ describe('<Footer />', () => {
 
   describe('handles language switching', () => {
     it('calls onLanguageSelected prop when a language is changed', async () => {
+      const user = userEvent.setup();
       const mockHandleLanguageSelected = jest.fn();
       render(<FooterWithLanguageSelector languageSelected={mockHandleLanguageSelected} />);
 
-      await userEvent.selectOptions(screen.getByRole('combobox'), 'es');
-      await userEvent.click(screen.getByTestId('site-footer-submit-btn'));
+      await user.selectOptions(screen.getByRole('combobox'), 'es');
+      await user.click(screen.getByTestId('site-footer-submit-btn'));
 
       expect(mockHandleLanguageSelected).toHaveBeenCalledWith('es');
     });
