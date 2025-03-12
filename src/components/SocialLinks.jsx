@@ -12,7 +12,6 @@ const SocialLinks = ({ footerIcons, svgSprite }) => (
           target="_blank"
           showLaunchIcon={false}
           className="footer-social-list__link"
-          data-testid="footer-social-link"
         >
           <svg viewBox="0 0 35 35" className="footer-social-list__svg">
             <use href={`${svgSprite}#${link.icon}`} />
