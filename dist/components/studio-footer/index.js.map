@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","names":["StudioFooter"],"sources":["../../../src/components/studio-footer/index.jsx"],"sourcesContent":["import StudioFooter from './StudioFooter';\n\nexport default StudioFooter;\n"],"mappings":"AAAA,OAAOA,YAAY,MAAM,gBAAgB;AAEzC,eAAeA,YAAY","ignoreList":[]}
