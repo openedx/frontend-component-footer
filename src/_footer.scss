@@ -1,5 +1,5 @@
 $gray-footer: #fcfcfc !default;
 
 .footer {
-  background-color: $gray-footer;
+  background-color: var(--pgn-color-light-100, $gray-footer);
 }
