@@ -134,11 +134,11 @@ const StudioFooter = ({
           <FormattedMessage {...messages.trademarkMessage} />
           <Hyperlink className="ml-1" destination="https://www.edx.org">edX Inc</Hyperlink>.
           <ActionRow.Spacer />
-          <Hyperlink destination="https://open.edx.org" className="float-right">
+          <Hyperlink destination={config.STUDIO_FOOTER_LOGO_REDIRECT_URL || 'https://open.edx.org'} className="float-right">
             <Image
               width="120px"
               alt="Powered by Open edX"
-              src="https://logos.openedx.org/open-edx-logo-tag.png"
+              src={config.STUDIO_FOOTER_LOGO_URL || 'https://logos.openedx.org/open-edx-logo-tag.png'}
             />
           </Hyperlink>
         </ActionRow>
