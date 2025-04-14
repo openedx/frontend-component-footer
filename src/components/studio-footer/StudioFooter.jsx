@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import _ from 'lodash';
+import isEmpty from 'lodash/isEmpty';
 import { useIntl, FormattedMessage } from '@edx/frontend-platform/i18n';
 import { ensureConfig } from '@edx/frontend-platform';
 import { AppContext } from '@edx/frontend-platform/react';
@@ -88,7 +88,7 @@ const StudioFooter = ({
               >
                 <FormattedMessage {...messages.studioXButtonLabel} />
               </Button>
-              {!_.isEmpty(config.SUPPORT_EMAIL) && (
+              {!isEmpty(config.SUPPORT_EMAIL) && (
                 <Button
                   as="a"
                   href={`mailto:${config.SUPPORT_EMAIL}`}
@@ -105,11 +105,11 @@ const StudioFooter = ({
         <ActionRow className="pt-3 m-0 x-small">
           © {new Date().getFullYear()} <Hyperlink destination={config.MARKETING_SITE_BASE_URL} target="_blank" className="ml-2">{config.SITE_NAME}</Hyperlink>
           <ActionRow.Spacer />
-          {!_.isEmpty(config.TERMS_OF_SERVICE_URL) && (
+          {!isEmpty(config.TERMS_OF_SERVICE_URL) && (
             <Hyperlink destination={config.TERMS_OF_SERVICE_URL} data-testid="termsOfService">
               {intl.formatMessage(messages.termsOfServiceLinkLabel)}
             </Hyperlink>
-          )}{!_.isEmpty(config.PRIVACY_POLICY_URL) && (
+          )}{!isEmpty(config.PRIVACY_POLICY_URL) && (
             <Hyperlink destination={config.PRIVACY_POLICY_URL} data-testid="privacyPolicy">
               {intl.formatMessage(messages.privacyPolicyLinkLabel)}
             </Hyperlink>
