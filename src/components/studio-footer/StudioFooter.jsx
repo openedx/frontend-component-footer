@@ -3,6 +3,7 @@ import isEmpty from 'lodash/isEmpty';
 import { useIntl, FormattedMessage } from '@edx/frontend-platform/i18n';
 import { ensureConfig } from '@edx/frontend-platform';
 import { AppContext } from '@edx/frontend-platform/react';
+import { PluginSlot } from '@openedx/frontend-plugin-framework';
 import {
   ActionRow,
   Button,
@@ -134,13 +135,15 @@ const StudioFooter = ({
           <FormattedMessage {...messages.trademarkMessage} />
           <Hyperlink className="ml-1" destination="https://www.edx.org">edX Inc</Hyperlink>.
           <ActionRow.Spacer />
-          <Hyperlink destination="https://openedx.org" className="float-right">
-            <Image
-              width="120px"
-              alt="Powered by Open edX"
-              src="https://logos.openedx.org/open-edx-logo-tag.png"
-            />
-          </Hyperlink>
+          <PluginSlot id="studio_footer_logo_slot">
+            <Hyperlink destination="https://open.edx.org" className="float-right">
+              <Image
+                width="120px"
+                alt="Powered by Open edX"
+                src="https://logos.openedx.org/open-edx-logo-tag.png"
+              />
+            </Hyperlink>
+          </PluginSlot>
         </ActionRow>
       </Container>
     </>
