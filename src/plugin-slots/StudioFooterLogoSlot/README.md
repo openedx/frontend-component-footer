@@ -1,6 +1,9 @@
-# StudioFooterLogo Slot
+# StudioFooterLogoSlot
 
-### Slot ID: `studio_footer_logo_slot`
+### Slot ID: `org.openedx.frontend.layout.studio_footer_logo.v1`
+
+### Slot ID Aliases
+* `studio_footer_logo_slot`
 
 ## Description
 
@@ -23,13 +26,13 @@ import {
 
 const config = {
   pluginSlots: {
-    studio_footer_logo_slot: {
+    'org.openedx.frontend.layout.studio_footer_logo.v1': {
       keepDefault: true,
       plugins: [
         {
           op: PLUGIN_OPERATIONS.Insert,
           widget: {
-            id: 'studio_footer_logo_slot',
+            id: 'studio_footer_logo_addition',
             type: DIRECT_PLUGIN,
             priority: 40,
             RenderWidget: () => {

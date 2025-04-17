@@ -3,7 +3,7 @@ import { PluginSlot } from '@openedx/frontend-plugin-framework';
 import { Hyperlink, Image } from '@openedx/paragon';
 
 const StudioFooterLogoSlot = () => (
-  <PluginSlot id="studio_footer_logo_slot">
+  <PluginSlot id="org.openedx.frontend.layout.studio_footer_logo.v1" idAliases={['studio_footer_logo_slot']}>
     <Hyperlink destination="https://openedx.org" className="float-right">
       <Image
         width="120px"
