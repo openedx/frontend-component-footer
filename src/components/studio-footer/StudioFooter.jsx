@@ -8,7 +8,6 @@ import {
   Button,
   Container,
   Hyperlink,
-  Image,
   TransitionReplace,
 } from '@openedx/paragon';
 import { ExpandLess, ExpandMore, Help } from '@openedx/paragon/icons';
@@ -16,6 +15,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
 import messages from './messages';
+import StudioFooterLogoSlot from '../../plugin-slots/StudioFooterLogoSlot';
 
 ensureConfig([
   'LMS_BASE_URL',
@@ -63,12 +63,12 @@ const StudioFooter = ({
           {isOpen ? (
             <ActionRow key="help-link-button-row" className="py-4" data-testid="helpButtonRow">
               <ActionRow.Spacer />
-              <Button as="a" href="https://docs.edx.org/" size="sm">
+              <Button as="a" href="https://docs.openedx.org/" size="sm">
                 <FormattedMessage {...messages.edxDocumentationButtonLabel} />
               </Button>
               <Button
                 as="a"
-                href="https://open.edx.org/"
+                href="https://openedx.org/"
                 size="sm"
                 data-testid="openEdXPortalButton"
               >
@@ -134,13 +134,7 @@ const StudioFooter = ({
           <FormattedMessage {...messages.trademarkMessage} />
           <Hyperlink className="ml-1" destination="https://www.edx.org">edX Inc</Hyperlink>.
           <ActionRow.Spacer />
-          <Hyperlink destination="https://open.edx.org" className="float-right">
-            <Image
-              width="120px"
-              alt="Powered by Open edX"
-              src="https://logos.openedx.org/open-edx-logo-tag.png"
-            />
-          </Hyperlink>
+          <StudioFooterLogoSlot />
         </ActionRow>
       </Container>
     </>

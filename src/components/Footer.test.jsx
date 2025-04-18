@@ -7,6 +7,7 @@ import { IntlProvider } from '@edx/frontend-platform/i18n';
 import { AppContext } from '@edx/frontend-platform/react';
 
 import Footer from './Footer';
+import FooterSlot from '../plugin-slots/FooterSlot';
 
 const FooterWithContext = ({ locale = 'es' }) => {
   const contextValue = useMemo(() => ({
@@ -22,7 +23,7 @@ const FooterWithContext = ({ locale = 'es' }) => {
       <AppContext.Provider
         value={contextValue}
       >
-        <Footer />
+        <FooterSlot />
       </AppContext.Provider>
     </IntlProvider>
   );

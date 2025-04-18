@@ -5,7 +5,7 @@ import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom/extend-expect';
 import { IntlProvider } from '@edx/frontend-platform/i18n';
 import { AppContext } from '@edx/frontend-platform/react';
-import StudioFooter from './StudioFooter';
+import StudioFooterSlot from '../../plugin-slots/StudioFooterSlot';
 import messages from './messages';
 
 const config = {
@@ -36,7 +36,7 @@ const Component = ({ updateVariable }) => {
   return (
     <IntlProvider locale="en">
       <AppContext.Provider value={contextValue}>
-        <StudioFooter />
+        <StudioFooterSlot />
       </AppContext.Provider>
     </IntlProvider>
   );

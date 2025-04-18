@@ -95,9 +95,9 @@ This library has the following exports:
 
 Plugin
 ======
-The footer can be replaced using using `Frontend Plugin Framework <https://github.com/openedx/frontend-plugin-framework>`_.
+The footer can be replaced or modified using `Frontend Plugin Framework <https://github.com/openedx/frontend-plugin-framework>`_.
 
-Information on how to utilize the ``FooterSlot`` component to do so is available in the `frontend-slot-footer repository <https://github.com/openedx/frontend-slot-footer/>`_.
+Information on how to replace or modify the footer is available `here </src/plugin-slots>`_.
 
 Examples
 ========
