@@ -77,7 +77,7 @@ describe('Footer', () => {
       render(<Component />);
       const helpToggleButton = screen.getByText(messages.openHelpButtonLabel.defaultMessage);
       await user.click(helpToggleButton);
-      expect(screen.getByTestId('openEdXPortalButton')).toBeVisible();
+      expect(screen.getByTestId('openEdXDemoCourseButton')).toBeVisible();
     });
     it('should not show contact us button', async () => {
       const user = userEvent.setup();
