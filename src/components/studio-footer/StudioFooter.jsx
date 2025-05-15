@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import isEmpty from 'lodash/isEmpty';
 import { useIntl, FormattedMessage } from '@edx/frontend-platform/i18n';
 import { ensureConfig } from '@edx/frontend-platform';
@@ -7,15 +7,13 @@ import {
   ActionRow,
   Container,
   Hyperlink,
-  TransitionReplace,
 } from '@openedx/paragon';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
 import messages from './messages';
 import StudioFooterLogoSlot from '../../plugin-slots/StudioFooterLogoSlot';
-import HelpContent from './help-components/HelpContent';
-import HelpButton from './help-components/HelpButton';
+import StudioFooterHelpSectionSlot from '../../plugin-slots/StudioFooterHelpSectionSlot';
 
 ensureConfig([
   'LMS_BASE_URL',
@@ -32,27 +30,18 @@ const StudioFooter = ({
   containerProps,
 }) => {
   const intl = useIntl();
-  const [isOpen, setIsOpen] = useState(false);
   const { config } = useContext(AppContext);
 
   const { containerClassName, ...restContainerProps } = containerProps || {};
 
   return (
     <>
-      <div className="m-0 mt-6 row align-items-center justify-content-center">
-        <div className="col border-top mr-2" />
-        <HelpButton
-          setIsOpen={setIsOpen}
-          isOpen={isOpen}
-        />
-        <div className="col border-top ml-2" />
-      </div>
+      <StudioFooterHelpSectionSlot />
       <Container
         size="xl"
         className={classNames('px-4', containerClassName)}
         {...restContainerProps}
       >
-        { isOpen && <TransitionReplace><HelpContent /></TransitionReplace> }
         <ActionRow className="pt-3 m-0 x-small">
           © {new Date().getFullYear()} <Hyperlink destination={config.MARKETING_SITE_BASE_URL} target="_blank" className="ml-2">{config.SITE_NAME}</Hyperlink>
           <ActionRow.Spacer />
