@@ -8,6 +8,7 @@ import { AppContext } from '@edx/frontend-platform/react';
 
 import Footer from './Footer';
 import FooterSlot from '../plugin-slots/FooterSlot';
+import StudioFooterHelpSectionSlot from '../plugin-slots/StudioFooterHelpSectionSlot';
 
 const FooterWithContext = ({ locale = 'es' }) => {
   const contextValue = useMemo(() => ({
@@ -88,5 +89,34 @@ describe('<Footer />', () => {
 
       expect(mockHandleLanguageSelected).toHaveBeenCalledWith('es');
     });
+  });
+});
+
+describe('<StudioFooterHelpSectionSlot />', () => {
+  const SectionWithContext = ({ locale = 'es' }) => {
+    const contextValue = useMemo(() => ({
+      authenticatedUser: null,
+      config: {
+        LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
+        LMS_BASE_URL: process.env.LMS_BASE_URL,
+      },
+    }), []);
+
+    return (
+      <IntlProvider locale={locale}>
+        <AppContext.Provider
+          value={contextValue}
+        >
+          <StudioFooterHelpSectionSlot />
+        </AppContext.Provider>
+      </IntlProvider>
+    );
+  };
+
+  it('renders correctly', () => {
+    const tree = renderer
+      .create(<SectionWithContext />)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });

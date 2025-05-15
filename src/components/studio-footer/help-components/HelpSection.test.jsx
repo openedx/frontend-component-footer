@@ -6,7 +6,7 @@ import HelpSection from './HelpSection';
 import '@testing-library/jest-dom';
 
 // eslint-disable-next-line react/prop-types
-const HelpSectionWithContext = ({ locale = 'en', config = {} }) => {
+const HelpSectionWithContext = ({ locale = 'en', config = {}, containerProps = null }) => {
   const contextValue = useMemo(() => ({
     authenticatedUser: null,
     config,
@@ -17,7 +17,7 @@ const HelpSectionWithContext = ({ locale = 'en', config = {} }) => {
       <AppContext.Provider
         value={contextValue}
       >
-        <HelpSection />
+        <HelpSection containerProps={containerProps} />
       </AppContext.Provider>
     </IntlProvider>
   );
@@ -42,7 +42,7 @@ describe('HelpSection', () => {
   });
 
   it('hides HelpContent when HelpButton is clicked twice', () => {
-    render(<HelpSectionWithContext />);
+    render(<HelpSectionWithContext containerProps={{ containerClassName: 'container', size: 'xl' }} />);
     const button = screen.getByTestId('helpToggleButton');
     fireEvent.click(button);
     expect(screen.queryByTestId('helpButtonRow')).toBeInTheDocument();

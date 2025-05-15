@@ -5,8 +5,8 @@ import {
 } from '@openedx/paragon';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import HelpContent from './HelpContent';
-import HelpButton from './HelpButton';
+import StudioFooterHelpButtonSlot from '../../../plugin-slots/StudioFooterHelpButtonSlot';
+import StudioFooterHelpContentlot from '../../../plugin-slots/StudioFooterHelpContentSlot';
 
 const HelpSection = ({ containerProps }) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -15,7 +15,7 @@ const HelpSection = ({ containerProps }) => {
     <>
       <div className="m-0 mt-6 row align-items-center justify-content-center">
         <div className="col border-top mr-2" />
-        <HelpButton
+        <StudioFooterHelpButtonSlot
           setIsOpen={setIsOpen}
           isOpen={isOpen}
         />
@@ -26,7 +26,7 @@ const HelpSection = ({ containerProps }) => {
         className={classNames('px-4', containerClassName)}
         {...restContainerProps}
       >
-        {isOpen && <TransitionReplace><HelpContent /></TransitionReplace> }
+        {isOpen && <TransitionReplace><StudioFooterHelpContentlot /></TransitionReplace> }
       </Container>
     </>
   );
