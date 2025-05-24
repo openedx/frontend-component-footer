@@ -1,6 +1,6 @@
 # StudioFooterLogoSlot
 
-### Slot ID: `org.openedx.frontend.layout.studio_footer.help_section.v1`
+### Slot ID: `org.openedx.frontend.layout.studio_footer_help_section.v1`
 
 ### Slot ID Aliases
 * `studio_footer_help_section_slot`
@@ -8,6 +8,8 @@
 ## Description
 
 This slot is used to repace/modify/hide the help section to the studio footer.
+
+![Screenshot of modified help section](./images/custom_help_section.png)
 
 ## Examples
 
@@ -24,8 +26,8 @@ import {
 
 const config = {
   pluginSlots: {
-    'org.openedx.frontend.layout.studio_footer.help_section.v1': {
-      keepDefault: true,
+    'org.openedx.frontend.layout.studio_footer_help_section.v1': {
+      keepDefault: false,
       plugins: [
         {
           op: PLUGIN_OPERATIONS.Insert,
@@ -35,12 +37,12 @@ const config = {
             priority: 40,
             RenderWidget: () => {
               return (
-                <p> 
-                  Custom Help Section custizable as needed 
-                  <Button className="button button1">Go to home</button>
+                <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '20px 5px' }}> 
+                  <p>Custom Help Section custizable as needed </p>
+                  <Button className="button button1">Go to home</Button>
                   <Hyperlink destination="https://example.com/">About</Hyperlink>
                   <Hyperlink destination="https://example.com/">Info</Hyperlink>
-                </p>
+                </div>
               )
             }
           }
