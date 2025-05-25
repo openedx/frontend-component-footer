@@ -16,17 +16,31 @@ ensureConfig([
 const BUTTONS = [
   {
     as: 'a',
-    href: 'https://docs.openedx.org/en/latest/educators/quickstarts/build_a_course.html',
+    href: 'https://docs.openedx.org/',
     size: 'sm',
-    message: messages.educatorsDocsButtonLabel,
+    message: messages.edxDocumentationButtonLabel,
     dataTestid: null,
   },
   {
     as: 'a',
-    href: 'https://sandbox.openedx.org/courses/course-v1:OpenedX+01-2024+2024-1/about',
+    href: 'https://openedx.org/',
     size: 'sm',
-    message: messages.openEdxDemoCourseButtonLabel,
+    message: messages.openEdxPortalButtonLabel,
+    dataTestid: 'openEdXPortalButton',
+  },
+  {
+    as: 'a',
+    href: 'https://www.edx.org/course/edx101-overview-of-creating-an-edx-course#.VO4eaLPF-n1',
+    size: 'sm',
+    message: messages.edx101ButtonLabel,
     dataTestid: 'openEdXDemoCourseButton',
+  },
+  {
+    as: 'a',
+    href: 'https://www.edx.org/course/studiox-creating-a-course-with-edx-studio',
+    size: 'sm',
+    message: messages.studioXButtonLabel,
+    dataTestid: null,
   },
 ];
 

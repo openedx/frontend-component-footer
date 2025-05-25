@@ -11,15 +11,25 @@ const messages = defineMessages({
     defaultMessage: 'Hide Studio help',
     description: 'Label for button that closes the collapsed section with help buttons',
   },
-  educatorsDocsButtonLabel: {
-    id: 'authoring.footer.help.educatorsDocs.button.label',
-    defaultMessage: 'Open edX Educators Docs',
-    description: 'Label for button that links to the build a course quickstart site',
+  edxDocumentationButtonLabel: {
+    id: 'authoring.footer.help.edxDocumentation.button.label',
+    defaultMessage: 'edX documentation',
+    description: 'Label for button that links to the edX documentation site',
   },
-  openEdxDemoCourseButtonLabel: {
+  openEdxPortalButtonLabel: {
     id: 'authoring.footer.help.openEdxPortal.button.label',
-    defaultMessage: 'Open edX Demo Course',
-    description: 'Label for button that links to the open edX demo course portal',
+    defaultMessage: 'Open edX portal',
+    description: 'Label for button that links to the Open edX portal',
+  },
+  edx101ButtonLabel: {
+    id: 'authoring.footer.help.edx101.button.label',
+    defaultMessage: 'Enroll in edX 101',
+    description: 'Label for button that links to the edX 101 course',
+  },
+  studioXButtonLabel: {
+    id: 'authoring.footer.help.studioX.button.label',
+    defaultMessage: 'Enroll in StudioX',
+    description: 'Label for button that links to the edX StudioX course',
   },
   contactUsButtonLabel: {
     id: 'authoring.footer.help.contactUs.button.label',

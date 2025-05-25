@@ -28,9 +28,8 @@ describe('HelpContent', () => {
   it('renders all help buttons', () => {
     const config = { SUPPORT_EMAIL: 'support@example.com' };
     render(<ContentWithContext config={config} />);
-    expect(screen.getByText(messages.educatorsDocsButtonLabel.defaultMessage)).toBeInTheDocument();
-    expect(screen.getByText(messages.openEdxDemoCourseButtonLabel.defaultMessage)).toBeInTheDocument();
-    expect(screen.getByText(messages.educatorsDocsButtonLabel.defaultMessage)).toBeInTheDocument();
+    expect(screen.getByText(messages.edxDocumentationButtonLabel.defaultMessage)).toBeInTheDocument();
+    expect(screen.getByText(messages.edx101ButtonLabel.defaultMessage)).toBeInTheDocument();
   });
 
   it('does not render contact button if SUPPORT_EMAIL is empty', () => {
