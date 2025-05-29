@@ -7,7 +7,7 @@ import {
 import HelpSection from '../../components/studio-footer/help-components/HelpSection';
 
 const StudioFooterHelpSectionSlot = ({ containerProps }) => (
-  <PluginSlot id="org.openedx.frontend.layout.studio_footer_help_section.v1" pluginProps={{ containerProps }}>
+  <PluginSlot id="org.openedx.frontend.layout.studio_footer_help_section.v1">
     <HelpSection containerProps={containerProps} />
   </PluginSlot>
 );
