@@ -3,6 +3,7 @@ import React, { useMemo } from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom';
 import { IntlProvider } from '@edx/frontend-platform/i18n';
 import { AppContext } from '@edx/frontend-platform/react';
 import StudioFooterSlot from '../../plugin-slots/StudioFooterSlot';
@@ -77,7 +78,7 @@ describe('Footer', () => {
       render(<Component />);
       const helpToggleButton = screen.getByText(messages.openHelpButtonLabel.defaultMessage);
       await user.click(helpToggleButton);
-      expect(screen.getByTestId('openEdXPortalButton')).toBeVisible();
+      expect(screen.getByTestId('openEdXDemoCourseButton')).toBeVisible();
     });
     it('should not show contact us button', async () => {
       const user = userEvent.setup();

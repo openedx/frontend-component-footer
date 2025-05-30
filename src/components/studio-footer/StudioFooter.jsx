@@ -1,21 +1,19 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import isEmpty from 'lodash/isEmpty';
 import { useIntl, FormattedMessage } from '@edx/frontend-platform/i18n';
 import { ensureConfig } from '@edx/frontend-platform';
 import { AppContext } from '@edx/frontend-platform/react';
 import {
   ActionRow,
-  Button,
   Container,
   Hyperlink,
-  TransitionReplace,
 } from '@openedx/paragon';
-import { ExpandLess, ExpandMore, Help } from '@openedx/paragon/icons';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
 import messages from './messages';
 import StudioFooterLogoSlot from '../../plugin-slots/StudioFooterLogoSlot';
+import StudioFooterHelpSectionSlot from '../../plugin-slots/StudioFooterHelpSectionSlot';
 
 ensureConfig([
   'LMS_BASE_URL',
@@ -32,76 +30,18 @@ const StudioFooter = ({
   containerProps,
 }) => {
   const intl = useIntl();
-  const [isOpen, setIsOpen] = useState(false);
   const { config } = useContext(AppContext);
 
   const { containerClassName, ...restContainerProps } = containerProps || {};
 
   return (
     <>
-      <div className="m-0 mt-6 row align-items-center justify-content-center">
-        <div className="col border-top mr-2" />
-        <Button
-          data-testid="helpToggleButton"
-          variant="outline-primary"
-          onClick={() => setIsOpen(!isOpen)}
-          iconBefore={Help}
-          iconAfter={isOpen ? ExpandLess : ExpandMore}
-          size="sm"
-        >
-          {isOpen ? intl.formatMessage(messages.closeHelpButtonLabel)
-            : intl.formatMessage(messages.openHelpButtonLabel)}
-        </Button>
-        <div className="col border-top ml-2" />
-      </div>
+      <StudioFooterHelpSectionSlot containerProps={containerProps} />
       <Container
         size="xl"
         className={classNames('px-4', containerClassName)}
         {...restContainerProps}
       >
-        <TransitionReplace>
-          {isOpen ? (
-            <ActionRow key="help-link-button-row" className="py-4" data-testid="helpButtonRow">
-              <ActionRow.Spacer />
-              <Button as="a" href="https://docs.openedx.org/" size="sm">
-                <FormattedMessage {...messages.edxDocumentationButtonLabel} />
-              </Button>
-              <Button
-                as="a"
-                href="https://openedx.org/"
-                size="sm"
-                data-testid="openEdXPortalButton"
-              >
-                <FormattedMessage {...messages.openEdxPortalButtonLabel} />
-              </Button>
-              <Button
-                as="a"
-                href="https://www.edx.org/course/edx101-overview-of-creating-an-edx-course#.VO4eaLPF-n1"
-                size="sm"
-              >
-                <FormattedMessage {...messages.edx101ButtonLabel} />
-              </Button>
-              <Button
-                as="a"
-                href="https://www.edx.org/course/studiox-creating-a-course-with-edx-studio"
-                size="sm"
-              >
-                <FormattedMessage {...messages.studioXButtonLabel} />
-              </Button>
-              {!isEmpty(config.SUPPORT_EMAIL) && (
-                <Button
-                  as="a"
-                  href={`mailto:${config.SUPPORT_EMAIL}`}
-                  size="sm"
-                  data-testid="contactUsButton"
-                >
-                  <FormattedMessage {...messages.contactUsButtonLabel} />
-                </Button>
-              )}
-              <ActionRow.Spacer />
-            </ActionRow>
-          ) : null}
-        </TransitionReplace>
         <ActionRow className="pt-3 m-0 x-small">
           © {new Date().getFullYear()} <Hyperlink destination={config.MARKETING_SITE_BASE_URL} target="_blank" className="ml-2">{config.SITE_NAME}</Hyperlink>
           <ActionRow.Spacer />
