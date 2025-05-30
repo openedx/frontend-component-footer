@@ -36,7 +36,7 @@ const StudioFooter = ({
 
   return (
     <>
-      <StudioFooterHelpSectionSlot />
+      <StudioFooterHelpSectionSlot containerProps={containerProps} />
       <Container
         size="xl"
         className={classNames('px-4', containerClassName)}

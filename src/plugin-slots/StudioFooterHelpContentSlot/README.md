@@ -2,9 +2,6 @@
 
 ### Slot ID: `org.openedx.frontend.layout.studio_footer_help-content.v1`
 
-### Slot ID Aliases
-* `studio_footer_help_content_slot`
-
 ## Description
 
 This slot is used to repace/modify/hide the help content to the studio footer.
