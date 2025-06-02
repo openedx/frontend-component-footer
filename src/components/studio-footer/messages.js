@@ -17,7 +17,7 @@ const messages = defineMessages({
     description: 'Label for button that links to the build a course quickstart site',
   },
   openEdxDemoCourseButtonLabel: {
-    id: 'authoring.footer.help.openEdxPortal.button.label',
+    id: 'authoring.footer.help.openEdxDemoCourse.button.label',
     defaultMessage: 'Open edX Demo Course',
     description: 'Label for button that links to the open edX demo course portal',
   },
