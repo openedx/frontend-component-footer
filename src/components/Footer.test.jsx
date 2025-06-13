@@ -5,6 +5,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { IntlProvider } from '@edx/frontend-platform/i18n';
 import { AppContext } from '@edx/frontend-platform/react';
+import { initializeMockApp } from '@edx/frontend-platform/testing';
 
 import Footer from './Footer';
 import FooterSlot from '../plugin-slots/FooterSlot';
@@ -30,27 +31,25 @@ const FooterWithContext = ({ locale = 'es' }) => {
   );
 };
 
-const FooterWithLanguageSelector = ({ languageSelected = () => {} }) => {
+const { LANGUAGE_PREFERENCE_COOKIE_NAME } = process.env;
+const FooterWithLanguageSelector = ({ authenticatedUser = null }) => {
   const contextValue = useMemo(() => ({
-    authenticatedUser: null,
+    authenticatedUser,
     config: {
+      ENABLE_FOOTER_LANG_SELECTOR: true,
+      LANGUAGE_PREFERENCE_COOKIE_NAME,
       LOGO_TRADEMARK_URL: process.env.LOGO_TRADEMARK_URL,
       LMS_BASE_URL: process.env.LMS_BASE_URL,
+      SITE_SUPPORTED_LANGUAGES: ['es', 'en'],
     },
-  }), []);
+  }), [authenticatedUser]);
 
   return (
     <IntlProvider locale="en">
       <AppContext.Provider
         value={contextValue}
       >
-        <Footer
-          onLanguageSelected={languageSelected}
-          supportedLanguages={[
-            { label: 'English', value: 'en' },
-            { label: 'Español', value: 'es' },
-          ]}
-        />
+        <Footer />
       </AppContext.Provider>
     </IntlProvider>
   );
@@ -71,6 +70,7 @@ describe('<Footer />', () => {
       expect(tree).toMatchSnapshot();
     });
     it('renders with a language selector', () => {
+      initializeMockApp();
       const tree = renderer
         .create(<FooterWithLanguageSelector />)
         .toJSON();
