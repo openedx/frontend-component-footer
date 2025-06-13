@@ -1,47 +1,27 @@
 import React, { useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
-import { publish } from '@edx/frontend-platform';
-import {
-  injectIntl, LOCALE_CHANGED, getLocale, handleRtl, getPrimaryLanguageSubtag,
-} from '@edx/frontend-platform/i18n';
-import { logError } from '@edx/frontend-platform/logging';
-import { Dropdown, useWindowSize } from '@openedx/paragon';
+import { changeUserSessionLanguage, getPrimaryLanguageSubtag, getSupportedLocaleList, getLocale } from '@edx/frontend-platform/i18n';
+import { Dropdown, Scrollable, useWindowSize } from '@openedx/paragon';
 import { Language } from '@openedx/paragon/icons';
-import { getCookies } from '@edx/frontend-platform/i18n/lib';
-import { patchPreferences, postSetLang } from './data';
 
-const onLanguageSelected = async ({ langCookieName, username, selectedLlocale }) => {
-  try {
-    if (username) {
-      await patchPreferences(username, { prefLang: selectedLlocale });
-      await postSetLang(selectedLlocale);
-    } else {
-      getCookies().set(langCookieName, selectedLlocale);
-    }
-    publish(LOCALE_CHANGED, getLocale());
-    handleRtl();
-  } catch (error) {
-    logError(error);
-  }
-};
 const getLocaleName = (locale) => {
   const langName = new Intl.DisplayNames([locale], { type: 'language', languageDisplay: 'standard' }).of(locale);
   return langName.replace(/^\w/, (c) => c.toUpperCase());
 };
 
 const LanguageSelector = ({
-  langCookieName, options, username,
+  supportedLanguages = [], ...props
 }) => {
   const [currentLocale, setLocale] = useState(getLocale());
   const { width } = useWindowSize();
-
-  const handleSelect = (selectedLlocale) => {
+  const options = supportedLanguages.length > 0 ? supportedLanguages : getSupportedLocaleList();
+  
+  const handleSelect = async (selectedLlocale) => {
     if (currentLocale !== selectedLlocale) {
-      onLanguageSelected({ langCookieName, username, selectedLlocale });
+      await changeUserSessionLanguage(selectedLlocale);
     }
     setLocale(selectedLlocale);
   };
-
   const currentLocaleLabel = useMemo(() => {
     if (width < 576) {
       return '';
@@ -63,20 +43,20 @@ const LanguageSelector = ({
         {currentLocaleLabel}
       </Dropdown.Toggle>
       <Dropdown.Menu>
+        <Scrollable style={{'max-height': '40vh'}}>
         {options.map((locale) => (
           <Dropdown.Item key={`lang-selector-${locale}`} eventKey={locale}>
             {getLocaleName(locale)}
           </Dropdown.Item>
         ))}
+        </Scrollable>
       </Dropdown.Menu>
     </Dropdown>
   );
 };
 
 LanguageSelector.propTypes = {
-  langCookieName: PropTypes.string.isRequired,
-  options: PropTypes.arrayOf(PropTypes.string).isRequired,
-  username: PropTypes.string,
+  supportedLanguages: PropTypes.arrayOf(PropTypes.string), 
 };
 
-export default injectIntl(LanguageSelector);
+export default LanguageSelector;

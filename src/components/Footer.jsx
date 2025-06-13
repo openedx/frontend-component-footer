@@ -6,7 +6,8 @@ import { ensureConfig } from '@edx/frontend-platform';
 import { AppContext } from '@edx/frontend-platform/react';
 
 import messages from './Footer.messages';
-import LanguageSelector from './LanguageSelector';
+
+import LanguageSelectorSlot from '../plugin-slots/LanguageSelectorSlot';
 
 ensureConfig([
   'LMS_BASE_URL',
@@ -57,15 +58,9 @@ class SiteFooter extends React.Component {
             />
           </a>
           <div className="flex-grow-1" />
-          {config.ENABLE_FOOTER_LANG_SELECTOR && (
             <div className="mb-2">
-              <LanguageSelector
-                options={config.SITE_SUPPORTED_LANGUAGES}
-                username={authenticatedUser?.username}
-                langCookieName={config.LANGUAGE_PREFERENCE_COOKIE_NAME}
-              />
+              <LanguageSelectorSlot />
             </div>
-          )}
         </div>
       </footer>
     );
