@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Footer /> renders correctly renders with a language selector 1`] = `
+exports[`<Footer /> renders correctly 1`] = `
 <footer
   className="footer d-flex border-top py-3 px-4"
   role="contentinfo"
@@ -65,66 +65,6 @@ exports[`<Footer /> renders correctly renders with a language selector 1`] = `
         </button>
       </div>
     </div>
-  </div>
-</footer>
-`;
-
-exports[`<Footer /> renders correctly renders without a language selector 1`] = `
-<footer
-  className="footer d-flex border-top py-3 px-4"
-  role="contentinfo"
->
-  <div
-    className="container-fluid d-flex"
-  >
-    <a
-      aria-label="edX Home"
-      className="d-block"
-      href="http://localhost:18000"
-    >
-      <img
-        alt="Powered by Open edX"
-        src="https://edx-cdn.org/v3/default/logo-trademark.svg"
-        style={
-          {
-            "maxHeight": 45,
-          }
-        }
-      />
-    </a>
-    <div
-      className="flex-grow-1"
-    />
-  </div>
-</footer>
-`;
-
-exports[`<Footer /> renders correctly renders without a language selector in es 1`] = `
-<footer
-  className="footer d-flex border-top py-3 px-4"
-  role="contentinfo"
->
-  <div
-    className="container-fluid d-flex"
-  >
-    <a
-      aria-label="edX Home"
-      className="d-block"
-      href="http://localhost:18000"
-    >
-      <img
-        alt="Powered by Open edX"
-        src="https://edx-cdn.org/v3/default/logo-trademark.svg"
-        style={
-          {
-            "maxHeight": 45,
-          }
-        }
-      />
-    </a>
-    <div
-      className="flex-grow-1"
-    />
   </div>
 </footer>
 `;

@@ -86,20 +86,6 @@ This library has the following exports:
 * ``messages``: Internationalization messages suitable for use with `@edx/frontend-platform/i18n <https://edx.github.io/frontend-platform/module-Internationalization.html>`_
 * ``dist/footer.scss``: A SASS file which contains style information for the component.  It should be imported into the micro-frontend's own SCSS file.
 
-Language Selector
------------------
-
-The language selector dropdown is optional and can be enabled by setting the MFE configuration variable ``ENABLE_FOOTER_LANG_SELECTOR`` to ``true``.
-Secondly, configue the languages that should be displayed in the dropdown by setting the MFE configuration variable ``SITE_SUPPORTED_LANGUAGES`` to an array of locale languages.
-Example:
-
-.. code-block:: python 
-
-  MFE_CONFIG["EDX_FRONTEND_APP_CONFIG"] = {
-    "ENABLE_FOOTER_LANG_SELECTOR": True,
-    "SITE_SUPPORTED_LANGUAGES": ['en', 'es', 'fr', 'pt-br'],
-  }
-
 Plugin
 ======
 The footer can be replaced or modified using `Frontend Plugin Framework <https://github.com/openedx/frontend-plugin-framework>`_.
