@@ -4,7 +4,11 @@ import PropTypes from 'prop-types';
 import LanguageSelector from '../../components/LanguageSelector';
 
 const LanguageSelectorSlot = ({ supportedLanguages = [] }) => (
-  <PluginSlot id="org.openedx.frontend.layout.footer_lang_selector.v1" pluginProps={{ supportedLanguages }}>
+  <PluginSlot
+    id="org.openedx.frontend.layout.footer_lang_selector.v1"
+    idAliases={['footer_lang_selector']}
+    slotOptions={{ mergeProps: true }}
+  >
     <LanguageSelector supportedLanguages={supportedLanguages} />
   </PluginSlot>
 );
