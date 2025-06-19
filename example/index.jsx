@@ -15,13 +15,7 @@ subscribe(APP_READY, () => {
         authenticatedUser: null,
         config: getConfig(),
       }}>
-        <Footer
-          onLanguageSelected={() => {}}
-          supportedLanguages={[
-            { label: 'English', value: 'en' },
-            { label: 'Español', value: 'es' },
-          ]}
-        />
+        <Footer />
       </AppContext.Provider>
     </AppProvider>,
     document.getElementById('root'),

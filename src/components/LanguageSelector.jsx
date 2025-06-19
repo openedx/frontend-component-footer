@@ -1,58 +1,65 @@
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
-import { injectIntl, intlShape, FormattedMessage } from '@edx/frontend-platform/i18n';
+import {
+  changeUserSessionLanguage, getPrimaryLanguageSubtag, getSupportedLocaleList, getLocale,
+} from '@edx/frontend-platform/i18n';
+import { Dropdown, Scrollable, useWindowSize } from '@openedx/paragon';
+import { Language } from '@openedx/paragon/icons';
+
+const getLocaleName = (locale) => {
+  const langName = new Intl.DisplayNames([locale], { type: 'language', languageDisplay: 'standard' }).of(locale);
+  return langName.replace(/^\w/, (c) => c.toUpperCase());
+};
 
 const LanguageSelector = ({
-  intl, options, onSubmit, ...props
+  supportedLanguages = [],
 }) => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const languageCode = e.target.elements['site-footer-language-select'].value;
-    onSubmit(languageCode);
+  const [currentLocale, setLocale] = useState(getLocale());
+  const { width } = useWindowSize();
+  const options = supportedLanguages.length > 0 ? supportedLanguages : getSupportedLocaleList();
+
+  const handleSelect = async (selectedLocale) => {
+    if (currentLocale !== selectedLocale) {
+      await changeUserSessionLanguage(selectedLocale);
+    }
+    setLocale(selectedLocale);
   };
 
+  const currentLocaleLabel = useMemo(() => {
+    if (width < 576) {
+      return '';
+    }
+    if (width < 768) {
+      return getPrimaryLanguageSubtag(currentLocale).toUpperCase();
+    }
+    return getLocaleName(currentLocale);
+  }, [currentLocale, width]);
+
   return (
-    <form
-      className="form-inline"
-      onSubmit={handleSubmit}
-      {...props}
-    >
-      <div className="form-group">
-        {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-        <label htmlFor="site-footer-language-select" className="d-inline-block m-0">
-          <FormattedMessage
-            id="footer.languageForm.select.label"
-            defaultMessage="Choose Language"
-            description="The label for the laguage select part of the language selection form."
-          />
-        </label>
-        <select
-          id="site-footer-language-select"
-          className="form-control-sm mx-2"
-          name="site-footer-language-select"
-          defaultValue={intl.locale}
-        >
-          {options.map(({ value, label }) => <option key={value} value={value}>{label}</option>)}
-        </select>
-        <button data-testid="site-footer-submit-btn" className="btn btn-outline-primary btn-sm" type="submit">
-          <FormattedMessage
-            id="footer.languageForm.submit.label"
-            defaultMessage="Apply"
-            description="The label for button to submit the language selection form."
-          />
-        </button>
-      </div>
-    </form>
+    <Dropdown onSelect={handleSelect}>
+      <Dropdown.Toggle
+        id="lang-selector-dropdown"
+        iconBefore={Language}
+        variant="outline-primary"
+        size="sm"
+      >
+        {currentLocaleLabel}
+      </Dropdown.Toggle>
+      <Dropdown.Menu>
+        <Scrollable style={{ maxHeight: '40vh' }}>
+          {options.map((locale) => (
+            <Dropdown.Item key={`lang-selector-${locale}`} eventKey={locale}>
+              {getLocaleName(locale)}
+            </Dropdown.Item>
+          ))}
+        </Scrollable>
+      </Dropdown.Menu>
+    </Dropdown>
   );
 };
 
 LanguageSelector.propTypes = {
-  intl: intlShape.isRequired,
-  onSubmit: PropTypes.func.isRequired,
-  options: PropTypes.arrayOf(PropTypes.shape({
-    value: PropTypes.string,
-    label: PropTypes.string,
-  })).isRequired,
+  supportedLanguages: PropTypes.arrayOf(PropTypes.string),
 };
 
-export default injectIntl(LanguageSelector);
+export default LanguageSelector;

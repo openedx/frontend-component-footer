@@ -6,7 +6,8 @@ import { ensureConfig } from '@edx/frontend-platform';
 import { AppContext } from '@edx/frontend-platform/react';
 
 import messages from './Footer.messages';
-import LanguageSelector from './LanguageSelector';
+
+import LanguageSelectorSlot from '../plugin-slots/LanguageSelectorSlot';
 
 ensureConfig([
   'LMS_BASE_URL',
@@ -35,14 +36,10 @@ class SiteFooter extends React.Component {
 
   render() {
     const {
-      supportedLanguages,
-      onLanguageSelected,
       logo,
       intl,
     } = this.props;
-    const showLanguageSelector = supportedLanguages.length > 0 && onLanguageSelected;
     const { config } = this.context;
-
     return (
       <footer
         role="contentinfo"
@@ -61,12 +58,9 @@ class SiteFooter extends React.Component {
             />
           </a>
           <div className="flex-grow-1" />
-          {showLanguageSelector && (
-            <LanguageSelector
-              options={supportedLanguages}
-              onSubmit={onLanguageSelected}
-            />
-          )}
+          <div className="mb-2">
+            <LanguageSelectorSlot />
+          </div>
         </div>
       </footer>
     );
@@ -78,17 +72,10 @@ SiteFooter.contextType = AppContext;
 SiteFooter.propTypes = {
   intl: intlShape.isRequired,
   logo: PropTypes.string,
-  onLanguageSelected: PropTypes.func,
-  supportedLanguages: PropTypes.arrayOf(PropTypes.shape({
-    label: PropTypes.string.isRequired,
-    value: PropTypes.string.isRequired,
-  })),
 };
 
 SiteFooter.defaultProps = {
   logo: undefined,
-  onLanguageSelected: undefined,
-  supportedLanguages: [],
 };
 
 export default injectIntl(SiteFooter);
