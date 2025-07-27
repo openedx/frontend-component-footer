@@ -1,4 +1,19 @@
 @use "@openedx/paragon/dist/core.min.css" as paragonCore;
 @use "@openedx/paragon/dist/light.min.css" as paragonLight;
 
+// Import Cormorant Garamond font for headings
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
 @import "@edx/frontend-component-footer/footer";
+
+// Apply global background and text colors
+body {
+  background-color: var(--wood-bg) !important;
+  color: var(--paper) !important;
+}
+
+// Global heading font family
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Cormorant Garamond', serif !important;
+  color: var(--paper) !important;
+}

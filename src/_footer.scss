@@ -1,5 +1,23 @@
-$gray-footer: #fcfcfc !default;
+// Dark Wood & Brass Library Theme - CSS Custom Properties
+:root {
+  --wood-bg: #20160e;
+  --paper: #f4ecd8;
+  --brass: #bfa75a;
+  --wood-dark: #36281b;
+  --ink: #32261a;
+  --accent: #7f5c27;
+  --shadow: 0 2px 8px rgba(54, 40, 27, 0.18);
+}
 
 .footer {
-  background-color: var(--pgn-color-light-100, $gray-footer);
+  background-color: var(--wood-dark) !important;
+  color: var(--paper) !important;
+  border-top: 1px solid var(--accent) !important;
+
+  a {
+    color: var(--brass) !important;
+    &:hover {
+      color: var(--accent) !important;
+    }
+  }
 }
