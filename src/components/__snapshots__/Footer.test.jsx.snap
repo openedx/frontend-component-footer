@@ -12,6 +12,7 @@ exports[`<Footer /> renders correctly renders with a language selector 1`] = `
       aria-label="edX Home"
       className="d-block"
       href="http://localhost:18000"
+      onClick={[Function]}
     >
       <img
         alt="Powered by Open edX"
@@ -81,6 +82,7 @@ exports[`<Footer /> renders correctly renders without a language selector 1`] = 
       aria-label="edX Home"
       className="d-block"
       href="http://localhost:18000"
+      onClick={[Function]}
     >
       <img
         alt="Powered by Open edX"
@@ -111,6 +113,7 @@ exports[`<Footer /> renders correctly renders without a language selector in es 
       aria-label="edX Home"
       className="d-block"
       href="http://localhost:18000"
+      onClick={[Function]}
     >
       <img
         alt="Powered by Open edX"
