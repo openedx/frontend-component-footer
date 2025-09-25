@@ -34,7 +34,6 @@
     "@edx/brand": "npm:@openedx/brand-openedx@^1.2.2",
     "@edx/browserslist-config": "^1.1.1",
     "@edx/frontend-platform": "^8.2.1",
-    "@edx/reactifex": "^2.1.1",
     "@openedx/frontend-build": "^14.3.1",
     "@openedx/paragon": "^23.3.0",
     "@testing-library/jest-dom": "^5.16.4",
