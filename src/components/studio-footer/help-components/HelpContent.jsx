@@ -23,7 +23,7 @@ const BUTTONS = [
   },
   {
     as: 'a',
-    href: 'https://sandbox.openedx.org/courses/course-v1:OpenedX+01-2024+2024-1/about',
+    href: 'https://training.openedx.io/courses/course-v1:OpenedX+DemoX+Demo_Course/about',
     size: 'sm',
     message: messages.openEdxDemoCourseButtonLabel,
     dataTestid: 'openEdXDemoCourseButton',
