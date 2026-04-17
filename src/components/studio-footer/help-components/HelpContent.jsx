@@ -23,7 +23,7 @@ const BUTTONS = [
   },
   {
     as: 'a',
-    href: 'https://training.openedx.io/courses/course-v1:OpenedX+DemoX+Demo_Course/about',
+    href: 'https://apps.training.openedx.io/catalog/courses/course-v1:OpenedX+DemoX+Demo_Course/about',
     size: 'sm',
     message: messages.openEdxDemoCourseButtonLabel,
     dataTestid: 'openEdXDemoCourseButton',
